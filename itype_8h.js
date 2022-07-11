@@ -28,6 +28,7 @@ var itype_8h =
     [ "islot_artifact", "structislot__artifact.html", "structislot__artifact" ],
     [ "enum_traits< condition_type >", "structenum__traits_3_01condition__type_01_4.html", "structenum__traits_3_01condition__type_01_4" ],
     [ "conditional_name", "structconditional__name.html", "structconditional__name" ],
+    [ "islot_milling", "classislot__milling.html", "classislot__milling" ],
     [ "itype", "structitype.html", "structitype" ],
     [ "CATA_SRC_ITYPE_H", "itype_8h.html#ace8a6e1e7fecf6448f065604b34e2195", null ],
     [ "condition_type", "itype_8h.html#afc401f615ea14e8e1ee24cf7068b7716", [

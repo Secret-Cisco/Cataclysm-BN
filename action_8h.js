@@ -69,6 +69,7 @@ var action_8h =
       [ "ACTION_FIRE", "action_8h.html#a14769f0512c139a614db195c6477c667abca7415aafd43554dc796a0c213cc1b9", null ],
       [ "ACTION_FIRE_BURST", "action_8h.html#a14769f0512c139a614db195c6477c667a8e6de3469f1d7774a00c343d203e1abc", null ],
       [ "ACTION_SELECT_FIRE_MODE", "action_8h.html#a14769f0512c139a614db195c6477c667ad851b098daaee88bab4ff011590ce1c7", null ],
+      [ "ACTION_SELECT_DEFAULT_AMMO", "action_8h.html#a14769f0512c139a614db195c6477c667ad10da4dc3f8773e313ad43832fd72db2", null ],
       [ "ACTION_CAST_SPELL", "action_8h.html#a14769f0512c139a614db195c6477c667ab4a5543db619db73a81d9301c6b2eafa", null ],
       [ "ACTION_DROP", "action_8h.html#a14769f0512c139a614db195c6477c667a0a24061f05bb68bad318fa65ab436331", null ],
       [ "ACTION_DIR_DROP", "action_8h.html#a14769f0512c139a614db195c6477c667ab5c0d53a1087ead36f9fa4f5237892a0", null ],

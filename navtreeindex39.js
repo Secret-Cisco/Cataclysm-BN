@@ -1,5 +1,16 @@
 var NAVTREEINDEX39 =
 {
+"classgame_1_1debug__hour__timer.html#a65edcca589b6cfc44d8952f0e80ea4df":[36,0,355,1,2],
+"classgame_1_1debug__hour__timer.html#a9feb8994fc0896df854759d46852af04":[36,0,355,1,0],
+"classgame_1_1debug__hour__timer.html#aea4b7723c442a563c5c0e3966fb408be":[36,0,355,1,1],
+"classgame_1_1draw__callback__t.html":[36,0,355,2],
+"classgame_1_1draw__callback__t.html#a34a3aaacf27434b21c15bd724e56f2ea":[36,0,355,2,0],
+"classgame_1_1draw__callback__t.html#a3f96e6e644453d94da9bbad70186052b":[36,0,355,2,5],
+"classgame_1_1draw__callback__t.html#a6a06fc8317e4e6e7313efcb2f331340e":[36,0,355,2,4],
+"classgame_1_1draw__callback__t.html#aa50ceb767c9b60fa67233e9e693db69f":[36,0,355,2,3],
+"classgame_1_1draw__callback__t.html#ad58eda0c2b62cfb74084aaf571af399e":[36,0,355,2,2],
+"classgame_1_1draw__callback__t.html#aff1ab6fae941cd26a068886dfe582acf":[36,0,355,2,1],
+"classgame_1_1monster__range.html":[36,0,355,3],
 "classgame_1_1monster__range.html#ae3333abb248f910956cff9c6e23cabfb":[36,0,355,3,0],
 "classgame_1_1non__dead__range.html":[36,0,355,4],
 "classgame_1_1non__dead__range.html#a4a87ad4a568e3be4ec950de49c813aa4":[36,0,355,4,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX39 =
 "classheat__food__actor.html":[36,0,379],
 "classheat__food__actor.html#a00819e80eb7f42775d46e6c5b43e6b0e":[36,0,379,1],
 "classheat__food__actor.html#a1ed236047c63d62250be9a475b1792e7":[36,0,379,2],
-"classheat__food__actor.html#a214f05bb97c3ec14feeb2af4e1e196b6":[36,0,379,0],
-"classheat__food__actor.html#a5394a2a957f51cd7ca46f7a947f62387":[36,0,379,3],
-"classheat__food__actor.html#a5afdef5a0ed7da6c23f45bfdb02ddb97":[36,0,379,4],
-"classheat__food__actor.html#a7b9e63304bbaf13ad604f32fe6dbb8d0":[36,0,379,6],
-"classheat__food__actor.html#aa1c1a1bd46adfab604b9a247275ced1c":[36,0,379,5],
-"classhelp.html":[36,0,380],
-"classhelp.html#a13541f2b5b5194fcb9ed58ea3ba639be":[36,0,380,5],
-"classhelp.html#a488716222442c1089a07b84bbe73f774":[36,0,380,0],
-"classhelp.html#a7003e5f15e9b45132fda0268eac2d27c":[36,0,380,2],
-"classhelp.html#a7e79c9714a06115f413d3681e2b99ea5":[36,0,380,7],
-"classhelp.html#a8f7f5c48382d2155ebd6d5dcf622eff4":[36,0,380,1],
-"classhelp.html#ac5579138daa4ea224f64d4c5d9a36f98":[36,0,380,3]
+"classheat__food__actor.html#a214f05bb97c3ec14feeb2af4e1e196b6":[36,0,379,0]
 };

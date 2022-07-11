@@ -148,6 +148,7 @@ var iteminfo__query_8h =
       [ "DESCRIPTION_FLAGS_POWERARMOR", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa5789a7c68b3aaf7dfb33db96e6a86665", null ],
       [ "DESCRIPTION_FLAGS_POWERARMOR_RADIATIONHINT", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaad677c6c4526b3d8b3f2596d9e61661c4", null ],
       [ "DESCRIPTION_IRRADIATION", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa59be0d71ec1b070b18d9f4215fa4a90f", null ],
+      [ "DESCRIPTION_BIONIC_ARMOR_INTERFACE", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa806bc3e9eb5192c0e501fe1b73311d96", null ],
       [ "DESCRIPTION_RECHARGE_UPSMODDED", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaac9ddd8ec0ae7bb9c31ab86c5b710a26b", null ],
       [ "DESCRIPTION_RECHARGE_NORELOAD", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa66ded97adad69f0d0e43b011564cd41d", null ],
       [ "DESCRIPTION_RECHARGE_UPSCAPABLE", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa3a07e3ba4359475b31e1eae6b5743467", null ],

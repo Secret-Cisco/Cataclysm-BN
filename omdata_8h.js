@@ -71,6 +71,8 @@ var omdata_8h =
     [ "get_all", "omdata_8h.html#a3d42986ba134e024ebb207ec4df4e1f9", null ],
     [ "get_all", "omdata_8h.html#ae39e94620013b52e3f84a973c5a5bf73", null ],
     [ "get_default_batch", "omdata_8h.html#a7e95432bcc3c9ccbb4567d281671ec36", null ],
+    [ "get_num_cw_rotations", "omdata_8h.html#ae5880bf6be45abef1fa502fcfd72f2e0", null ],
+    [ "get_suffix", "omdata_8h.html#a6e9ee2299698dc65bb07a42a93a72280", null ],
     [ "id", "omdata_8h.html#aa1a61aff83d6172cc670f0492ca0e8ea", null ],
     [ "land_use_code_forest", "omdata_8h.html#a0b3343e09309fc35bebf385e63e4333e", null ],
     [ "land_use_code_wetland", "omdata_8h.html#ac66fb2ceac1137e366b0ba7db2bcee85", null ],
@@ -95,7 +97,11 @@ var omdata_8h =
     [ "turn_random", "omdata_8h.html#ab3d71532342ed72a0e77b239d0d0dac9", null ],
     [ "turn_right", "omdata_8h.html#a873bc312d49e851dd397d439879ea67e", null ],
     [ "all", "omdata_8h.html#a27cad92b0d05637eb934f1a7f3424e41", null ],
+    [ "all_cw_rotations", "omdata_8h.html#a2b39a84cafdcaf8907103ea262cec3c1", null ],
+    [ "all_suffixes", "omdata_8h.html#aac35dc8ac4c61236c41ff4e0f0fbc42c", null ],
     [ "bits", "omdata_8h.html#ad5b4fe0a1bf503b57217aa8bf45b7e53", null ],
+    [ "invalid_dir_rotations", "omdata_8h.html#ad5d9b0a3900b2503fa0e662dd4f18eb0", null ],
+    [ "invalid_dir_suffix", "omdata_8h.html#a5ce76e0483e37d651ad6210bb00fa30b", null ],
     [ "OMSPEC_FREQ", "omdata_8h.html#ad25977a64e3d8681be2cea62c5633769", null ],
     [ "size", "omdata_8h.html#af97f9dbddaa758278662da3478826c61", null ]
 ];

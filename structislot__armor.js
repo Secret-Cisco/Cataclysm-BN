@@ -6,7 +6,6 @@ var structislot__armor =
     [ "env_resist", "structislot__armor.html#a3bf1982fb7e01dcb6f894a43fa689639", null ],
     [ "env_resist_w_filter", "structislot__armor.html#a87b0eca7d014fdb845b58be81257c95c", null ],
     [ "max_encumber", "structislot__armor.html#a409d99d9509c3a12acf98e5d4da89b0c", null ],
-    [ "power_armor", "structislot__armor.html#a7610fea1701c2a18844d1241f743fe21", null ],
     [ "sided", "structislot__armor.html#a0da3d1bef6cc7dd66499906eadfaf57f", null ],
     [ "storage", "structislot__armor.html#afea4f5875d9a65ab246ad0d6e78e5332", null ],
     [ "thickness", "structislot__armor.html#abd747f7666386a848f2d6e432f46c72e", null ],

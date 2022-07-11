@@ -5,7 +5,6 @@ var structislot__pet__armor =
     [ "env_resist_w_filter", "structislot__pet__armor.html#a07f4aee7ab982c02789d251c37fb5d27", null ],
     [ "max_vol", "structislot__pet__armor.html#a58a5e9a68c7ff82f6819c7b953a91988", null ],
     [ "min_vol", "structislot__pet__armor.html#a523c3f337d55e8b1e3bcc17dcf06f005", null ],
-    [ "power_armor", "structislot__pet__armor.html#aa634fe35dd8d86479f7fcb0c4323ff81", null ],
     [ "storage", "structislot__pet__armor.html#a653d6c157e8e24b69e72d81e0144428a", null ],
     [ "thickness", "structislot__pet__armor.html#a6a602800d0c7474c2cd0928a630a08fb", null ]
 ];

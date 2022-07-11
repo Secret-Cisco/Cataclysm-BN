@@ -120,6 +120,7 @@ var classCharacter =
     [ "can_pick_weight", "classCharacter.html#aef94559a8419824449833a59a1573aaf", null ],
     [ "can_pick_weight", "classCharacter.html#a9914a26587b7992ba97e495754e25ea7", null ],
     [ "can_run", "classCharacter.html#a2a1dd6df0e3771b8a49495d837051050", null ],
+    [ "can_swap", "classCharacter.html#a4522a03a5d1cdd935f139d67ac4dda43", null ],
     [ "can_uninstall_bionic", "classCharacter.html#a46e532601173c6b54d976d848a068b6a", null ],
     [ "can_unwield", "classCharacter.html#aa4824e66a8c00b7334c41fb5262d8148", null ],
     [ "can_use", "classCharacter.html#a4eddeb86babf626e7869882079b40651", null ],

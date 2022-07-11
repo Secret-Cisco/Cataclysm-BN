@@ -9,8 +9,6 @@ var handle__action_8cpp =
     [ "flag_LOCKED", "handle__action_8cpp.html#aa4c53af5b8ef586b17db26b930a119c7", null ],
     [ "flag_MAGIC_FOCUS", "handle__action_8cpp.html#ab4f9f94cd591c6932c7ecd98dafcfe0b", null ],
     [ "flag_NO_QUICKDRAW", "handle__action_8cpp.html#ac31c0f251b04dae53d4af00cd2bdfb5a", null ],
-    [ "flag_RELOAD_AND_SHOOT", "handle__action_8cpp.html#a30c9d25adcf2167a8bff0fe6ca21fdaf", null ],
-    [ "flag_RELOAD_ONE", "handle__action_8cpp.html#a0d6f759986c08c3aee23ac4284b9b01b", null ],
     [ "flag_SLEEP_IGNORE", "handle__action_8cpp.html#acb1cb26693407083bab4e47afdbc9e4c", null ],
     [ "generate_weather_anim_frame", "handle__action_8cpp.html#ad3ab6b45fc06fa539a635f868c96ed7e", null ],
     [ "grab", "handle__action_8cpp.html#adad5435d6c5b95d6e491750b1abead4e", null ],

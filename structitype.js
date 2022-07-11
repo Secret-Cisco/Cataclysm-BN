@@ -69,6 +69,7 @@ var structitype =
     [ "magazines", "structitype.html#a8f4b158de33b6320ba43249b005a2f94", null ],
     [ "materials", "structitype.html#a32ac824cb8437ef7a8288dafe6c6bfe1", null ],
     [ "melee", "structitype.html#ae287a1f1bf88e79b98da2bb0893546a7", null ],
+    [ "milling_data", "structitype.html#ab5a0c74951d7c96f34dbb6da4824f373", null ],
     [ "min_dex", "structitype.html#a025457dc0d2c2545e84cbb01533ed535", null ],
     [ "min_int", "structitype.html#a203a347d8d0a2784baa916490e2f377a", null ],
     [ "min_per", "structitype.html#a3425c169f961247fd33daa19b98934ce", null ],

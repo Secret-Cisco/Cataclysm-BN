@@ -11,6 +11,7 @@ var armor__layers_8cpp =
     [ "draw_mid_pane", "armor__layers_8cpp.html#a693ca1203a93c5063785654e4299b0f7", null ],
     [ "flag_AURA", "armor__layers_8cpp.html#ab0e722b4d6c8fdcebccff1bc1c5ffea4", null ],
     [ "flag_BELTED", "armor__layers_8cpp.html#a0acfb8cda610138cb8dc7a0eb0bcfe4c", null ],
+    [ "flag_COMPACT", "armor__layers_8cpp.html#a8093e22fe086841b9528e978863d3d12", null ],
     [ "flag_FANCY", "armor__layers_8cpp.html#a8272451ac37c14be0d68994575ceff13", null ],
     [ "flag_FIT", "armor__layers_8cpp.html#a614c2056b7d8fcc6773e3441a3feacc3", null ],
     [ "flag_FLOTATION", "armor__layers_8cpp.html#a2461f5cfa25addb4bfc22223fe3fcd36", null ],

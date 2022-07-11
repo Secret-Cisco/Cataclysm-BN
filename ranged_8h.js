@@ -22,6 +22,7 @@ var ranged_8h =
     [ "mode_turret_manual", "ranged_8h.html#a9f06978559f45ddb20b5a1caec3f9c1f", null ],
     [ "mode_turrets", "ranged_8h.html#a3371a56d7b45012072236fb97eda5cc0", null ],
     [ "print_dmg_msg", "ranged_8h.html#af042bc3e3b1ea1c57a42ee323ad284a8", null ],
+    [ "prompt_select_default_ammo_for", "ranged_8h.html#ae7778ea8feb8352ac65fe74e81164ebc", null ],
     [ "range_with_even_chance_of_good_hit", "ranged_8h.html#a6b4c3a2a360b378de261413fbb7d84f0", null ],
     [ "str_draw_damage_modifier", "ranged_8h.html#a32d7ead84f4eb01b4050fdbbca0767ea", null ],
     [ "str_draw_dispersion_modifier", "ranged_8h.html#a613a2847b3c06998d6117f2630fc9ed5", null ],

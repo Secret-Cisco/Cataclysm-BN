@@ -1102,10 +1102,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l08116">8116</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l08117" name="l08117"></a><span class="lineno"> 8117</span>    : <a class="code hl_function" href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map</a>( mapsize, <a class="code hl_variable" href="classmap.html#a87a151868377cb4b2843de06991c97da">zlevels</a> )</div>
-<div class="line"><a id="l08118" name="l08118"></a><span class="lineno"> 8118</span>{</div>
-<div class="line"><a id="l08119" name="l08119"></a><span class="lineno"> 8119</span>}</div>
+<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l08122">8122</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l08123" name="l08123"></a><span class="lineno"> 8123</span>    : <a class="code hl_function" href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map</a>( mapsize, <a class="code hl_variable" href="classmap.html#a87a151868377cb4b2843de06991c97da">zlevels</a> )</div>
+<div class="line"><a id="l08124" name="l08124"></a><span class="lineno"> 8124</span>{</div>
+<div class="line"><a id="l08125" name="l08125"></a><span class="lineno"> 8125</span>}</div>
 <div class="ttc" id="aclassmap_html_a87a151868377cb4b2843de06991c97da"><div class="ttname"><a href="classmap.html#a87a151868377cb4b2843de06991c97da">map::zlevels</a></div><div class="ttdeci">bool zlevels</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01797">map.h:1797</a></div></div>
 <div class="ttc" id="aclassmap_html_aa3646717fd2a2a35fa554503ff4918f8"><div class="ttname"><a href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map::map</a></div><div class="ttdeci">map(int mapsize=MAPSIZE, bool zlev=false)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00169">map.cpp:169</a></div></div>
 </div><!-- fragment -->
@@ -1138,15 +1138,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classmap.html#a46608709f68358365d0734b1063fed73">map</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l07593">7593</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l07594" name="l07594"></a><span class="lineno"> 7594</span>{</div>
-<div class="line"><a id="l07595" name="l07595"></a><span class="lineno"> 7595</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_min( 0, 0, -<a class="code hl_variable" href="game__constants_8h.html#aad0eacfa516a8f7e005674027d7640fe">OVERMAP_DEPTH</a> );</div>
-<div class="line"><a id="l07596" name="l07596"></a><span class="lineno"> 7596</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_max( <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a> + 1 );</div>
-<div class="line"><a id="l07597" name="l07597"></a><span class="lineno"> 7597</span> </div>
-<div class="line"><a id="l07598" name="l07598"></a><span class="lineno"> 7598</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structhalf__open__cuboid.html">half_open_cuboid&lt;tripoint&gt;</a> map_boundaries( map_boundary_min, map_boundary_max );</div>
-<div class="line"><a id="l07599" name="l07599"></a><span class="lineno"> 7599</span> </div>
-<div class="line"><a id="l07600" name="l07600"></a><span class="lineno"> 7600</span>    <span class="keywordflow">return</span> map_boundaries.contains( p );</div>
-<div class="line"><a id="l07601" name="l07601"></a><span class="lineno"> 7601</span>}</div>
+<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l07599">7599</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l07600" name="l07600"></a><span class="lineno"> 7600</span>{</div>
+<div class="line"><a id="l07601" name="l07601"></a><span class="lineno"> 7601</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_min( 0, 0, -<a class="code hl_variable" href="game__constants_8h.html#aad0eacfa516a8f7e005674027d7640fe">OVERMAP_DEPTH</a> );</div>
+<div class="line"><a id="l07602" name="l07602"></a><span class="lineno"> 7602</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_max( <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a> + 1 );</div>
+<div class="line"><a id="l07603" name="l07603"></a><span class="lineno"> 7603</span> </div>
+<div class="line"><a id="l07604" name="l07604"></a><span class="lineno"> 7604</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structhalf__open__cuboid.html">half_open_cuboid&lt;tripoint&gt;</a> map_boundaries( map_boundary_min, map_boundary_max );</div>
+<div class="line"><a id="l07605" name="l07605"></a><span class="lineno"> 7605</span> </div>
+<div class="line"><a id="l07606" name="l07606"></a><span class="lineno"> 7606</span>    <span class="keywordflow">return</span> map_boundaries.contains( p );</div>
+<div class="line"><a id="l07607" name="l07607"></a><span class="lineno"> 7607</span>}</div>
 <div class="ttc" id="agame__constants_8h_html_a3984a9476d1edc78e4e7b886a08d4d4b"><div class="ttname"><a href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a></div><div class="ttdeci">static constexpr int OVERMAP_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00063">game_constants.h:63</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00037">game_constants.h:37</a></div></div>
@@ -1193,7 +1193,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtinymap.html">tinymap</a></li>
-    <li class="footer">Generated on Sat Jul 2 2022 01:46:34 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Jul 11 2022 10:53:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

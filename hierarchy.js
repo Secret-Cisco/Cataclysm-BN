@@ -920,6 +920,7 @@ var hierarchy =
     [ "islot_engine", "structislot__engine.html", null ],
     [ "islot_fuel", "structislot__fuel.html", null ],
     [ "islot_magazine", "structislot__magazine.html", null ],
+    [ "islot_milling", "classislot__milling.html", null ],
     [ "islot_mod", "structislot__mod.html", null ],
     [ "islot_pet_armor", "structislot__pet__armor.html", null ],
     [ "islot_seed", "structislot__seed.html", null ],
@@ -981,7 +982,9 @@ var hierarchy =
         [ "iuse_function_wrapper_with_info", "classiuse__function__wrapper__with__info.html", null ]
       ] ],
       [ "iuse_transform", "classiuse__transform.html", [
-        [ "delayed_transform_iuse", "classdelayed__transform__iuse.html", null ]
+        [ "delayed_transform_iuse", "classdelayed__transform__iuse.html", null ],
+        [ "set_transform_iuse", "classset__transform__iuse.html", null ],
+        [ "set_transformed_iuse", "classset__transformed__iuse.html", null ]
       ] ],
       [ "learn_spell_actor", "classlearn__spell__actor.html", null ],
       [ "manualnoise_actor", "classmanualnoise__actor.html", null ],
@@ -999,7 +1002,6 @@ var hierarchy =
       [ "sew_advanced_actor", "classsew__advanced__actor.html", null ],
       [ "unfold_vehicle_iuse", "classunfold__vehicle__iuse.html", null ],
       [ "unpack_actor", "classunpack__actor.html", null ],
-      [ "ups_based_armor_actor", "classups__based__armor__actor.html", null ],
       [ "weigh_self_actor", "classweigh__self__actor.html", null ]
     ] ],
     [ "iuse_location", "structiuse__location.html", null ],

@@ -4,7 +4,6 @@ var classread__inventory__preset =
     [ "get_book", "classread__inventory__preset.html#af381b0f09a51e82bb79c753f71aff7b3", null ],
     [ "get_color", "classread__inventory__preset.html#a86b5891ab1a579d99ab64b7dfbf35a9c", null ],
     [ "get_denial", "classread__inventory__preset.html#a01947d5241797c2b2dc269299eeecf2b", null ],
-    [ "get_filter", "classread__inventory__preset.html#a2382315c6186329ece235b16d7c483f5", null ],
     [ "get_known_recipes", "classread__inventory__preset.html#ac049c3c86fd3d76118cde6a6eb01238d", null ],
     [ "is_known", "classread__inventory__preset.html#a2ca9a4e5b9248ebc2537f7a8bd48733c", null ],
     [ "is_shown", "classread__inventory__preset.html#aec03c2e3d7d6960ba7939068526e45a2", null ],

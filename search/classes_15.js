@@ -16,11 +16,10 @@ var searchData=
   ['unpack_5factor_13',['unpack_actor',['../classunpack__actor.html',1,'']]],
   ['unstacked_5fitems_14',['unstacked_items',['../structpickup_1_1unstacked__items.html',1,'pickup']]],
   ['update_5fmapgen_5ffunction_5fjson_15',['update_mapgen_function_json',['../classupdate__mapgen__function__json.html',1,'']]],
-  ['ups_5fbased_5farmor_5factor_16',['ups_based_armor_actor',['../classups__based__armor__actor.html',1,'']]],
-  ['use_5fbionic_17',['use_bionic',['../structhacking__activity__actor_1_1use__bionic.html',1,'hacking_activity_actor']]],
-  ['use_5ffunction_18',['use_function',['../structuse__function.html',1,'']]],
-  ['user_5finterface_19',['user_interface',['../classauto__pickup_1_1user__interface.html',1,'auto_pickup']]],
-  ['user_5fturn_20',['user_turn',['../classuser__turn.html',1,'']]],
-  ['utf8_5fto_5futf16_21',['utf8_to_utf16',['../classdetail_1_1utf8__to__utf16.html',1,'detail']]],
-  ['utf8_5fwrapper_22',['utf8_wrapper',['../classutf8__wrapper.html',1,'']]]
+  ['use_5fbionic_16',['use_bionic',['../structhacking__activity__actor_1_1use__bionic.html',1,'hacking_activity_actor']]],
+  ['use_5ffunction_17',['use_function',['../structuse__function.html',1,'']]],
+  ['user_5finterface_18',['user_interface',['../classauto__pickup_1_1user__interface.html',1,'auto_pickup']]],
+  ['user_5fturn_19',['user_turn',['../classuser__turn.html',1,'']]],
+  ['utf8_5fto_5futf16_20',['utf8_to_utf16',['../classdetail_1_1utf8__to__utf16.html',1,'detail']]],
+  ['utf8_5fwrapper_21',['utf8_wrapper',['../classutf8__wrapper.html',1,'']]]
 ];

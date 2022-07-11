@@ -114,7 +114,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00972">972</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00977">977</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9feb8994fc0896df854759d46852af04" name="a9feb8994fc0896df854759d46852af04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9feb8994fc0896df854759d46852af04">&#9670;&nbsp;</a></span>IRLTimeMs</h2>
@@ -128,7 +128,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00975">975</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00980">980</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 
 </div>
 </div>
@@ -148,24 +148,24 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11687">11687</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l11688" name="l11688"></a><span class="lineno">11688</span>{</div>
-<div class="line"><a id="l11689" name="l11689"></a><span class="lineno">11689</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> ) {</div>
-<div class="line"><a id="l11690" name="l11690"></a><span class="lineno">11690</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacecalendar.html#a356df28513f4d655ae35c312ab6e7d55">calendar::once_every</a>( <a class="code hl_function" href="classtime__duration.html#af151c8d00f18411742bf9766f5be1b79">time_duration::from_hours</a>( 1 ) ) ) {</div>
-<div class="line"><a id="l11691" name="l11691"></a><span class="lineno">11691</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="classgame_1_1debug__hour__timer.html#a9feb8994fc0896df854759d46852af04">IRLTimeMs</a> now = std::chrono::time_point_cast&lt;std::chrono::milliseconds&gt;(</div>
-<div class="line"><a id="l11692" name="l11692"></a><span class="lineno">11692</span>                                      std::chrono::system_clock::now() );</div>
-<div class="line"><a id="l11693" name="l11693"></a><span class="lineno">11693</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> ) {</div>
-<div class="line"><a id="l11694" name="l11694"></a><span class="lineno">11694</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <span class="stringliteral">&quot;in-game hour took: %d ms&quot;</span>, ( now - *<a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> ).<a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>() );</div>
-<div class="line"><a id="l11695" name="l11695"></a><span class="lineno">11695</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l11696" name="l11696"></a><span class="lineno">11696</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <span class="stringliteral">&quot;starting debug timer&quot;</span> );</div>
-<div class="line"><a id="l11697" name="l11697"></a><span class="lineno">11697</span>            }</div>
-<div class="line"><a id="l11698" name="l11698"></a><span class="lineno">11698</span>            <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> = now;</div>
-<div class="line"><a id="l11699" name="l11699"></a><span class="lineno">11699</span>        }</div>
-<div class="line"><a id="l11700" name="l11700"></a><span class="lineno">11700</span>    }</div>
-<div class="line"><a id="l11701" name="l11701"></a><span class="lineno">11701</span>}</div>
-<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a0ba7c88b05b18425742214bef4e71bd1"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">game::debug_hour_timer::start_time</a></div><div class="ttdeci">cata::optional&lt; IRLTimeMs &gt; start_time</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00980">game.h:980</a></div></div>
-<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a5688fa1d4fbf286957168dc6854294ed"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">game::debug_hour_timer::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00979">game.h:979</a></div></div>
-<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a9feb8994fc0896df854759d46852af04"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a9feb8994fc0896df854759d46852af04">game::debug_hour_timer::IRLTimeMs</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::system_clock, std::chrono::milliseconds &gt; IRLTimeMs</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00975">game.h:975</a></div></div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11723">11723</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l11724" name="l11724"></a><span class="lineno">11724</span>{</div>
+<div class="line"><a id="l11725" name="l11725"></a><span class="lineno">11725</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> ) {</div>
+<div class="line"><a id="l11726" name="l11726"></a><span class="lineno">11726</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacecalendar.html#a356df28513f4d655ae35c312ab6e7d55">calendar::once_every</a>( <a class="code hl_function" href="classtime__duration.html#af151c8d00f18411742bf9766f5be1b79">time_duration::from_hours</a>( 1 ) ) ) {</div>
+<div class="line"><a id="l11727" name="l11727"></a><span class="lineno">11727</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="classgame_1_1debug__hour__timer.html#a9feb8994fc0896df854759d46852af04">IRLTimeMs</a> now = std::chrono::time_point_cast&lt;std::chrono::milliseconds&gt;(</div>
+<div class="line"><a id="l11728" name="l11728"></a><span class="lineno">11728</span>                                      std::chrono::system_clock::now() );</div>
+<div class="line"><a id="l11729" name="l11729"></a><span class="lineno">11729</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> ) {</div>
+<div class="line"><a id="l11730" name="l11730"></a><span class="lineno">11730</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <span class="stringliteral">&quot;in-game hour took: %d ms&quot;</span>, ( now - *<a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> ).<a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>() );</div>
+<div class="line"><a id="l11731" name="l11731"></a><span class="lineno">11731</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l11732" name="l11732"></a><span class="lineno">11732</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <span class="stringliteral">&quot;starting debug timer&quot;</span> );</div>
+<div class="line"><a id="l11733" name="l11733"></a><span class="lineno">11733</span>            }</div>
+<div class="line"><a id="l11734" name="l11734"></a><span class="lineno">11734</span>            <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> = now;</div>
+<div class="line"><a id="l11735" name="l11735"></a><span class="lineno">11735</span>        }</div>
+<div class="line"><a id="l11736" name="l11736"></a><span class="lineno">11736</span>    }</div>
+<div class="line"><a id="l11737" name="l11737"></a><span class="lineno">11737</span>}</div>
+<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a0ba7c88b05b18425742214bef4e71bd1"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">game::debug_hour_timer::start_time</a></div><div class="ttdeci">cata::optional&lt; IRLTimeMs &gt; start_time</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00985">game.h:985</a></div></div>
+<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a5688fa1d4fbf286957168dc6854294ed"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">game::debug_hour_timer::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00984">game.h:984</a></div></div>
+<div class="ttc" id="aclassgame_1_1debug__hour__timer_html_a9feb8994fc0896df854759d46852af04"><div class="ttname"><a href="classgame_1_1debug__hour__timer.html#a9feb8994fc0896df854759d46852af04">game::debug_hour_timer::IRLTimeMs</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::system_clock, std::chrono::milliseconds &gt; IRLTimeMs</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00980">game.h:980</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_af151c8d00f18411742bf9766f5be1b79"><div class="ttname"><a href="classtime__duration.html#af151c8d00f18411742bf9766f5be1b79">time_duration::from_hours</a></div><div class="ttdeci">static constexpr time_duration from_hours(const T h)</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00216">calendar.h:216</a></div></div>
 <div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00884">messages.cpp:884</a></div></div>
 <div class="ttc" id="anamespacecalendar_html_a356df28513f4d655ae35c312ab6e7d55"><div class="ttname"><a href="namespacecalendar.html#a356df28513f4d655ae35c312ab6e7d55">calendar::once_every</a></div><div class="ttdeci">bool once_every(const time_duration &amp;event_frequency)</div><div class="ttdoc">Predicate to handle rate-limiting.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00490">calendar.cpp:490</a></div></div>
@@ -173,7 +173,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="fmtlib__core_8h_source.html#l01073">detail::count()</a>, <a class="el" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423">enabled</a>, <a class="el" href="calendar_8h_source.html#l00216">time_duration::from_hours()</a>, and <a class="el" href="calendar_8cpp_source.html#l00490">calendar::once_every()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01432">game::do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01434">game::do_turn()</a>.</p>
 
 </div>
 </div>
@@ -192,18 +192,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11680">11680</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l11681" name="l11681"></a><span class="lineno">11681</span>{</div>
-<div class="line"><a id="l11682" name="l11682"></a><span class="lineno">11682</span>    <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> = !<a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a>;</div>
-<div class="line"><a id="l11683" name="l11683"></a><span class="lineno">11683</span>    <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l11684" name="l11684"></a><span class="lineno">11684</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <span class="stringliteral">&quot;debug timer %s&quot;</span>, <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> ? <span class="stringliteral">&quot;enabled&quot;</span> : <span class="stringliteral">&quot;disabled&quot;</span> ) );</div>
-<div class="line"><a id="l11685" name="l11685"></a><span class="lineno">11685</span>}</div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11716">11716</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l11717" name="l11717"></a><span class="lineno">11717</span>{</div>
+<div class="line"><a id="l11718" name="l11718"></a><span class="lineno">11718</span>    <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> = !<a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a>;</div>
+<div class="line"><a id="l11719" name="l11719"></a><span class="lineno">11719</span>    <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1">start_time</a> = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l11720" name="l11720"></a><span class="lineno">11720</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <span class="stringliteral">&quot;debug timer %s&quot;</span>, <a class="code hl_variable" href="classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed">enabled</a> ? <span class="stringliteral">&quot;enabled&quot;</span> : <span class="stringliteral">&quot;disabled&quot;</span> ) );</div>
+<div class="line"><a id="l11721" name="l11721"></a><span class="lineno">11721</span>}</div>
 <div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
 <div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423">enabled</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, and <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11675">game::toggle_debug_hour_timer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11711">game::toggle_debug_hour_timer()</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00979">979</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00984">984</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00980">980</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00985">985</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgame.html">game</a></li><li class="navelem"><a class="el" href="classgame_1_1debug__hour__timer.html">debug_hour_timer</a></li>
-    <li class="footer">Generated on Sat Jul 2 2022 01:46:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Jul 11 2022 10:53:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

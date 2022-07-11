@@ -42,6 +42,7 @@ var classItem__factory =
     [ "load", "classItem__factory.html#aabc9fff908ac8cece2d22241445dc8a9", null ],
     [ "load", "classItem__factory.html#a107f5ea5a78ed4acc84ff1dc65295eb9", null ],
     [ "load", "classItem__factory.html#a3f002355b6183c361139ce1cfcc261ac", null ],
+    [ "load", "classItem__factory.html#a14cde3bd1039d87371d373ce96af77a1", null ],
     [ "load", "classItem__factory.html#a526dce11d1507dfa5fae6162ae730282", null ],
     [ "load", "classItem__factory.html#ad2c197340fa1be7ce6ea7e89eeab82e3", null ],
     [ "load", "classItem__factory.html#a278411a6b8607baad068ffeabbae6001", null ],

@@ -117,7 +117,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00427">427</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00452">452</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a492f096800820f625467f7b90b78e3c2" name="a492f096800820f625467f7b90b78e3c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a492f096800820f625467f7b90b78e3c2">&#9670;&nbsp;</a></span>deserialize()</h2>
@@ -145,23 +145,23 @@ template&lt;typename JsonStream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00437">437</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>                                         {</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <span class="keyword">auto</span> jo = jsin.get_object();</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        jo.read( <span class="stringliteral">&quot;point&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#af4995adf51a0c8127d145da108e23029">p</a> );</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        jo.read( <span class="stringliteral">&quot;terrain&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a525e9202294f380f912e7efc96c55c98">terrain</a> );</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        jo.read( <span class="stringliteral">&quot;existing&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a143b5363d069e98926785999f57268f2">existing</a> );</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        jo.read( <span class="stringliteral">&quot;connection&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a6633bb6bbc2b3d8396c9e871f6ea45ba">connection</a> );</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;from&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a425b8a15489c643eab6bfe4c638929ed">from</a> );</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00462">462</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>                                         {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        <span class="keyword">auto</span> jo = jsin.get_object();</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        jo.read( <span class="stringliteral">&quot;point&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#af4995adf51a0c8127d145da108e23029">p</a> );</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        jo.read( <span class="stringliteral">&quot;terrain&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a525e9202294f380f912e7efc96c55c98">terrain</a> );</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        jo.read( <span class="stringliteral">&quot;existing&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a143b5363d069e98926785999f57268f2">existing</a> );</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        jo.read( <span class="stringliteral">&quot;connection&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a6633bb6bbc2b3d8396c9e871f6ea45ba">connection</a> );</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;from&quot;</span>, <a class="code hl_variable" href="structovermap__special__connection.html#a425b8a15489c643eab6bfe4c638929ed">from</a> );</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    }</div>
 <div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00054">assign.h:54</a></div></div>
-<div class="ttc" id="astructovermap__special__connection_html_a143b5363d069e98926785999f57268f2"><div class="ttname"><a href="structovermap__special__connection.html#a143b5363d069e98926785999f57268f2">overmap_special_connection::existing</a></div><div class="ttdeci">bool existing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00434">omdata.h:434</a></div></div>
-<div class="ttc" id="astructovermap__special__connection_html_a425b8a15489c643eab6bfe4c638929ed"><div class="ttname"><a href="structovermap__special__connection.html#a425b8a15489c643eab6bfe4c638929ed">overmap_special_connection::from</a></div><div class="ttdeci">cata::optional&lt; tripoint &gt; from</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00429">omdata.h:429</a></div></div>
-<div class="ttc" id="astructovermap__special__connection_html_a525e9202294f380f912e7efc96c55c98"><div class="ttname"><a href="structovermap__special__connection.html#a525e9202294f380f912e7efc96c55c98">overmap_special_connection::terrain</a></div><div class="ttdeci">string_id&lt; oter_type_t &gt; terrain</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00432">omdata.h:432</a></div></div>
-<div class="ttc" id="astructovermap__special__connection_html_a6633bb6bbc2b3d8396c9e871f6ea45ba"><div class="ttname"><a href="structovermap__special__connection.html#a6633bb6bbc2b3d8396c9e871f6ea45ba">overmap_special_connection::connection</a></div><div class="ttdeci">string_id&lt; overmap_connection &gt; connection</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00433">omdata.h:433</a></div></div>
-<div class="ttc" id="astructovermap__special__connection_html_af4995adf51a0c8127d145da108e23029"><div class="ttname"><a href="structovermap__special__connection.html#af4995adf51a0c8127d145da108e23029">overmap_special_connection::p</a></div><div class="ttdeci">tripoint p</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00428">omdata.h:428</a></div></div>
+<div class="ttc" id="astructovermap__special__connection_html_a143b5363d069e98926785999f57268f2"><div class="ttname"><a href="structovermap__special__connection.html#a143b5363d069e98926785999f57268f2">overmap_special_connection::existing</a></div><div class="ttdeci">bool existing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00459">omdata.h:459</a></div></div>
+<div class="ttc" id="astructovermap__special__connection_html_a425b8a15489c643eab6bfe4c638929ed"><div class="ttname"><a href="structovermap__special__connection.html#a425b8a15489c643eab6bfe4c638929ed">overmap_special_connection::from</a></div><div class="ttdeci">cata::optional&lt; tripoint &gt; from</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00454">omdata.h:454</a></div></div>
+<div class="ttc" id="astructovermap__special__connection_html_a525e9202294f380f912e7efc96c55c98"><div class="ttname"><a href="structovermap__special__connection.html#a525e9202294f380f912e7efc96c55c98">overmap_special_connection::terrain</a></div><div class="ttdeci">string_id&lt; oter_type_t &gt; terrain</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00457">omdata.h:457</a></div></div>
+<div class="ttc" id="astructovermap__special__connection_html_a6633bb6bbc2b3d8396c9e871f6ea45ba"><div class="ttname"><a href="structovermap__special__connection.html#a6633bb6bbc2b3d8396c9e871f6ea45ba">overmap_special_connection::connection</a></div><div class="ttdeci">string_id&lt; overmap_connection &gt; connection</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00458">omdata.h:458</a></div></div>
+<div class="ttc" id="astructovermap__special__connection_html_af4995adf51a0c8127d145da108e23029"><div class="ttname"><a href="structovermap__special__connection.html#af4995adf51a0c8127d145da108e23029">overmap_special_connection::p</a></div><div class="ttdeci">tripoint p</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00453">omdata.h:453</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="omdata_8h_source.html#l00433">connection</a>, <a class="el" href="omdata_8h_source.html#l00434">existing</a>, <a class="el" href="omdata_8h_source.html#l00429">from</a>, <a class="el" href="omdata_8h_source.html#l00428">p</a>, and <a class="el" href="omdata_8h_source.html#l00432">terrain</a>.</p>
+<p class="reference">References <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="omdata_8h_source.html#l00458">connection</a>, <a class="el" href="omdata_8h_source.html#l00459">existing</a>, <a class="el" href="omdata_8h_source.html#l00454">from</a>, <a class="el" href="omdata_8h_source.html#l00453">p</a>, and <a class="el" href="omdata_8h_source.html#l00457">terrain</a>.</p>
 
 </div>
 </div>
@@ -178,9 +178,9 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00433">433</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00458">458</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00437">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00462">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -196,9 +196,9 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00434">434</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00459">459</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00437">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00462">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -214,9 +214,9 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00429">429</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00454">454</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00437">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00462">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00430">430</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00455">455</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
 </div>
 </div>
@@ -248,9 +248,9 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00428">428</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00453">453</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00437">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00462">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -266,9 +266,9 @@ template&lt;typename JsonStream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00432">432</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00457">457</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00437">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00462">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ template&lt;typename JsonStream &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structovermap__special__connection.html">overmap_special_connection</a></li>
-    <li class="footer">Generated on Sat Jul 2 2022 01:46:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Jul 11 2022 10:53:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
