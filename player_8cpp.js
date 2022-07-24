@@ -1,5 +1,6 @@
 var player_8cpp =
 [
+    [ "calc_fatigue_cap", "player_8cpp.html#a7fe4e25d4d32b168cdc76f313b4262c0", null ],
     [ "encumb_color", "player_8cpp.html#a29e1940dc5802dfb2387644ce4ce4b10", null ],
     [ "flag_RESTRICT_HAND", "player_8cpp.html#a2113157ced26b32206fbc8a85279e861", null ],
     [ "flag_SPLINT", "player_8cpp.html#ac515c71f173b6c81dbc78f60ce2b89d2", null ],

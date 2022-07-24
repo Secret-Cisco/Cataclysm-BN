@@ -1,7 +1,5 @@
 var NAVTREEINDEX65 =
 {
-"classstring__input__popup.html#ae349a19ae0a53b2d46945e9d50e9b821":[36,0,865,44],
-"classstring__input__popup.html#aeaceebbc8ff206aaa1f9e9e6891aafad":[36,0,865,35],
 "classstring__input__popup.html#aeced4fb3877cc8e24da36af12af2e519":[36,0,865,30],
 "classstring__input__popup.html#aed67459aa7e13636bb77e1065072c2fb":[36,0,865,68],
 "classstring__input__popup.html#aedb392b0f6f571e9defbecdeeb9c151b":[36,0,865,65],
@@ -249,5 +247,7 @@ var NAVTREEINDEX65 =
 "classtile__lookup__res.html#a14c6f1544e9b6d264906b2d89aa8ad57":[36,0,887,2],
 "classtile__lookup__res.html#a44d535873fa22db3d6ec0573e5abc92e":[36,0,887,0],
 "classtile__lookup__res.html#a58f65ecbb2bcf4ed3ae3b3fbbc3a28d1":[36,0,887,3],
-"classtile__lookup__res.html#a6f5b2a777c94953987ae257661e63545":[36,0,887,1]
+"classtile__lookup__res.html#a6f5b2a777c94953987ae257661e63545":[36,0,887,1],
+"classtile__lookup__res.html#a808a47cb81b43606feccb2170430b7df":[36,0,887,4],
+"classtileray.html":[36,0,889]
 };

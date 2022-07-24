@@ -373,26 +373,21 @@ $(document).ready(function(){initNavTree('submap_8cpp_source.html',''); initResi
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keyword">const</span> <span class="keyword">auto</span> new_pos = <a class="code hl_function" href="mapgen__functions_8cpp.html#a60321e5661fe285e032f87708c5430f6">rotate_point</a>( elem-&gt;pos );</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        elem-&gt;pos = new_pos;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="comment">// turn the steering wheel, vehicle::turn does not actually</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="comment">// move the vehicle.</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        elem-&gt;turn( turns * 90_degrees );</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="comment">// The facing direction and recalculate the positions of the parts</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        elem-&gt;face = elem-&gt;turn_dir;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        elem-&gt;precalc_mounts( 0, elem-&gt;turn_dir, elem-&gt;pivot_anchor[0] );</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        elem-&gt;set_facing( turns * 90_degrees );</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    }</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    std::map&lt;point, computer&gt; rot_comp;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classsubmap.html#aeeba53a78e62b516c1bd1be0c63542ca">computers</a> ) {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        rot_comp.emplace( <a class="code hl_function" href="mapgen__functions_8cpp.html#a60321e5661fe285e032f87708c5430f6">rotate_point</a>( elem.first ), elem.second );</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    std::map&lt;point, computer&gt; rot_comp;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classsubmap.html#aeeba53a78e62b516c1bd1be0c63542ca">computers</a> ) {</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        rot_comp.emplace( <a class="code hl_function" href="mapgen__functions_8cpp.html#a60321e5661fe285e032f87708c5430f6">rotate_point</a>( elem.first ), elem.second );</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <a class="code hl_variable" href="classsubmap.html#aeeba53a78e62b516c1bd1be0c63542ca">computers</a> = rot_comp;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    std::map&lt;point_sm_ms, cata::poly_serialized&lt;active_tile_data&gt;&gt; rot_active_furn;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classsubmap.html#a13a7762a23694210abea9955505fcb87">active_furniture</a> ) {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        rot_active_furn.emplace( <a class="code hl_typedef" href="coordinates_8h.html#a0ac9d32a9fb320505f70e5f6834d82f4">point_sm_ms</a>( <a class="code hl_function" href="mapgen__functions_8cpp.html#a60321e5661fe285e032f87708c5430f6">rotate_point</a>( elem.first.raw() ) ), elem.second );</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <a class="code hl_variable" href="classsubmap.html#a13a7762a23694210abea9955505fcb87">active_furniture</a> = rot_active_furn;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <a class="code hl_variable" href="classsubmap.html#aeeba53a78e62b516c1bd1be0c63542ca">computers</a> = rot_comp;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    std::map&lt;point_sm_ms, cata::poly_serialized&lt;active_tile_data&gt;&gt; rot_active_furn;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classsubmap.html#a13a7762a23694210abea9955505fcb87">active_furniture</a> ) {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        rot_active_furn.emplace( <a class="code hl_typedef" href="coordinates_8h.html#a0ac9d32a9fb320505f70e5f6834d82f4">point_sm_ms</a>( <a class="code hl_function" href="mapgen__functions_8cpp.html#a60321e5661fe285e032f87708c5430f6">rotate_point</a>( elem.first.raw() ) ), elem.second );</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    }</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_variable" href="classsubmap.html#a13a7762a23694210abea9955505fcb87">active_furniture</a> = rot_active_furn;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
 <div class="ttc" id="abasecamp_8h_html"><div class="ttname"><a href="basecamp_8h.html">basecamp.h</a></div></div>
 <div class="ttc" id="acharacter_8h_html_a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf"><div class="ttname"><a href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">rechargeable_cbm::other</a></div><div class="ttdeci">@ other</div></div>
 <div class="ttc" id="aclassactive__item__cache_html_a0a27abec1dd9248b460d36341f864dcf"><div class="ttname"><a href="classactive__item__cache.html#a0a27abec1dd9248b460d36341f864dcf">active_item_cache::rotate_locations</a></div><div class="ttdeci">void rotate_locations(int turns, const point &amp;dim)</div><div class="ttdef"><b>Definition:</b> <a href="active__item__cache_8cpp_source.html#l00117">active_item_cache.cpp:117</a></div></div>
@@ -432,8 +427,8 @@ $(document).ready(function(){initNavTree('submap_8cpp_source.html',''); initResi
 <div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00037">game_constants.h:37</a></div></div>
 <div class="ttc" id="aint__id_8h_html"><div class="ttname"><a href="int__id_8h.html">int_id.h</a></div></div>
-<div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
-<div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
+<div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
+<div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
 <div class="ttc" id="amapdata_8cpp_html_a2c46d6c97cbcfb86c8493ab0bf7ea240"><div class="ttname"><a href="mapdata_8cpp.html#a2c46d6c97cbcfb86c8493ab0bf7ea240">t_console</a></div><div class="ttdeci">ter_id t_console</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l00704">mapdata.cpp:704</a></div></div>
 <div class="ttc" id="amapdata_8cpp_html_a7eaf3fb1c88b99d3594824fe3cb7003f"><div class="ttname"><a href="mapdata_8cpp.html#a7eaf3fb1c88b99d3594824fe3cb7003f">t_null</a></div><div class="ttdeci">ter_id t_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l00623">mapdata.cpp:623</a></div></div>
 <div class="ttc" id="amapdata_8cpp_html_a98423a935af4b918d68f206e63f6cf7f"><div class="ttname"><a href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a></div><div class="ttdeci">furn_id f_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l01095">mapdata.cpp:1095</a></div></div>
@@ -472,7 +467,7 @@ $(document).ready(function(){initNavTree('submap_8cpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="submap_8cpp.html">submap.cpp</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:22 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:08:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

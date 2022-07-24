@@ -116,7 +116,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00096">96</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00087">87</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7762c15f55085997009cd60c03c572f" name="aa7762c15f55085997009cd60c03c572f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7762c15f55085997009cd60c03c572f">&#9670;&nbsp;</a></span>forest_biome_component()</h2>
@@ -159,35 +159,35 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8cpp_source.html#l00812">812</a> of file <a class="el" href="regional__settings_8cpp_source.html">regional_settings.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>{</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const std::string, int&gt; &amp;pr : <a class="code hl_variable" href="structforest__biome__component.html#a8adfc7e16ec9c9e52dc134c36a2edeee">unfinalized_types</a> ) {</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <a class="code hl_struct" href="structter__furn__id.html">ter_furn_id</a> tf_id;</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        tf_id.<a class="code hl_variable" href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter</a> = <a class="code hl_variable" href="mapdata_8cpp.html#a7eaf3fb1c88b99d3594824fe3cb7003f">t_null</a>;</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        tf_id.<a class="code hl_variable" href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">furn</a> = <a class="code hl_variable" href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a>;</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">ter_str_id</a> tid( pr.first );</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">furn_str_id</a> fid( pr.first );</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        <span class="keywordflow">if</span>( tid.is_valid() ) {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            tf_id.<a class="code hl_variable" href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter</a> = tid.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( fid.is_valid() ) {</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>            tf_id.<a class="code hl_variable" href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">furn</a> = fid.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>        }</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>        <a class="code hl_variable" href="structforest__biome__component.html#ae5dca5f9433f336f0554b0263102fdbf">types</a>.add( tf_id, pr.second );</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    }</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>}</div>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8cpp_source.html#l00813">813</a> of file <a class="el" href="regional__settings_8cpp_source.html">regional_settings.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>{</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const std::string, int&gt; &amp;pr : <a class="code hl_variable" href="structforest__biome__component.html#a8adfc7e16ec9c9e52dc134c36a2edeee">unfinalized_types</a> ) {</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        <a class="code hl_struct" href="structter__furn__id.html">ter_furn_id</a> tf_id;</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        tf_id.<a class="code hl_variable" href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter</a> = <a class="code hl_variable" href="mapdata_8cpp.html#a7eaf3fb1c88b99d3594824fe3cb7003f">t_null</a>;</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>        tf_id.<a class="code hl_variable" href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">furn</a> = <a class="code hl_variable" href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a>;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">ter_str_id</a> tid( pr.first );</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">furn_str_id</a> fid( pr.first );</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>        <span class="keywordflow">if</span>( tid.is_valid() ) {</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            tf_id.<a class="code hl_variable" href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter</a> = tid.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( fid.is_valid() ) {</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            tf_id.<a class="code hl_variable" href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">furn</a> = fid.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>        }</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        <a class="code hl_variable" href="structforest__biome__component.html#ae5dca5f9433f336f0554b0263102fdbf">types</a>.add( tf_id, pr.second );</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    }</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>}</div>
 <div class="ttc" id="aclassint__id_html_a88b1e0c550f4d6f36cac7a73feca7f01"><div class="ttname"><a href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">int_id::id</a></div><div class="ttdeci">const string_id&lt; T &gt; &amp; id() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00033">ammo_effect.cpp:33</a></div></div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; ter_t &gt;</a></div></div>
 <div class="ttc" id="amapdata_8cpp_html_a7eaf3fb1c88b99d3594824fe3cb7003f"><div class="ttname"><a href="mapdata_8cpp.html#a7eaf3fb1c88b99d3594824fe3cb7003f">t_null</a></div><div class="ttdeci">ter_id t_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l00623">mapdata.cpp:623</a></div></div>
 <div class="ttc" id="amapdata_8cpp_html_a98423a935af4b918d68f206e63f6cf7f"><div class="ttname"><a href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a></div><div class="ttdeci">furn_id f_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l01095">mapdata.cpp:1095</a></div></div>
-<div class="ttc" id="astructforest__biome__component_html_a8adfc7e16ec9c9e52dc134c36a2edeee"><div class="ttname"><a href="structforest__biome__component.html#a8adfc7e16ec9c9e52dc134c36a2edeee">forest_biome_component::unfinalized_types</a></div><div class="ttdeci">std::map&lt; std::string, int &gt; unfinalized_types</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00097">regional_settings.h:97</a></div></div>
-<div class="ttc" id="astructforest__biome__component_html_ae5dca5f9433f336f0554b0263102fdbf"><div class="ttname"><a href="structforest__biome__component.html#ae5dca5f9433f336f0554b0263102fdbf">forest_biome_component::types</a></div><div class="ttdeci">weighted_int_list&lt; ter_furn_id &gt; types</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00098">regional_settings.h:98</a></div></div>
-<div class="ttc" id="astructter__furn__id_html"><div class="ttname"><a href="structter__furn__id.html">ter_furn_id</a></div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00067">regional_settings.h:67</a></div></div>
-<div class="ttc" id="astructter__furn__id_html_a0e4c9b3cbcad5dea11c882c58bf9caaf"><div class="ttname"><a href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter_furn_id::ter</a></div><div class="ttdeci">ter_id ter</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00068">regional_settings.h:68</a></div></div>
-<div class="ttc" id="astructter__furn__id_html_acbfc4f432b2cf479189e6ab09e37d236"><div class="ttname"><a href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">ter_furn_id::furn</a></div><div class="ttdeci">furn_id furn</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00069">regional_settings.h:69</a></div></div>
+<div class="ttc" id="astructforest__biome__component_html_a8adfc7e16ec9c9e52dc134c36a2edeee"><div class="ttname"><a href="structforest__biome__component.html#a8adfc7e16ec9c9e52dc134c36a2edeee">forest_biome_component::unfinalized_types</a></div><div class="ttdeci">std::map&lt; std::string, int &gt; unfinalized_types</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00088">regional_settings.h:88</a></div></div>
+<div class="ttc" id="astructforest__biome__component_html_ae5dca5f9433f336f0554b0263102fdbf"><div class="ttname"><a href="structforest__biome__component.html#ae5dca5f9433f336f0554b0263102fdbf">forest_biome_component::types</a></div><div class="ttdeci">weighted_int_list&lt; ter_furn_id &gt; types</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00089">regional_settings.h:89</a></div></div>
+<div class="ttc" id="astructter__furn__id_html"><div class="ttname"><a href="structter__furn__id.html">ter_furn_id</a></div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00058">regional_settings.h:58</a></div></div>
+<div class="ttc" id="astructter__furn__id_html_a0e4c9b3cbcad5dea11c882c58bf9caaf"><div class="ttname"><a href="structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf">ter_furn_id::ter</a></div><div class="ttdeci">ter_id ter</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00059">regional_settings.h:59</a></div></div>
+<div class="ttc" id="astructter__furn__id_html_acbfc4f432b2cf479189e6ab09e37d236"><div class="ttname"><a href="structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236">ter_furn_id::furn</a></div><div class="ttdeci">furn_id furn</div><div class="ttdef"><b>Definition:</b> <a href="regional__settings_8h_source.html#l00060">regional_settings.h:60</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapdata_8cpp_source.html#l01095">f_null</a>, <a class="el" href="regional__settings_8h_source.html#l00069">ter_furn_id::furn</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="mapdata_8cpp_source.html#l00623">t_null</a>, <a class="el" href="regional__settings_8h_source.html#l00068">ter_furn_id::ter</a>, <a class="el" href="regional__settings_8h_source.html#l00098">types</a>, and <a class="el" href="regional__settings_8h_source.html#l00097">unfinalized_types</a>.</p>
+<p class="reference">References <a class="el" href="mapdata_8cpp_source.html#l01095">f_null</a>, <a class="el" href="regional__settings_8h_source.html#l00060">ter_furn_id::furn</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="mapdata_8cpp_source.html#l00623">t_null</a>, <a class="el" href="regional__settings_8h_source.html#l00059">ter_furn_id::ter</a>, <a class="el" href="regional__settings_8h_source.html#l00089">types</a>, and <a class="el" href="regional__settings_8h_source.html#l00088">unfinalized_types</a>.</p>
 
 </div>
 </div>
@@ -204,9 +204,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00100">100</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00091">91</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00035">load_forest_biome_component()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00036">load_forest_biome_component()</a>.</p>
 
 </div>
 </div>
@@ -222,9 +222,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00101">101</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00092">92</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00035">load_forest_biome_component()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00036">load_forest_biome_component()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +240,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00099">99</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00090">90</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00035">load_forest_biome_component()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00036">load_forest_biome_component()</a>.</p>
 
 </div>
 </div>
@@ -258,9 +258,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00098">98</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00089">89</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00812">finalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00813">finalize()</a>.</p>
 
 </div>
 </div>
@@ -276,9 +276,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00097">97</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="regional__settings_8h_source.html#l00088">88</a> of file <a class="el" href="regional__settings_8h_source.html">regional_settings.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00812">finalize()</a>, and <a class="el" href="regional__settings_8cpp_source.html#l00035">load_forest_biome_component()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="regional__settings_8cpp_source.html#l00813">finalize()</a>, and <a class="el" href="regional__settings_8cpp_source.html#l00036">load_forest_biome_component()</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structforest__biome__component.html">forest_biome_component</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:37 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

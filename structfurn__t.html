@@ -385,24 +385,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iexamine_8cpp_source.html#l03816">3816</a> of file <a class="el" href="iexamine_8cpp_source.html">iexamine.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03817" name="l03817"></a><span class="lineno"> 3817</span>{</div>
-<div class="line"><a id="l03818" name="l03818"></a><span class="lineno"> 3818</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *pseudo = <a class="code hl_function" href="structfurn__t.html#aca23d59d0fb4b19be78fcdf07280b00f">crafting_pseudo_item_type</a>();</div>
-<div class="line"><a id="l03819" name="l03819"></a><span class="lineno"> 3819</span>    <span class="keywordflow">if</span>( pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a> &amp;&amp; !pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a>-&gt;ammo_id.empty() ) {</div>
-<div class="line"><a id="l03820" name="l03820"></a><span class="lineno"> 3820</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;iid = <a class="code hl_typedef" href="type__id_8h.html#a4a240e1107e45f10d64b78f1b5f58d59">ammotype</a>( *pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a>-&gt;ammo_id.begin() )-&gt;<a class="code hl_function" href="classammunition__type.html#a78e84b57881c38e74df1c0b58a804ca0">default_ammotype</a>();</div>
-<div class="line"><a id="l03821" name="l03821"></a><span class="lineno"> 3821</span>        <span class="keywordflow">return</span> &amp;*iid;</div>
-<div class="line"><a id="l03822" name="l03822"></a><span class="lineno"> 3822</span>    }</div>
-<div class="line"><a id="l03823" name="l03823"></a><span class="lineno"> 3823</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l03824" name="l03824"></a><span class="lineno"> 3824</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iexamine_8cpp_source.html#l03866">3866</a> of file <a class="el" href="iexamine_8cpp_source.html">iexamine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03867" name="l03867"></a><span class="lineno"> 3867</span>{</div>
+<div class="line"><a id="l03868" name="l03868"></a><span class="lineno"> 3868</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *pseudo = <a class="code hl_function" href="structfurn__t.html#aca23d59d0fb4b19be78fcdf07280b00f">crafting_pseudo_item_type</a>();</div>
+<div class="line"><a id="l03869" name="l03869"></a><span class="lineno"> 3869</span>    <span class="keywordflow">if</span>( pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a> &amp;&amp; !pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a>-&gt;ammo_id.empty() ) {</div>
+<div class="line"><a id="l03870" name="l03870"></a><span class="lineno"> 3870</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;iid = <a class="code hl_typedef" href="type__id_8h.html#a4a240e1107e45f10d64b78f1b5f58d59">ammotype</a>( *pseudo-&gt;<a class="code hl_variable" href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">tool</a>-&gt;ammo_id.begin() )-&gt;<a class="code hl_function" href="classammunition__type.html#a78e84b57881c38e74df1c0b58a804ca0">default_ammotype</a>();</div>
+<div class="line"><a id="l03871" name="l03871"></a><span class="lineno"> 3871</span>        <span class="keywordflow">return</span> &amp;*iid;</div>
+<div class="line"><a id="l03872" name="l03872"></a><span class="lineno"> 3872</span>    }</div>
+<div class="line"><a id="l03873" name="l03873"></a><span class="lineno"> 3873</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l03874" name="l03874"></a><span class="lineno"> 3874</span>}</div>
 <div class="ttc" id="aclassammunition__type_html_a78e84b57881c38e74df1c0b58a804ca0"><div class="ttname"><a href="classammunition__type.html#a78e84b57881c38e74df1c0b58a804ca0">ammunition_type::default_ammotype</a></div><div class="ttdeci">const itype_id &amp; default_ammotype() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo_8h_source.html#l00021">ammo.h:21</a></div></div>
-<div class="ttc" id="astructfurn__t_html_aca23d59d0fb4b19be78fcdf07280b00f"><div class="ttname"><a href="structfurn__t.html#aca23d59d0fb4b19be78fcdf07280b00f">furn_t::crafting_pseudo_item_type</a></div><div class="ttdeci">const itype * crafting_pseudo_item_type() const</div><div class="ttdef"><b>Definition:</b> <a href="iexamine_8cpp_source.html#l03808">iexamine.cpp:3808</a></div></div>
+<div class="ttc" id="astructfurn__t_html_aca23d59d0fb4b19be78fcdf07280b00f"><div class="ttname"><a href="structfurn__t.html#aca23d59d0fb4b19be78fcdf07280b00f">furn_t::crafting_pseudo_item_type</a></div><div class="ttdeci">const itype * crafting_pseudo_item_type() const</div><div class="ttdef"><b>Definition:</b> <a href="iexamine_8cpp_source.html#l03858">iexamine.cpp:3858</a></div></div>
 <div class="ttc" id="astructitype_html"><div class="ttname"><a href="structitype.html">itype</a></div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00836">itype.h:836</a></div></div>
 <div class="ttc" id="astructitype_html_a62a6e70840cb0e484f8d61e273f440f4"><div class="ttname"><a href="structitype.html#a62a6e70840cb0e484f8d61e273f440f4">itype::tool</a></div><div class="ttdeci">cata::value_ptr&lt; islot_tool &gt; tool</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00847">itype.h:847</a></div></div>
 <div class="ttc" id="atype__id_8h_html_a4a240e1107e45f10d64b78f1b5f58d59"><div class="ttname"><a href="type__id_8h.html#a4a240e1107e45f10d64b78f1b5f58d59">ammotype</a></div><div class="ttdeci">string_id&lt; ammunition_type &gt; ammotype</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00012">type_id.h:12</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="iexamine_8cpp_source.html#l03808">crafting_pseudo_item_type()</a>, <a class="el" href="ammo_8h_source.html#l00021">ammunition_type::default_ammotype()</a>, and <a class="el" href="itype_8h_source.html#l00847">itype::tool</a>.</p>
+<p class="reference">References <a class="el" href="iexamine_8cpp_source.html#l03858">crafting_pseudo_item_type()</a>, <a class="el" href="ammo_8h_source.html#l00021">ammunition_type::default_ammotype()</a>, and <a class="el" href="itype_8h_source.html#l00847">itype::tool</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>, and <a class="el" href="iexamine_8cpp_source.html#l03836">iexamine::reload_furniture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>, and <a class="el" href="iexamine_8cpp_source.html#l03886">iexamine::reload_furniture()</a>.</p>
 
 </div>
 </div>
@@ -421,19 +421,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iexamine_8cpp_source.html#l03808">3808</a> of file <a class="el" href="iexamine_8cpp_source.html">iexamine.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03809" name="l03809"></a><span class="lineno"> 3809</span>{</div>
-<div class="line"><a id="l03810" name="l03810"></a><span class="lineno"> 3810</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structfurn__t.html#a1c2dba493686253a3366982da99c7345">crafting_pseudo_item</a>.<a class="code hl_function" href="classstring__id.html#ac180a60056901aaf79f5c4b728a257bd">is_empty</a>() ) {</div>
-<div class="line"><a id="l03811" name="l03811"></a><span class="lineno"> 3811</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l03812" name="l03812"></a><span class="lineno"> 3812</span>    }</div>
-<div class="line"><a id="l03813" name="l03813"></a><span class="lineno"> 3813</span>    <span class="keywordflow">return</span> &amp;*<a class="code hl_variable" href="structfurn__t.html#a1c2dba493686253a3366982da99c7345">crafting_pseudo_item</a>;</div>
-<div class="line"><a id="l03814" name="l03814"></a><span class="lineno"> 3814</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iexamine_8cpp_source.html#l03858">3858</a> of file <a class="el" href="iexamine_8cpp_source.html">iexamine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03859" name="l03859"></a><span class="lineno"> 3859</span>{</div>
+<div class="line"><a id="l03860" name="l03860"></a><span class="lineno"> 3860</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structfurn__t.html#a1c2dba493686253a3366982da99c7345">crafting_pseudo_item</a>.<a class="code hl_function" href="classstring__id.html#ac180a60056901aaf79f5c4b728a257bd">is_empty</a>() ) {</div>
+<div class="line"><a id="l03861" name="l03861"></a><span class="lineno"> 3861</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l03862" name="l03862"></a><span class="lineno"> 3862</span>    }</div>
+<div class="line"><a id="l03863" name="l03863"></a><span class="lineno"> 3863</span>    <span class="keywordflow">return</span> &amp;*<a class="code hl_variable" href="structfurn__t.html#a1c2dba493686253a3366982da99c7345">crafting_pseudo_item</a>;</div>
+<div class="line"><a id="l03864" name="l03864"></a><span class="lineno"> 3864</span>}</div>
 <div class="ttc" id="aclassstring__id_html_ac180a60056901aaf79f5c4b728a257bd"><div class="ttname"><a href="classstring__id.html#ac180a60056901aaf79f5c4b728a257bd">string_id::is_empty</a></div><div class="ttdeci">bool is_empty() const</div><div class="ttdoc">Returns whether this id is empty.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00298">string_id.h:298</a></div></div>
 <div class="ttc" id="astructfurn__t_html_a1c2dba493686253a3366982da99c7345"><div class="ttname"><a href="structfurn__t.html#a1c2dba493686253a3366982da99c7345">furn_t::crafting_pseudo_item</a></div><div class="ttdeci">itype_id crafting_pseudo_item</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00495">mapdata.h:495</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mapdata_8h_source.html#l00495">crafting_pseudo_item</a>, and <a class="el" href="string__id_8h_source.html#l00298">string_id&lt; T &gt;::is_empty()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03816">crafting_ammo_item_type()</a>, <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>, <a class="el" href="iexamine_8cpp_source.html#l03836">iexamine::reload_furniture()</a>, and <a class="el" href="map_8cpp_source.html#l04868">use_charges_from_furn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03866">crafting_ammo_item_type()</a>, <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>, <a class="el" href="iexamine_8cpp_source.html#l03886">iexamine::reload_furniture()</a>, and <a class="el" href="map_8cpp_source.html#l04853">use_charges_from_furn()</a>.</p>
 
 </div>
 </div>
@@ -492,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mapdata_8h_source.html#l00505">move_str_req</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="start__location_8cpp_source.html#l00131">board_up()</a>, <a class="el" href="map_8cpp_source.html#l01371">map::furn_set()</a>, and <a class="el" href="handle__action_8cpp_source.html#l00599">grab()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="start__location_8cpp_source.html#l00131">board_up()</a>, <a class="el" href="map_8cpp_source.html#l01354">map::furn_set()</a>, and <a class="el" href="handle__action_8cpp_source.html#l00595">grab()</a>.</p>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00513">513</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="distribution__grid_8cpp_source.html#l00293">grid_furn_transform_queue::apply()</a>, <a class="el" href="map_8cpp_source.html#l01371">map::furn_set()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="distribution__grid_8cpp_source.html#l00293">grid_furn_transform_queue::apply()</a>, <a class="el" href="map_8cpp_source.html#l01354">map::furn_set()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00497">497</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05670">Character::base_comfort_value()</a>, <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>, and <a class="el" href="player_8cpp_source.html#l03766">player::try_to_sleep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05679">Character::base_comfort_value()</a>, <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>, and <a class="el" href="player_8cpp_source.html#l03766">player::try_to_sleep()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00495">495</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03808">crafting_pseudo_item_type()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01208">deploy_furn_actor::info()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03858">crafting_pseudo_item_type()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01208">deploy_furn_actor::info()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -711,7 +711,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00503">503</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapdata_8cpp_source.html#l01600">finalize_furn()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l01228">iexamine::deployed_furniture()</a>, <a class="el" href="mapdata_8cpp_source.html#l01600">finalize_furn()</a>, <a class="el" href="iexamine_8cpp_source.html#l02890">iexamine::fireplace()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -749,7 +749,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00498">498</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09440">Character::floor_bedding_warmth()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09456">Character::floor_bedding_warmth()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -767,7 +767,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00490">490</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__ter__fur__transform_8cpp_source.html#l00184">ter_furn_transform::add_all_messages()</a>, <a class="el" href="distribution__grid_8cpp_source.html#l00293">grid_furn_transform_queue::apply()</a>, <a class="el" href="editmap_8cpp_source.html#l01044">apply&lt; furn_t &gt;()</a>, <a class="el" href="mapgen_8cpp_source.html#l01615">jmapgen_sealed_item::check()</a>, <a class="el" href="mapgen_8cpp_source.html#l02133">check_furn()</a>, <a class="el" href="map_8cpp_source.html#l05855">map::draw_maptile()</a>, <a class="el" href="game_8cpp_source.html#l06101">game::print_terrain_info()</a>, and <a class="el" href="magic__ter__fur__transform_8cpp_source.html#l00213">ter_furn_transform::transform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__ter__fur__transform_8cpp_source.html#l00184">ter_furn_transform::add_all_messages()</a>, <a class="el" href="distribution__grid_8cpp_source.html#l00293">grid_furn_transform_queue::apply()</a>, <a class="el" href="editmap_8cpp_source.html#l01044">apply&lt; furn_t &gt;()</a>, <a class="el" href="mapgen_8cpp_source.html#l01615">jmapgen_sealed_item::check()</a>, <a class="el" href="mapgen_8cpp_source.html#l02133">check_furn()</a>, <a class="el" href="map_8cpp_source.html#l05840">map::draw_maptile()</a>, <a class="el" href="game_8cpp_source.html#l06103">game::print_terrain_info()</a>, and <a class="el" href="magic__ter__fur__transform_8cpp_source.html#l00213">ter_furn_transform::transform()</a>.</p>
 
 </div>
 </div>
@@ -785,7 +785,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00496">496</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03150">get_keg_capacity()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l03187">get_keg_capacity()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -803,7 +803,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00505">505</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="start__location_8cpp_source.html#l00131">board_up()</a>, <a class="el" href="map_8cpp_source.html#l01456">map::can_move_furniture()</a>, <a class="el" href="game_8cpp_source.html#l10060">game::grabbed_furn_move()</a>, <a class="el" href="mapdata_8cpp_source.html#l01516">is_movable()</a>, <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>, and <a class="el" href="editmap_8cpp_source.html#l00692">editmap::update_view_with_help()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="start__location_8cpp_source.html#l00131">board_up()</a>, <a class="el" href="map_8cpp_source.html#l01439">map::can_move_furniture()</a>, <a class="el" href="game_8cpp_source.html#l10063">game::grabbed_furn_move()</a>, <a class="el" href="mapdata_8cpp_source.html#l01516">is_movable()</a>, <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>, and <a class="el" href="editmap_8cpp_source.html#l00692">editmap::update_view_with_help()</a>.</p>
 
 </div>
 </div>
@@ -839,7 +839,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00509">509</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l02315">iexamine::harvest_plant()</a>, <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03747">activity_handlers::plant_seed_finish()</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00511">511</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02240">Character::env_surgery_bonus()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mapdata_8h_source.html#l00493">493</a> of file <a class="el" href="mapdata_8h_source.html">mapdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l01623">map::get_furn_transforms_into()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l01606">map::get_furn_transforms_into()</a>, and <a class="el" href="mapdata_8cpp_source.html#l01521">load()</a>.</p>
 
 </div>
 </div>
@@ -908,7 +908,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structfurn__t.html">furn_t</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:37 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

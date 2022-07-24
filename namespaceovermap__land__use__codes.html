@@ -119,15 +119,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00415">415</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>{</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.check();</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00414">414</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>{</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.check();</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>}</div>
 <div class="ttc" id="anamespaceanonymous__namespace_02overmap_8cpp_03_html_aa149a1553a392b8ec618f79d31b13ab0"><div class="ttname"><a href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a></div><div class="ttdeci">generic_factory&lt; overmap_land_use_code &gt; land_use_codes(&quot;overmap land use codes&quot;)</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00712">DynamicDataLoader::check_consistency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00713">DynamicDataLoader::check_consistency()</a>.</p>
 
 </div>
 </div>
@@ -146,18 +146,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00408">408</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>{</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.get_all() ) {</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classovermap__land__use__code.html">overmap_land_use_code</a> &amp;<span class="keyword">&gt;</span>( elem ).<a class="code hl_function" href="namespacebehavior.html#afe3a980844810e0be990318528efca5b">finalize</a>(); <span class="comment">// This cast is ugly, but safe.</span></div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    }</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>}</div>
-<div class="ttc" id="aclassovermap__land__use__code_html"><div class="ttname"><a href="classovermap__land__use__code.html">overmap_land_use_code</a></div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00130">omdata.h:131</a></div></div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00407">407</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>{</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.get_all() ) {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classovermap__land__use__code.html">overmap_land_use_code</a> &amp;<span class="keyword">&gt;</span>( elem ).<a class="code hl_function" href="namespacebehavior.html#afe3a980844810e0be990318528efca5b">finalize</a>(); <span class="comment">// This cast is ugly, but safe.</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    }</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>}</div>
+<div class="ttc" id="aclassovermap__land__use__code_html"><div class="ttname"><a href="classovermap__land__use__code.html">overmap_land_use_code</a></div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00044">omdata.h:45</a></div></div>
 <div class="ttc" id="anamespacebehavior_html_afe3a980844810e0be990318528efca5b"><div class="ttname"><a href="namespacebehavior.html#afe3a980844810e0be990318528efca5b">behavior::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="behavior_8cpp_source.html#l00160">behavior.cpp:160</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="behavior_8cpp_source.html#l00160">behavior::finalize()</a>, and <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00625">DynamicDataLoader::finalize_loaded_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00626">DynamicDataLoader::finalize_loaded_data()</a>.</p>
 
 </div>
 </div>
@@ -176,10 +176,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00425">425</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>{</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.get_all();</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00424">424</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>{</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.get_all();</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a>.</p>
 
@@ -211,14 +211,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00403">403</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>{</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.load( jo, src );</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00402">402</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>{</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.load( jo, src );</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00232">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00233">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -237,14 +237,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00420">420</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>{</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.reset();</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00419">419</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>{</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">land_use_codes</a>.reset();</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0">anonymous_namespace{overmap.cpp}::land_use_codes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00522">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00523">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceovermap__land__use__codes.html">overmap_land_use_codes</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:54:00 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

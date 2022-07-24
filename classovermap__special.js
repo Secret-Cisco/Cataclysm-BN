@@ -9,7 +9,7 @@ var classovermap__special =
     [ "city_distance", "classovermap__special.html#a39eb68a5ef8c9a220e27fe2a969c5d96", null ],
     [ "city_size", "classovermap__special.html#a49ecbf908d6545a3f7454a103048f8bc", null ],
     [ "connections", "classovermap__special.html#ae327c6f94bdf3a60a55db9abedf11911", null ],
-    [ "default_locations", "classovermap__special.html#a4af048fda8b7972a4c60691482883bf6", null ],
+    [ "default_locations", "classovermap__special.html#a3f2650bddfe643cf175487d4b4e2d86d", null ],
     [ "flags", "classovermap__special.html#a366bdd7f56c0b5b1feb53b65eadf6f49", null ],
     [ "id", "classovermap__special.html#aae533ac4ea687db241db7619f6b318f9", null ],
     [ "occurrences", "classovermap__special.html#aa58275c72ef065ff91c23268e18d9e22", null ],

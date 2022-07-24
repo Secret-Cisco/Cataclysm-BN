@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="handle__liquid_8cpp_source.html#l00053">53</a> of file <a class="el" href="handle__liquid_8cpp_source.html">handle_liquid.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keyword">auto</span> stack = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;m.i_at( pos );</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keyword">auto</span> stack = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>().<a class="code hl_function" href="classmap.html#a5130a127601b67e569eaef37a1a88610">i_at</a>( pos );</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Need to store the *index* of the item on the ground, but it may be a virtual item from</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// an infinite liquid source.</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> <span class="keyword">auto</span> iter = std::find_if( stack.begin(), stack.end(), [&amp;]( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp; i ) {</div>
@@ -230,14 +230,15 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.coords.push_back( pos );</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.str_values.push_back( <a class="code hl_function" href="activity__actor_8cpp.html#a6046e0589823cbb6ce42e6a3ffe059f1">serialize</a>( liquid ) );</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-<div class="ttc" id="aactivity__actor_8cpp_html_a6046e0589823cbb6ce42e6a3ffe059f1"><div class="ttname"><a href="activity__actor_8cpp.html#a6046e0589823cbb6ce42e6a3ffe059f1">serialize</a></div><div class="ttdeci">void serialize(const cata::clone_ptr&lt; activity_actor &gt; &amp;actor, JsonOut &amp;jsout)</div><div class="ttdef"><b>Definition:</b> <a href="activity__actor_8cpp_source.html#l01072">activity_actor.cpp:1072</a></div></div>
+<div class="ttc" id="aactivity__actor_8cpp_html_a6046e0589823cbb6ce42e6a3ffe059f1"><div class="ttname"><a href="activity__actor_8cpp.html#a6046e0589823cbb6ce42e6a3ffe059f1">serialize</a></div><div class="ttdeci">void serialize(const cata::clone_ptr&lt; activity_actor &gt; &amp;actor, JsonOut &amp;jsout)</div><div class="ttdef"><b>Definition:</b> <a href="activity__actor_8cpp_source.html#l01075">activity_actor.cpp:1075</a></div></div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00175">item.h:176</a></div></div>
+<div class="ttc" id="aclassmap_html_a5130a127601b67e569eaef37a1a88610"><div class="ttname"><a href="classmap.html#a5130a127601b67e569eaef37a1a88610">map::i_at</a></div><div class="ttdeci">map_stack i_at(const tripoint &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04068">map.cpp:4068</a></div></div>
 <div class="ttc" id="aenums_8h_html_a12770396b1ce62aa57ba6ab08ca56485af9d2599d35024105825278cee06c6ed0"><div class="ttname"><a href="enums_8h.html#a12770396b1ce62aa57ba6ab08ca56485af9d2599d35024105825278cee06c6ed0">LST_INFINITE_MAP</a></div><div class="ttdeci">@ LST_INFINITE_MAP</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00201">enums.h:201</a></div></div>
 <div class="ttc" id="aenums_8h_html_a12770396b1ce62aa57ba6ab08ca56485afafd4e0f97060c446a14696dda5e72bc"><div class="ttname"><a href="enums_8h.html#a12770396b1ce62aa57ba6ab08ca56485afafd4e0f97060c446a14696dda5e72bc">LST_MAP_ITEM</a></div><div class="ttdeci">@ LST_MAP_ITEM</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00201">enums.h:201</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00267">game.cpp:267</a></div></div>
+<div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00141">map.cpp:141</a></div></div>
 <div class="ttc" id="asounds_8cpp_html_ad9fe7b616a93a8209da903eba756237e"><div class="ttname"><a href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a></div><div class="ttdeci">activity_id act</div><div class="ttdef"><b>Definition:</b> <a href="sounds_8cpp_source.html#l00075">sounds.cpp:75</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="enums_8h_source.html#l00201">LST_INFINITE_MAP</a>, <a class="el" href="enums_8h_source.html#l00201">LST_MAP_ITEM</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01072">serialize()</a>.</p>
+<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="map_8cpp_source.html#l00141">get_map()</a>, <a class="el" href="map_8cpp_source.html#l04068">map::i_at()</a>, <a class="el" href="enums_8h_source.html#l00201">LST_INFINITE_MAP</a>, <a class="el" href="enums_8h_source.html#l00201">LST_MAP_ITEM</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01075">serialize()</a>.</p>
 
 </div>
 </div>
@@ -294,12 +295,12 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.coords.push_back( veh.<a class="code hl_function" href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">global_part_pos3</a>( 0 ) );</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.str_values.push_back( <a class="code hl_function" href="activity__actor_8cpp.html#a6046e0589823cbb6ce42e6a3ffe059f1">serialize</a>( liquid ) );</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
-<div class="ttc" id="aclassvehicle_html_ae8132c34a1ea24866889e6e599796adc"><div class="ttname"><a href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">vehicle::global_part_pos3</a></div><div class="ttdeci">tripoint global_part_pos3(const int &amp;index) const</div><div class="ttdoc">Get the coordinates of the studied part of the vehicle.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l03106">vehicle.cpp:3106</a></div></div>
+<div class="ttc" id="aclassvehicle_html_ae8132c34a1ea24866889e6e599796adc"><div class="ttname"><a href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">vehicle::global_part_pos3</a></div><div class="ttdeci">tripoint global_part_pos3(const int &amp;index) const</div><div class="ttdoc">Get the coordinates of the studied part of the vehicle.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l03109">vehicle.cpp:3109</a></div></div>
 <div class="ttc" id="aenums_8h_html_a12770396b1ce62aa57ba6ab08ca56485af5eb267fe3fee88e5f7be8c724ed0976"><div class="ttname"><a href="enums_8h.html#a12770396b1ce62aa57ba6ab08ca56485af5eb267fe3fee88e5f7be8c724ed0976">LST_VEHICLE</a></div><div class="ttdeci">@ LST_VEHICLE</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00201">enums.h:201</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="vehicle_8cpp_source.html#l03106">vehicle::global_part_pos3()</a>, <a class="el" href="enums_8h_source.html#l00201">LST_VEHICLE</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01072">serialize()</a>.</p>
+<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="vehicle_8cpp_source.html#l03109">vehicle::global_part_pos3()</a>, <a class="el" href="enums_8h_source.html#l00201">LST_VEHICLE</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01075">serialize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="handle__liquid_8cpp_source.html#l00305">liquid_handler::perform_liquid_transfer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="handle__liquid_8cpp_source.html#l00306">liquid_handler::perform_liquid_transfer()</a>.</p>
 
 </div>
 </div>
@@ -391,9 +392,9 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 <div class="ttc" id="aenums_8h_html_acd84cee6bc30eee57ffcd6a5ca6875c1a33665880804269db9a96e0df0fa89f3b"><div class="ttname"><a href="enums_8h.html#acd84cee6bc30eee57ffcd6a5ca6875c1a33665880804269db9a96e0df0fa89f3b">LTT_VEHICLE</a></div><div class="ttdeci">@ LTT_VEHICLE</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00203">enums.h:203</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="vehicle_8cpp_source.html#l03106">vehicle::global_part_pos3()</a>, and <a class="el" href="enums_8h_source.html#l00203">LTT_VEHICLE</a>.</p>
+<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="vehicle_8cpp_source.html#l03109">vehicle::global_part_pos3()</a>, and <a class="el" href="enums_8h_source.html#l00203">LTT_VEHICLE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="handle__liquid_8cpp_source.html#l00305">liquid_handler::perform_liquid_transfer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="handle__liquid_8cpp_source.html#l00306">liquid_handler::perform_liquid_transfer()</a>.</p>
 
 </div>
 </div>
@@ -450,7 +451,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="handle__liquid_8cpp.html">handle_liquid.cpp</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:27 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:04 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

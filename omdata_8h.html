@@ -90,8 +90,7 @@ $(document).ready(function(){initNavTree('omdata_8h.html',''); initResizable(); 
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">omdata.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -110,7 +109,7 @@ $(document).ready(function(){initNavTree('omdata_8h.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="numeric__interval_8h_source.html">numeric_interval.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="coordinates_8h_source.html">coordinates.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="int__id_8h_source.html">int_id.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="overmap__location_8h_source.html">overmap_location.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="om__direction_8h_source.html">om_direction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__id_8h_source.html">string_id.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="translations_8h_source.html">translations.h</a>&quot;</code><br />
@@ -131,27 +130,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoter__t.html">oter_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structovermap__special__spawns.html">overmap_special_spawns</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structovermap__special__terrain.html">overmap_special_terrain</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structovermap__special__connection.html">overmap_special_connection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classovermap__special.html">overmap_special</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespaceom__direction"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html">om_direction</a></td></tr>
-<tr class="memdesc:namespaceom__direction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction on the overmap. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceovermap__terrains"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__terrains.html">overmap_terrains</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceovermap__land__use__codes"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__land__use__codes.html">overmap_land_use_codes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceovermap__specials"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html">overmap_specials</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacecity__buildings"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecity__buildings.html">city_buildings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -168,18 +152,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a3f3a3bf2c5af33fc8036734d1ba70b7c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a> : int { <br />
-&#160;&#160;<a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::invalid</a> = -1
-, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8">om_direction::none</a>
-, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca8d8d1437907bca79900ac5f0ea1f5c73">om_direction::north</a> = none
-, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca320381dbf7cd2f31c04baa6b36e1c682">om_direction::east</a>
-, <br />
-&#160;&#160;<a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca50fd76e33fe5b9617c5ca99008af8904">om_direction::south</a>
-, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cada4f0053a5c13882268852ae2da2e466">om_direction::west</a>
-<br />
- }</td></tr>
-<tr class="memdesc:a3f3a3bf2c5af33fc8036734d1ba70b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic enum for directions.  <a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">More...</a><br /></td></tr>
-<tr class="separator:a3f3a3bf2c5af33fc8036734d1ba70b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf721417ebfe396111f8f48b690ac4b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4b">oter_flags</a> { <br />
 &#160;&#160;<a class="el" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f">known_down</a> = 0
 , <a class="el" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad">known_up</a>
@@ -238,47 +210,6 @@ Functions</h2></td></tr>
 <tr class="separator:ab1b0e9c93445d630f8cfe67924328a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa195280dcec7e9295e19f5e3ca1bab50"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="omdata_8h.html#af29c9e397b40ad575ac13f98a1b63687">overmap_land_use_code_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omdata_8h.html#aa195280dcec7e9295e19f5e3ca1bab50">land_use_code_wetland_saltwater</a> (&quot;wetland_saltwater&quot;)</td></tr>
 <tr class="separator:aa195280dcec7e9295e19f5e3ca1bab50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9ee2299698dc65bb07a42a93a72280"><td class="memItemLeft" align="right" valign="top">constexpr const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a6e9ee2299698dc65bb07a42a93a72280">om_direction::get_suffix</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:a6e9ee2299698dc65bb07a42a93a72280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns directional suffix associated with the value, e.g.  <a href="namespaceom__direction.html#a6e9ee2299698dc65bb07a42a93a72280">More...</a><br /></td></tr>
-<tr class="separator:a6e9ee2299698dc65bb07a42a93a72280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5880bf6be45abef1fa502fcfd72f2e0"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#ae5880bf6be45abef1fa502fcfd72f2e0">om_direction::get_num_cw_rotations</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:ae5880bf6be45abef1fa502fcfd72f2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of clockwise rotations needed to reach this direction from 'north'.  <a href="namespaceom__direction.html#ae5880bf6be45abef1fa502fcfd72f2e0">More...</a><br /></td></tr>
-<tr class="separator:ae5880bf6be45abef1fa502fcfd72f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a61aff83d6172cc670f0492ca0e8ea"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#aa1a61aff83d6172cc670f0492ca0e8ea">om_direction::id</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:aa1a61aff83d6172cc670f0492ca0e8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for serialization purposes.  <a href="namespaceom__direction.html#aa1a61aff83d6172cc670f0492ca0e8ea">More...</a><br /></td></tr>
-<tr class="separator:aa1a61aff83d6172cc670f0492ca0e8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba958ccfad28c0a5572a04dd1428f32"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:a8ba958ccfad28c0a5572a04dd1428f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Human readable name of a direction.  <a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">More...</a><br /></td></tr>
-<tr class="separator:a8ba958ccfad28c0a5572a04dd1428f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81218991d18ce76097c769d5c3f185c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint.html">point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a81218991d18ce76097c769d5c3f185c2">om_direction::rotate</a> (const <a class="el" href="structpoint.html">point</a> &amp;p, <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:a81218991d18ce76097c769d5c3f185c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various rotations.  <a href="namespaceom__direction.html#a81218991d18ce76097c769d5c3f185c2">More...</a><br /></td></tr>
-<tr class="separator:a81218991d18ce76097c769d5c3f185c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2e6833cb139b3a28e7bfe7df5f3892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtripoint.html">tripoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a0c2e6833cb139b3a28e7bfe7df5f3892">om_direction::rotate</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;p, <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="separator:a0c2e6833cb139b3a28e7bfe7df5f3892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2e4f8ffd98ed611f555d655bb018ae"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a1a2e4f8ffd98ed611f555d655bb018ae">om_direction::rotate_symbol</a> (uint32_t sym, <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="separator:a1a2e4f8ffd98ed611f555d655bb018ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd60495dc245de428919857c1db77b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpoint.html">point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#abd60495dc245de428919857c1db77b04">om_direction::displace</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir, int dist=1)</td></tr>
-<tr class="memdesc:abd60495dc245de428919857c1db77b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="structpoint.html">point(0, 0)</a> displaced in specified direction by a specified distance.  <a href="namespaceom__direction.html#abd60495dc245de428919857c1db77b04">More...</a><br /></td></tr>
-<tr class="separator:abd60495dc245de428919857c1db77b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c0342ea30288a5a6d5bdbff38f7cde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">om_direction::add</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir1, <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir2)</td></tr>
-<tr class="memdesc:a75c0342ea30288a5a6d5bdbff38f7cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sum of two numbers.  <a href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">More...</a><br /></td></tr>
-<tr class="separator:a75c0342ea30288a5a6d5bdbff38f7cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a436b570f79ab5500b918150742a8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a55a436b570f79ab5500b918150742a8e">om_direction::turn_left</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:a55a436b570f79ab5500b918150742a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn by 90 degrees to the left, to the right, or randomly (either left or right).  <a href="namespaceom__direction.html#a55a436b570f79ab5500b918150742a8e">More...</a><br /></td></tr>
-<tr class="separator:a55a436b570f79ab5500b918150742a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873bc312d49e851dd397d439879ea67e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a873bc312d49e851dd397d439879ea67e">om_direction::turn_right</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="separator:a873bc312d49e851dd397d439879ea67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d71532342ed72a0e77b239d0d0dac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#ab3d71532342ed72a0e77b239d0d0dac9">om_direction::turn_random</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="separator:ab3d71532342ed72a0e77b239d0d0dac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744200df724ee18bb82152e165e7b694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a744200df724ee18bb82152e165e7b694">om_direction::opposite</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir)</td></tr>
-<tr class="memdesc:a744200df724ee18bb82152e165e7b694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an opposite direction.  <a href="namespaceom__direction.html#a744200df724ee18bb82152e165e7b694">More...</a><br /></td></tr>
-<tr class="separator:a744200df724ee18bb82152e165e7b694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fdbb3cc8e25454026b9ab57f9b91c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a0fdbb3cc8e25454026b9ab57f9b91c69">om_direction::random</a> ()</td></tr>
-<tr class="memdesc:a0fdbb3cc8e25454026b9ab57f9b91c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random direction.  <a href="namespaceom__direction.html#a0fdbb3cc8e25454026b9ab57f9b91c69">More...</a><br /></td></tr>
-<tr class="separator:a0fdbb3cc8e25454026b9ab57f9b91c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6add3dbb6f0d307bd591cff50efa128b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a6add3dbb6f0d307bd591cff50efa128b">om_direction::are_parallel</a> (<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir1, <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> dir2)</td></tr>
-<tr class="memdesc:a6add3dbb6f0d307bd591cff50efa128b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether these directions are parallel.  <a href="namespaceom__direction.html#a6add3dbb6f0d307bd591cff50efa128b">More...</a><br /></td></tr>
-<tr class="separator:a6add3dbb6f0d307bd591cff50efa128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc5f41f602dc02333b5e73aec4ec1a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omdata_8h.html#afdc5f41f602dc02333b5e73aec4ec1a8">operator==</a> (const <a class="el" href="type__id_8h.html#a08d4e395b54ad28c93af412ee36e00a1">oter_id</a> &amp;lhs, const char *rhs)</td></tr>
 <tr class="separator:afdc5f41f602dc02333b5e73aec4ec1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7260e86a43a1fe11ccbbde2a8501b8b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omdata_8h.html#a7260e86a43a1fe11ccbbde2a8501b8b0">operator!=</a> (const <a class="el" href="type__id_8h.html#a08d4e395b54ad28c93af412ee36e00a1">oter_id</a> &amp;lhs, const char *rhs)</td></tr>
@@ -303,44 +234,6 @@ Functions</h2></td></tr>
 <tr class="separator:a04f16b10494e93f0553b274410d7d0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d42986ba134e024ebb207ec4df4e1f9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classovermap__land__use__code.html">overmap_land_use_code</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__land__use__codes.html#a3d42986ba134e024ebb207ec4df4e1f9">overmap_land_use_codes::get_all</a> ()</td></tr>
 <tr class="separator:a3d42986ba134e024ebb207ec4df4e1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a9bc184554a7bea55b66ec11bcc76e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#ac5a9bc184554a7bea55b66ec11bcc76e">overmap_specials::load</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo, const std::string &amp;src)</td></tr>
-<tr class="separator:ac5a9bc184554a7bea55b66ec11bcc76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2939ccd0213e323b8a8c10f764f206eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#a2939ccd0213e323b8a8c10f764f206eb">overmap_specials::finalize</a> ()</td></tr>
-<tr class="separator:a2939ccd0213e323b8a8c10f764f206eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b049e59ea1caba25c44c785e08210c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#a5b049e59ea1caba25c44c785e08210c8">overmap_specials::check_consistency</a> ()</td></tr>
-<tr class="separator:a5b049e59ea1caba25c44c785e08210c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096b23bd59893411f0333358fbc6b0ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#a096b23bd59893411f0333358fbc6b0ab">overmap_specials::reset</a> ()</td></tr>
-<tr class="separator:a096b23bd59893411f0333358fbc6b0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae39e94620013b52e3f84a973c5a5bf73"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classovermap__special.html">overmap_special</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#ae39e94620013b52e3f84a973c5a5bf73">overmap_specials::get_all</a> ()</td></tr>
-<tr class="separator:ae39e94620013b52e3f84a973c5a5bf73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e95432bcc3c9ccbb4567d281671ec36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classovermap__special__batch.html">overmap_special_batch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#a7e95432bcc3c9ccbb4567d281671ec36">overmap_specials::get_default_batch</a> (const <a class="el" href="coordinates_8h.html#a25c9545e5a462b06e86032b6454271c3">point_abs_om</a> &amp;origin)</td></tr>
-<tr class="separator:a7e95432bcc3c9ccbb4567d281671ec36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ddf58bdbaf464bad8d7aca1d70226c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="omdata_8h.html#aa7964d871c74fa759b358081855b6e24">overmap_special_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceovermap__specials.html#af2ddf58bdbaf464bad8d7aca1d70226c">overmap_specials::create_building_from</a> (const <a class="el" href="classstring__id.html">string_id</a>&lt; <a class="el" href="structoter__type__t.html">oter_type_t</a> &gt; &amp;base)</td></tr>
-<tr class="memdesc:af2ddf58bdbaf464bad8d7aca1d70226c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a simple special from a building id.  <a href="namespaceovermap__specials.html#af2ddf58bdbaf464bad8d7aca1d70226c">More...</a><br /></td></tr>
-<tr class="separator:af2ddf58bdbaf464bad8d7aca1d70226c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be0b7f7107b43f1a3e7a3f3b1939266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecity__buildings.html#a6be0b7f7107b43f1a3e7a3f3b1939266">city_buildings::load</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo, const std::string &amp;src)</td></tr>
-<tr class="separator:a6be0b7f7107b43f1a3e7a3f3b1939266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a27cad92b0d05637eb934f1a7f3424e41"><td class="memItemLeft" align="right" valign="top">const std::array&lt; <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a> = {{ type::north, type::east, type::south, type::west }}</td></tr>
-<tr class="memdesc:a27cad92b0d05637eb934f1a7f3424e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the purposes of iteration.  <a href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">More...</a><br /></td></tr>
-<tr class="separator:a27cad92b0d05637eb934f1a7f3424e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97f9dbddaa758278662da3478826c61"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a> = all.size()</td></tr>
-<tr class="separator:af97f9dbddaa758278662da3478826c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac35dc8ac4c61236c41ff4e0f0fbc42c"><td class="memItemLeft" align="right" valign="top">const std::array&lt; std::string, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#aac35dc8ac4c61236c41ff4e0f0fbc42c">om_direction::all_suffixes</a> = {{ &quot;_north&quot;, &quot;_east&quot;, &quot;_south&quot;, &quot;_west&quot; }}</td></tr>
-<tr class="separator:aac35dc8ac4c61236c41ff4e0f0fbc42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce76e0483e37d651ad6210bb00fa30b"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a5ce76e0483e37d651ad6210bb00fa30b">om_direction::invalid_dir_suffix</a></td></tr>
-<tr class="separator:a5ce76e0483e37d651ad6210bb00fa30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b39a84cafdcaf8907103ea262cec3c1"><td class="memItemLeft" align="right" valign="top">const std::array&lt; int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#a2b39a84cafdcaf8907103ea262cec3c1">om_direction::all_cw_rotations</a> = {{ 0, 1, 2, 3 }}</td></tr>
-<tr class="separator:a2b39a84cafdcaf8907103ea262cec3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d9b0a3900b2503fa0e662dd4f18eb0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#ad5d9b0a3900b2503fa0e662dd4f18eb0">om_direction::invalid_dir_rotations</a> = 0</td></tr>
-<tr class="separator:ad5d9b0a3900b2503fa0e662dd4f18eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b4fe0a1bf503b57217aa8bf45b7e53"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__direction.html#ad5b4fe0a1bf503b57217aa8bf45b7e53">om_direction::bits</a> = static_cast&lt;size_t&gt;( -1 ) &gt;&gt; ( CHAR_BIT *sizeof( size_t ) - size )</td></tr>
-<tr class="memdesc:ad5b4fe0a1bf503b57217aa8bf45b7e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bits needed to store directions.  <a href="namespaceom__direction.html#ad5b4fe0a1bf503b57217aa8bf45b7e53">More...</a><br /></td></tr>
-<tr class="separator:ad5b4fe0a1bf503b57217aa8bf45b7e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25977a64e3d8681be2cea62c5633769"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omdata_8h.html#ad25977a64e3d8681be2cea62c5633769">OMSPEC_FREQ</a> = 15</td></tr>
-<tr class="separator:ad25977a64e3d8681be2cea62c5633769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa050019b0e857f29fc6fe7db77e722cf" name="aa050019b0e857f29fc6fe7db77e722cf"></a>
@@ -388,7 +281,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00040">40</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00037">37</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
 </div>
 </div>
@@ -442,79 +335,79 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a" name="afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a"></a>num_oter_flags&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00184">184</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f">known_down</a> = 0,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad">known_up</a>,</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a>,    <span class="comment">// this tile doesn&#39;t have four rotated versions (north, east, south, west)</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b">river_tile</a>,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5">has_sidewalk</a>,</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a>, <span class="comment">// does this tile have 8 versions, including straights, bends, tees, and a fourway?</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba">subway_connection</a>,</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde">lake</a>,</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43">lake_shore</a>,</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba">generic_loot</a>,</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6">risk_high</a>,</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f">risk_low</a>,</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1">source_ammo</a>,</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd">source_animals</a>,</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a">source_books</a>,</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0">source_chemistry</a>,</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c">source_clothing</a>,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273">source_construction</a>,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8">source_cooking</a>,</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9">source_drink</a>,</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382">source_electronics</a>,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b">source_fabrication</a>,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297">source_farming</a>,</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156">source_food</a>,</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040">source_forage</a>,</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582">source_fuel</a>,</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec">source_gun</a>,</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05">source_luxury</a>,</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff">source_medicine</a>,</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028">source_people</a>,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655">source_safety</a>,</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175">source_tailoring</a>,</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae">source_vehicles</a>,</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546">source_weapon</a>,</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a">num_oter_flags</a></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>};</div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae">source_vehicles</a></div><div class="ttdeci">@ source_vehicles</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00217">omdata.h:217</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff">source_medicine</a></div><div class="ttdeci">@ source_medicine</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00213">omdata.h:213</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a></div><div class="ttdeci">@ line_drawing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00190">omdata.h:190</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1">source_ammo</a></div><div class="ttdeci">@ source_ammo</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00197">omdata.h:197</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0">source_chemistry</a></div><div class="ttdeci">@ source_chemistry</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00200">omdata.h:200</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297">source_farming</a></div><div class="ttdeci">@ source_farming</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00207">omdata.h:207</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a">num_oter_flags</a></div><div class="ttdeci">@ num_oter_flags</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00220">omdata.h:219</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43">lake_shore</a></div><div class="ttdeci">@ lake_shore</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00193">omdata.h:193</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c">source_clothing</a></div><div class="ttdeci">@ source_clothing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00201">omdata.h:201</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba">subway_connection</a></div><div class="ttdeci">@ subway_connection</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00191">omdata.h:191</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546">source_weapon</a></div><div class="ttdeci">@ source_weapon</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00218">omdata.h:218</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8">source_cooking</a></div><div class="ttdeci">@ source_cooking</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00203">omdata.h:203</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b">river_tile</a></div><div class="ttdeci">@ river_tile</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00188">omdata.h:188</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad">known_up</a></div><div class="ttdeci">@ known_up</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00186">omdata.h:186</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582">source_fuel</a></div><div class="ttdeci">@ source_fuel</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00210">omdata.h:210</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273">source_construction</a></div><div class="ttdeci">@ source_construction</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00202">omdata.h:202</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a">source_books</a></div><div class="ttdeci">@ source_books</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00199">omdata.h:199</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9">source_drink</a></div><div class="ttdeci">@ source_drink</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00204">omdata.h:204</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5">has_sidewalk</a></div><div class="ttdeci">@ has_sidewalk</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00189">omdata.h:189</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028">source_people</a></div><div class="ttdeci">@ source_people</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00214">omdata.h:214</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6">risk_high</a></div><div class="ttdeci">@ risk_high</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00195">omdata.h:195</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b">source_fabrication</a></div><div class="ttdeci">@ source_fabrication</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00206">omdata.h:206</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f">risk_low</a></div><div class="ttdeci">@ risk_low</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00196">omdata.h:196</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f">known_down</a></div><div class="ttdeci">@ known_down</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00185">omdata.h:185</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156">source_food</a></div><div class="ttdeci">@ source_food</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00208">omdata.h:208</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382">source_electronics</a></div><div class="ttdeci">@ source_electronics</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00205">omdata.h:205</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde">lake</a></div><div class="ttdeci">@ lake</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00192">omdata.h:192</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba">generic_loot</a></div><div class="ttdeci">@ generic_loot</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00194">omdata.h:194</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05">source_luxury</a></div><div class="ttdeci">@ source_luxury</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00212">omdata.h:212</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175">source_tailoring</a></div><div class="ttdeci">@ source_tailoring</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00216">omdata.h:216</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a></div><div class="ttdeci">@ no_rotate</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00187">omdata.h:187</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040">source_forage</a></div><div class="ttdeci">@ source_forage</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00209">omdata.h:209</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655">source_safety</a></div><div class="ttdeci">@ source_safety</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00215">omdata.h:215</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd">source_animals</a></div><div class="ttdeci">@ source_animals</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00198">omdata.h:198</a></div></div>
-<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec">source_gun</a></div><div class="ttdeci">@ source_gun</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00211">omdata.h:211</a></div></div>
+<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00089">89</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f">known_down</a> = 0,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad">known_up</a>,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a>,    <span class="comment">// this tile doesn&#39;t have four rotated versions (north, east, south, west)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b">river_tile</a>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5">has_sidewalk</a>,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a>, <span class="comment">// does this tile have 8 versions, including straights, bends, tees, and a fourway?</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba">subway_connection</a>,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde">lake</a>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43">lake_shore</a>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba">generic_loot</a>,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6">risk_high</a>,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f">risk_low</a>,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1">source_ammo</a>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd">source_animals</a>,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a">source_books</a>,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0">source_chemistry</a>,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c">source_clothing</a>,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273">source_construction</a>,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8">source_cooking</a>,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9">source_drink</a>,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382">source_electronics</a>,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b">source_fabrication</a>,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297">source_farming</a>,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156">source_food</a>,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040">source_forage</a>,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582">source_fuel</a>,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec">source_gun</a>,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05">source_luxury</a>,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff">source_medicine</a>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028">source_people</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655">source_safety</a>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175">source_tailoring</a>,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae">source_vehicles</a>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546">source_weapon</a>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a">num_oter_flags</a></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0293f85a7b0d47d7da1b3cf18a6fb3ae">source_vehicles</a></div><div class="ttdeci">@ source_vehicles</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00122">omdata.h:122</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba04ec61424842265e913145d3d6cc1dff">source_medicine</a></div><div class="ttdeci">@ source_medicine</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00118">omdata.h:118</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a></div><div class="ttdeci">@ line_drawing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00095">omdata.h:95</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba08a771e10ca4f40b06ff8889f5c463c1">source_ammo</a></div><div class="ttdeci">@ source_ammo</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00102">omdata.h:102</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0b692bf80f9c502e74f34180e5fa51b0">source_chemistry</a></div><div class="ttdeci">@ source_chemistry</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00105">omdata.h:105</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0d10b736b0e75072a168fc97dcc04297">source_farming</a></div><div class="ttdeci">@ source_farming</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00112">omdata.h:112</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0da22bfd9727f6680cd8d79ee972273a">num_oter_flags</a></div><div class="ttdeci">@ num_oter_flags</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00125">omdata.h:124</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba0edec5d3671f46fec9ce88a434a6ab43">lake_shore</a></div><div class="ttdeci">@ lake_shore</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00098">omdata.h:98</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba1ad221454e8e1b8df9be3992d4782f4c">source_clothing</a></div><div class="ttdeci">@ source_clothing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00106">omdata.h:106</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba23b5dc5ff40ca2a795e8fbefc80f0fba">subway_connection</a></div><div class="ttdeci">@ subway_connection</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00096">omdata.h:96</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba298b33ca120ba2b44fb0c20db1902546">source_weapon</a></div><div class="ttdeci">@ source_weapon</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00123">omdata.h:123</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba2fb0345cc167a80da69ba3f39b85aee8">source_cooking</a></div><div class="ttdeci">@ source_cooking</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00108">omdata.h:108</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba3d70a5613ce345148dc68f0cfa36925b">river_tile</a></div><div class="ttdeci">@ river_tile</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00093">omdata.h:93</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba4037042c01947884e24971f2e1d438ad">known_up</a></div><div class="ttdeci">@ known_up</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00091">omdata.h:91</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba468c79af00cb17492a6d4e530b4ab582">source_fuel</a></div><div class="ttdeci">@ source_fuel</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00115">omdata.h:115</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba59ac316248bcc25e9bf37d09f96b6273">source_construction</a></div><div class="ttdeci">@ source_construction</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00107">omdata.h:107</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba614796adf649b39d19b26284b50da42a">source_books</a></div><div class="ttdeci">@ source_books</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00104">omdata.h:104</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba65ac0762396822b4a25c038a629234a9">source_drink</a></div><div class="ttdeci">@ source_drink</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00109">omdata.h:109</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba6e0254e353bc53037699e284ac57dcc5">has_sidewalk</a></div><div class="ttdeci">@ has_sidewalk</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00094">omdata.h:94</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba723182b91e511dfd33a7d20f7e5bc028">source_people</a></div><div class="ttdeci">@ source_people</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00119">omdata.h:119</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba7bc44d7b0d6ac46af574ab1597ecede6">risk_high</a></div><div class="ttdeci">@ risk_high</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00100">omdata.h:100</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba86942fe48f8d7443b6aab672b6c59a4b">source_fabrication</a></div><div class="ttdeci">@ source_fabrication</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00111">omdata.h:111</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba8fca253d0228bdeadf64a6730d69938f">risk_low</a></div><div class="ttdeci">@ risk_low</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00101">omdata.h:101</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba964030af5ffc668ff06d2753b0a5683f">known_down</a></div><div class="ttdeci">@ known_down</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00090">omdata.h:90</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baa4acb81446d0dcb0a69c045825910156">source_food</a></div><div class="ttdeci">@ source_food</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00113">omdata.h:113</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baaa3a2ea7989dc0bceae02204baa30382">source_electronics</a></div><div class="ttdeci">@ source_electronics</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00110">omdata.h:110</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bac6847ab1f717973d3f5d7f0a3f7e2dde">lake</a></div><div class="ttdeci">@ lake</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00097">omdata.h:97</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baca17a461e35af577e78aa44848422aba">generic_loot</a></div><div class="ttdeci">@ generic_loot</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00099">omdata.h:99</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bacebf3a56405b13bb23a66347ab130b05">source_luxury</a></div><div class="ttdeci">@ source_luxury</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00117">omdata.h:117</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bada2b7c60fcaf37c0b6507be22d188175">source_tailoring</a></div><div class="ttdeci">@ source_tailoring</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00121">omdata.h:121</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a></div><div class="ttdeci">@ no_rotate</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00092">omdata.h:92</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae685351b9c45ccf4033a005de64a6040">source_forage</a></div><div class="ttdeci">@ source_forage</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00114">omdata.h:114</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeadb92babd17b86e987a7d336f8d7655">source_safety</a></div><div class="ttdeci">@ source_safety</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00120">omdata.h:120</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baeecc3cc8b3396450e2e3a392259b3dbd">source_animals</a></div><div class="ttdeci">@ source_animals</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00103">omdata.h:103</a></div></div>
+<div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4baff13777571202e076b10534fa06f67ec">source_gun</a></div><div class="ttdeci">@ source_gun</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00116">omdata.h:116</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -543,7 +436,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00375">oter_t::is_wooded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00280">oter_t::is_wooded()</a>.</p>
 
 </div>
 </div>
@@ -571,7 +464,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00375">oter_t::is_wooded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00280">oter_t::is_wooded()</a>.</p>
 
 </div>
 </div>
@@ -599,7 +492,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00375">oter_t::is_wooded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00280">oter_t::is_wooded()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +520,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00375">oter_t::is_wooded()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00280">oter_t::is_wooded()</a>.</p>
 
 </div>
 </div>
@@ -657,10 +550,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00333">333</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>{</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keywordflow">return</span> !( lhs == rhs );</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00332">332</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>{</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">return</span> !( lhs == rhs );</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -690,41 +583,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00328">328</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>{</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordflow">return</span> lhs.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>().<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() == rhs;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00327">327</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>{</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keywordflow">return</span> lhs.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>().<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() == rhs;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>}</div>
 <div class="ttc" id="aclassint__id_html_a88b1e0c550f4d6f36cac7a73feca7f01"><div class="ttname"><a href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">int_id::id</a></div><div class="ttdeci">const string_id&lt; T &gt; &amp; id() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00033">ammo_effect.cpp:33</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa7dabc565f0c067e1a237ea224b18f93"><div class="ttname"><a href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">string_id::str</a></div><div class="ttdeci">const std::string &amp; str() const</div><div class="ttdoc">Returns the identifier as plain std::string.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00255">string_id.h:255</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ammo__effect_8cpp_source.html#l00033">int_id&lt; T &gt;::id()</a>, and <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad25977a64e3d8681be2cea62c5633769" name="ad25977a64e3d8681be2cea62c5633769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad25977a64e3d8681be2cea62c5633769">&#9670;&nbsp;</a></span>OMSPEC_FREQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int OMSPEC_FREQ = 15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00412">412</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00448">overmap_specials::check_consistency()</a>, <a class="el" href="overmapbuffer_8cpp_source.html#l01585">overmapbuffer::place_special()</a>, and <a class="el" href="overmap_8cpp_source.html#l04426">overmap::place_specials()</a>.</p>
 
 </div>
 </div>
@@ -734,7 +600,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="omdata_8h.html">omdata.h</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:06 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

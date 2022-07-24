@@ -235,17 +235,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#a037f3eee52fb0b1bdb1af8fe00313363">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00447">447</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>{</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    jo_zone.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;mark&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#a660009222e6211a182cf56a04349112b">mark</a> );</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    jo_zone.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;con&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> );</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    <span class="keywordflow">if</span>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;index&quot;</span> ) ) {</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <span class="comment">// Oops, saved incorrectly as an int id by legacy code. Just load it and hope for the best</span></div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a> = <a class="code hl_typedef" href="type__id_8h.html#a7de4e933ae593eb3de0a138f3cd84657">construction_id</a>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;index&quot;</span> ) );</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a> = <a class="code hl_typedef" href="type__id_8h.html#abb14ce5588f6fe430a78b1cc63218b86">construction_str_id</a>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;index&quot;</span> ) ).<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    }</div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00448">448</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>{</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    jo_zone.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;mark&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#a660009222e6211a182cf56a04349112b">mark</a> );</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    jo_zone.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;con&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> );</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keywordflow">if</span>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;index&quot;</span> ) ) {</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <span class="comment">// Oops, saved incorrectly as an int id by legacy code. Just load it and hope for the best</span></div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a> = <a class="code hl_typedef" href="type__id_8h.html#a7de4e933ae593eb3de0a138f3cd84657">construction_id</a>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;index&quot;</span> ) );</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a> = <a class="code hl_typedef" href="type__id_8h.html#abb14ce5588f6fe430a78b1cc63218b86">construction_str_id</a>( jo_zone.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;index&quot;</span> ) ).<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    }</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a6f04277ed5262b016bc4b4642b14d866"><div class="ttname"><a href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">JsonObject::has_int</a></div><div class="ttdeci">bool has_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00928">json.h:928</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00314">json.cpp:314</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00282">json.cpp:282</a></div></div>
@@ -254,8 +254,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassblueprint__options_html_ae990ead0664e4c00c5f890226f4e7f67"><div class="ttname"><a href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">blueprint_options::con</a></div><div class="ttdeci">std::string con</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8h_source.html#l00154">clzones.h:154</a></div></div>
 <div class="ttc" id="aclassblueprint__options_html_af5269f66133b104d88063a327e51286a"><div class="ttname"><a href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">blueprint_options::index</a></div><div class="ttdeci">construction_id index</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8h_source.html#l00155">clzones.h:155</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa3cde2bfb58efa9621289c0a70d24c5a"><div class="ttname"><a href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">string_id::id</a></div><div class="ttdeci">int_id&lt; T &gt; id() const</div><div class="ttdoc">Translate the string based it to the matching integer based id.</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00054">ammo_effect.cpp:54</a></div></div>
-<div class="ttc" id="atype__id_8h_html_a7de4e933ae593eb3de0a138f3cd84657"><div class="ttname"><a href="type__id_8h.html#a7de4e933ae593eb3de0a138f3cd84657">construction_id</a></div><div class="ttdeci">int_id&lt; construction &gt; construction_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00182">type_id.h:182</a></div></div>
-<div class="ttc" id="atype__id_8h_html_abb14ce5588f6fe430a78b1cc63218b86"><div class="ttname"><a href="type__id_8h.html#abb14ce5588f6fe430a78b1cc63218b86">construction_str_id</a></div><div class="ttdeci">string_id&lt; construction &gt; construction_str_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00183">type_id.h:183</a></div></div>
+<div class="ttc" id="atype__id_8h_html_a7de4e933ae593eb3de0a138f3cd84657"><div class="ttname"><a href="type__id_8h.html#a7de4e933ae593eb3de0a138f3cd84657">construction_id</a></div><div class="ttdeci">int_id&lt; construction &gt; construction_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00195">type_id.h:195</a></div></div>
+<div class="ttc" id="atype__id_8h_html_abb14ce5588f6fe430a78b1cc63218b86"><div class="ttname"><a href="type__id_8h.html#abb14ce5588f6fe430a78b1cc63218b86">construction_str_id</a></div><div class="ttdeci">string_id&lt; construction &gt; construction_str_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00196">type_id.h:196</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00154">con</a>, <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8h_source.html#l00928">JsonObject::has_int()</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="clzones_8h_source.html#l00155">index</a>, <a class="el" href="clzones_8h_source.html#l00153">mark</a>, and <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>.</p>
 
@@ -318,15 +318,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#ac101e59544ffb8893a970411763f0502">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00420">420</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>{</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a> =</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>                std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;();</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a>.emplace_back( std::make_pair( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Construct: &quot;</span> ),</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>                                          !<a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>.empty() ? <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> : <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No Construction&quot;</span> ) ) );</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a>;</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00421">421</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>{</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a> =</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;();</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a>.emplace_back( std::make_pair( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Construct: &quot;</span> ),</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>                                          !<a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>.empty() ? <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> : <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No Construction&quot;</span> ) ) );</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">options</a>;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>}</div>
 <div class="ttc" id="anamespacePATH__INFO_html_a5a5d41d971342c3e6103b510ccbcb9bb"><div class="ttname"><a href="namespacePATH__INFO.html#a5a5d41d971342c3e6103b510ccbcb9bb">PATH_INFO::options</a></div><div class="ttdeci">std::string options()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00238">path_info.cpp:238</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
@@ -490,14 +490,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#a23d35852b64e03e432364251cb6f3853">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00396">396</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>{</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>.empty() ) {</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>;</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    }</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No construction&quot;</span> );</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00397">397</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>{</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>.empty() ) {</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a>;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    }</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No construction&quot;</span> );</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, and <a class="el" href="clzones_8h_source.html#l00154">con</a>.</p>
 
@@ -560,10 +560,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#a19b21da052a9ed08af922d1798dbe1e9">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00386">386</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d">query_con</a>() == <a class="code hl_enumvalue" href="classblueprint__options.html#ac75ad71b4a557ac5830a75c5671abe2ea3fac5b370a7a29a7b6940a1c617dcdec">changed</a>;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00387">387</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>{</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d">query_con</a>() == <a class="code hl_enumvalue" href="classblueprint__options.html#ac75ad71b4a557ac5830a75c5671abe2ea3fac5b370a7a29a7b6940a1c617dcdec">changed</a>;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>}</div>
 <div class="ttc" id="aclassblueprint__options_html_a4fe1c4f86658407f8076591e2cf11e9d"><div class="ttname"><a href="classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d">blueprint_options::query_con</a></div><div class="ttdeci">query_con_result query_con()</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00238">clzones.cpp:238</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00160">changed</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>.</p>
@@ -595,10 +595,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#ae82470f009cdc2b99d1a3b0a5617b5d5">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00376">376</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>{</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d">query_con</a>() != <a class="code hl_enumvalue" href="classblueprint__options.html#ac75ad71b4a557ac5830a75c5671abe2ead5908f167ad0d58a4f70ee9babf65a96">canceled</a>;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00377">377</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>{</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d">query_con</a>() != <a class="code hl_enumvalue" href="classblueprint__options.html#ac75ad71b4a557ac5830a75c5671abe2ead5908f167ad0d58a4f70ee9babf65a96">canceled</a>;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00158">canceled</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>.</p>
 
@@ -660,7 +660,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00158">canceled</a>, <a class="el" href="clzones_8h_source.html#l00160">changed</a>, <a class="el" href="clzones_8h_source.html#l00154">con</a>, <a class="el" href="construction_8cpp_source.html#l00284">construction_menu()</a>, <a class="el" href="construction_8h_source.html#l00051">construction::description</a>, <a class="el" href="construction_8cpp_source.html#l00274">get_constructions()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">get_final_construction()</a>, <a class="el" href="clzones_8h_source.html#l00155">index</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00019">int_id&lt; T &gt;::is_valid()</a>, <a class="el" href="clzones_8h_source.html#l00153">mark</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00026">int_id&lt; T &gt;::obj()</a>, <a class="el" href="construction_8h_source.html#l00057">construction::post_terrain</a>, and <a class="el" href="clzones_8h_source.html#l00159">successful</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00386">query()</a>, and <a class="el" href="clzones_8cpp_source.html#l00376">query_at_creation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00387">query()</a>, and <a class="el" href="clzones_8cpp_source.html#l00377">query_at_creation()</a>.</p>
 
 </div>
 </div>
@@ -690,12 +690,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classzone__options.html#aacfa8706c8ccc5b5c7673cba56255f83">zone_options</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00440">440</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>{</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;mark&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#a660009222e6211a182cf56a04349112b">mark</a> );</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;con&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> );</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;index&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a>.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>() );</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00441">441</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>{</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;mark&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#a660009222e6211a182cf56a04349112b">mark</a> );</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;con&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#ae990ead0664e4c00c5f890226f4e7f67">con</a> );</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;index&quot;</span>, <a class="code hl_variable" href="classblueprint__options.html#af5269f66133b104d88063a327e51286a">index</a>.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>() );</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02046">json.cpp:2046</a></div></div>
 <div class="ttc" id="aclassint__id_html_a88b1e0c550f4d6f36cac7a73feca7f01"><div class="ttname"><a href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">int_id::id</a></div><div class="ttdeci">const string_id&lt; T &gt; &amp; id() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00033">ammo_effect.cpp:33</a></div></div>
 </div><!-- fragment -->
@@ -726,7 +726,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00154">154</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00447">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00169">get_con()</a>, <a class="el" href="clzones_8cpp_source.html#l00420">get_descriptions()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">get_final_construction()</a>, <a class="el" href="clzones_8cpp_source.html#l00396">get_zone_name_suggestion()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00440">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00448">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00169">get_con()</a>, <a class="el" href="clzones_8cpp_source.html#l00421">get_descriptions()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">get_final_construction()</a>, <a class="el" href="clzones_8cpp_source.html#l00397">get_zone_name_suggestion()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00441">serialize()</a>.</p>
 
 </div>
 </div>
@@ -752,7 +752,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00155">155</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00447">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00172">get_index()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00440">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00448">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00172">get_index()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00441">serialize()</a>.</p>
 
 </div>
 </div>
@@ -778,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00153">153</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00447">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00166">get_mark()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00440">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00448">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00166">get_mark()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">query_con()</a>, and <a class="el" href="clzones_8cpp_source.html#l00441">serialize()</a>.</p>
 
 </div>
 </div>
@@ -792,7 +792,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classblueprint__options.html">blueprint_options</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:09 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

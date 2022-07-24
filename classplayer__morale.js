@@ -16,7 +16,7 @@ var classplayer__morale =
     [ "clear", "classplayer__morale.html#ae0a4817f8e3783b0e0caa764e9ca98e5", null ],
     [ "consistent_with", "classplayer__morale.html#aab24d9b175d7eea0f556eccdc99f0f8d", null ],
     [ "decay", "classplayer__morale.html#a1056cd7d4a7291b62742feb18f03d933", null ],
-    [ "display", "classplayer__morale.html#a05a94382ea9fa307b058a19659b858ff", null ],
+    [ "display", "classplayer__morale.html#a6e4e61b329678f54956a8a066ce45fe0", null ],
     [ "get", "classplayer__morale.html#a5729dff1562ff08f13a546bb73f654bc", null ],
     [ "get_level", "classplayer__morale.html#a357c7f7ca8ffd78fe045846ba8ed6332", null ],
     [ "get_temper_mult", "classplayer__morale.html#a45b1cd2f3ada97412f1859ede28ed145", null ],

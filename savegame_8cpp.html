@@ -187,26 +187,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00150">150</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordflow">if</span>( fin.peek() == <span class="charliteral">&#39;#&#39;</span> ) {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        std::string vline;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        getline( fin, vline );</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        std::string tmphash;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        std::string tmpver;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">int</span> savedver = -1;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        std::stringstream vliness( vline );</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        vliness &gt;&gt; tmphash &gt;&gt; tmpver &gt;&gt; savedver;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">if</span>( tmpver == <span class="stringliteral">&quot;version&quot;</span> &amp;&amp; savedver != -1 ) {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <a class="code hl_variable" href="savegame_8cpp.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a> = savedver;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
-<div class="ttc" id="asavegame_8cpp_html_ad92349523462977f97edd9afbed2a996"><div class="ttname"><a href="savegame_8cpp.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a></div><div class="ttdeci">int savegame_loading_version</div><div class="ttdef"><b>Definition:</b> <a href="savegame_8cpp_source.html#l00066">savegame.cpp:66</a></div></div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00148">148</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span>( fin.peek() == <span class="charliteral">&#39;#&#39;</span> ) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        std::string vline;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        getline( fin, vline );</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        std::string tmphash;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        std::string tmpver;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">int</span> savedver = -1;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        std::stringstream vliness( vline );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        vliness &gt;&gt; tmphash &gt;&gt; tmpver &gt;&gt; savedver;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span>( tmpver == <span class="stringliteral">&quot;version&quot;</span> &amp;&amp; savedver != -1 ) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <a class="code hl_variable" href="savegame_8cpp.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a> = savedver;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
+<div class="ttc" id="asavegame_8cpp_html_ad92349523462977f97edd9afbed2a996"><div class="ttname"><a href="savegame_8cpp.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a></div><div class="ttdeci">int savegame_loading_version</div><div class="ttdef"><b>Definition:</b> <a href="savegame_8cpp_source.html#l00064">savegame.cpp:64</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="savegame_8cpp_source.html#l00066">savegame_loading_version</a>.</p>
+<p class="reference">References <a class="el" href="savegame_8cpp_source.html#l00064">savegame_loading_version</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00169">game::unserialize()</a>, <a class="el" href="savegame_8cpp_source.html#l00429">overmap::unserialize()</a>, <a class="el" href="savegame_8cpp_source.html#l01209">game::unserialize_master()</a>, and <a class="el" href="savegame_8cpp_source.html#l00717">overmap::unserialize_view()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, <a class="el" href="savegame_8cpp_source.html#l00427">overmap::unserialize()</a>, <a class="el" href="savegame_8cpp_source.html#l01207">game::unserialize_master()</a>, and <a class="el" href="savegame_8cpp_source.html#l00715">overmap::unserialize_view()</a>.</p>
 
 </div>
 </div>
@@ -244,30 +244,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00778">778</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>{</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 0;</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <span class="keywordtype">int</span> lastval = -1;</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; j++ ) {</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;array_col : array ) {</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> value = array_col[j];</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>            <span class="keywordflow">if</span>( value != lastval ) {</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>                <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> ) {</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>                    json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>                    json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>                }</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>                lastval = value;</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>                json.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>                json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( value ) );</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>                <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 1;</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>                <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>++;</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>            }</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        }</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    }</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00776">776</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>{</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 0;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordtype">int</span> lastval = -1;</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; j++ ) {</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;array_col : array ) {</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> value = array_col[j];</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>            <span class="keywordflow">if</span>( value != lastval ) {</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>                <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> ) {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>                    json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>                    json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>                }</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>                lastval = value;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>                json.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>                json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( value ) );</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>                <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 1;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>                <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>++;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>            }</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>        }</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    }</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a44cdd853d4c6913b37caa9f0131eeff2"><div class="ttname"><a href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">JsonOut::end_array</a></div><div class="ttdeci">void end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01961">json.cpp:1961</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4550e2036b904c4d4a90e440dd41c684"><div class="ttname"><a href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">JsonOut::start_array</a></div><div class="ttdeci">void start_array(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01950">json.cpp:1950</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00620">json.h:620</a></div></div>
@@ -276,7 +276,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__core_8h_source.html#l01073">detail::count()</a>, <a class="el" href="json_8cpp_source.html#l01961">JsonOut::end_array()</a>, <a class="el" href="game__constants_8h_source.html#l00052">OMAPY</a>, <a class="el" href="json_8cpp_source.html#l01950">JsonOut::start_array()</a>, and <a class="el" href="json_8h_source.html#l00620">JsonOut::write()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00804">overmap::serialize_view()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00802">overmap::serialize_view()</a>.</p>
 
 </div>
 </div>
@@ -314,30 +314,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00698">698</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>{</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 0;</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; j++ ) {</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;array_col : array ) {</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> == 0 ) {</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>                jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( value );</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>            }</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>            <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>--;</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>            array_col[j] = value;</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        }</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    }</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00696">696</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>{</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> = 0;</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; j++ ) {</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;array_col : array ) {</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> == 0 ) {</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( value );</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a> );</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>                jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>            }</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>            <a class="code hl_function" href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">count</a>--;</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>            array_col[j] = value;</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>        }</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    }</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_a70443f07b40c2a0ab1aee1e0418a1faf"><div class="ttname"><a href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">JsonIn::start_array</a></div><div class="ttdeci">void start_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01373">json.cpp:1373</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01485">json.cpp:1485</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_adb53515d72e6e0457ae3266ace12d5e5"><div class="ttname"><a href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">JsonIn::end_array</a></div><div class="ttdeci">bool end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01389">json.cpp:1389</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__core_8h_source.html#l01073">detail::count()</a>, <a class="el" href="json_8cpp_source.html#l01389">JsonIn::end_array()</a>, <a class="el" href="game__constants_8h_source.html#l00052">OMAPY</a>, <a class="el" href="json_8cpp_source.html#l01485">JsonIn::read()</a>, and <a class="el" href="json_8cpp_source.html#l01373">JsonIn::start_array()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00717">overmap::unserialize_view()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00715">overmap::unserialize_view()</a>.</p>
 
 </div>
 </div>
@@ -354,9 +354,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00330">330</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00328">328</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00344">overmap::is_obsolete_terrain()</a>, <a class="el" href="savegame_8cpp_source.html#l00332">overmap::load_obsolete_terrains()</a>, and <a class="el" href="savegame_8cpp_source.html#l00339">overmap::reset_obsolete_terrains()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00342">overmap::is_obsolete_terrain()</a>, <a class="el" href="savegame_8cpp_source.html#l00330">overmap::load_obsolete_terrains()</a>, and <a class="el" href="savegame_8cpp_source.html#l00337">overmap::reset_obsolete_terrains()</a>.</p>
 
 </div>
 </div>
@@ -372,9 +372,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00066">66</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00064">64</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00150">chkversion()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02335">item::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01262">npc_chatbin::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02585">vehicle::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01003">avatar::load()</a>, <a class="el" href="savegame__json_8cpp_source.html#l03942">submap::load()</a>, <a class="el" href="savegame_8cpp_source.html#l00169">game::unserialize()</a>, and <a class="el" href="savegame_8cpp_source.html#l01209">game::unserialize_master()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00148">chkversion()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02334">item::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01261">npc_chatbin::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02584">vehicle::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01002">avatar::load()</a>, <a class="el" href="savegame__json_8cpp_source.html#l03937">submap::load()</a>, <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, and <a class="el" href="savegame_8cpp_source.html#l01207">game::unserialize_master()</a>.</p>
 
 </div>
 </div>
@@ -390,9 +390,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00059">59</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l00057">57</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapbuffer_8cpp_source.html#l00164">mapbuffer::save_quad()</a>, <a class="el" href="savegame_8cpp_source.html#l00071">game::serialize()</a>, <a class="el" href="savegame_8cpp_source.html#l00931">overmap::serialize()</a>, <a class="el" href="savegame_8cpp_source.html#l01259">game::serialize_master()</a>, <a class="el" href="savegame_8cpp_source.html#l00804">overmap::serialize_view()</a>, and <a class="el" href="savegame_8cpp_source.html#l01209">game::unserialize_master()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapbuffer_8cpp_source.html#l00165">mapbuffer::save_quad()</a>, <a class="el" href="savegame_8cpp_source.html#l00069">game::serialize()</a>, <a class="el" href="savegame_8cpp_source.html#l00929">overmap::serialize()</a>, <a class="el" href="savegame_8cpp_source.html#l01257">game::serialize_master()</a>, <a class="el" href="savegame_8cpp_source.html#l00802">overmap::serialize_view()</a>, and <a class="el" href="savegame_8cpp_source.html#l01207">game::unserialize_master()</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="savegame_8cpp.html">savegame.cpp</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

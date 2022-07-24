@@ -1,5 +1,15 @@
 var NAVTREEINDEX146 =
 {
+"structjmapgen__int.html#ade405a1b7d223b55b8713e4277040a91":[36,0,479,0],
+"structjmapgen__int.html#af46ca2297a74d2a89244702ca1c6fa04":[36,0,479,7],
+"structjmapgen__int.html#af91db998b4c873453177d97ad575d138":[36,0,479,5],
+"structjmapgen__int.html#afda6a32f9db6b0190e0ddf927c1b0839":[36,0,479,3],
+"structjmapgen__objects.html":[36,0,488],
+"structjmapgen__objects.html#a0d2247b936d9d6ad95db00845d7f82d3":[36,0,488,7],
+"structjmapgen__objects.html#a1d888afd71c7da7fde36d5ec8f31bccc":[36,0,488,2],
+"structjmapgen__objects.html#a30e7225bf025354f39f981b93b797f0f":[36,0,488,11],
+"structjmapgen__objects.html#a34299f1b045ec198d9dab61602fac6bf":[36,0,488,5],
+"structjmapgen__objects.html#a41c55acb74b0b002b642ba0f25c76984":[36,0,488,6],
 "structjmapgen__objects.html#a42d3ea727e2b1226f75b975b49c21be1":[36,0,488,8],
 "structjmapgen__objects.html#a4a4094ff1cca9a9ad0518b9667a30182":[36,0,488,13],
 "structjmapgen__objects.html#a573a70a619220b128f5221b14b0eb948":[36,0,488,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX146 =
 "structmap__extras.html#a046d7da1313ba326d37dd73d889477c0":[36,0,563,0],
 "structmap__extras.html#a37c643efa217719f1fccc0b5d4eef2fc":[36,0,563,1],
 "structmap__extras.html#a789bf519a073646afd38e96d5762d122":[36,0,563,2],
-"structmap__extras.html#abee70496aca8f0b78a63b15df18fb9b4":[36,0,563,3],
-"structmap__layer.html":[36,0,566],
-"structmap__layer.html#a26c5708b39beeab6666d42ee192a1202":[36,0,566,1],
-"structmap__layer.html#a342b0d24bec31f597cccbf577343cce3":[36,0,566,4],
-"structmap__layer.html#a739c32af252c890d66a721aad3209caf":[36,0,566,2],
-"structmap__layer.html#adbaffb7ccb80bb4f94633a3f619a6937":[36,0,566,3],
-"structmap__layer.html#adea4029a91f58830025ce328987d332b":[36,0,566,0],
-"structmap__memory_1_1coord__pair.html":[36,0,567,0],
-"structmap__memory_1_1coord__pair.html#a9f247f668ca8a05a5e3e1760072b3414":[36,0,567,0,0],
-"structmap__memory_1_1coord__pair.html#ad136a4ccba391eac3fbe075ad346f7cb":[36,0,567,0,1],
-"structmap__memory_1_1coord__pair.html#afbaca5d68eda0690dc903960d50ca0ac":[36,0,567,0,2]
+"structmap__extras.html#abee70496aca8f0b78a63b15df18fb9b4":[36,0,563,3]
 };

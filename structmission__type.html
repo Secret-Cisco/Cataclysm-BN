@@ -183,8 +183,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab4453cee7ab10caf5368681a487b2f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add16e1706870455525b43b7b5db808b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmission__type.html#add16e1706870455525b43b7b5db808b6">monster_kill_goal</a> = -1</td></tr>
 <tr class="separator:add16e1706870455525b43b7b5db808b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d9c8066408c027d5cfcc0221f729c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstring__id.html">string_id</a>&lt; <a class="el" href="structoter__type__t.html">oter_type_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmission__type.html#a87d9c8066408c027d5cfcc0221f729c1">target_id</a></td></tr>
-<tr class="separator:a87d9c8066408c027d5cfcc0221f729c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b9307a54f1d2d5dedbf48be20f6467"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type__id_8h.html#a23955259c9ef5338ff50d43255f19cd9">oter_type_str_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmission__type.html#a13b9307a54f1d2d5dedbf48be20f6467">target_id</a></td></tr>
+<tr class="separator:a13b9307a54f1d2d5dedbf48be20f6467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0708976d834909f877ef0297617b9b7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="npc_8h.html#aade9b8156edf3773445de892411c0bf5">mission_type_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmission__type.html#a0708976d834909f877ef0297617b9b7b">follow_up</a> = <a class="el" href="npc_8h.html#aade9b8156edf3773445de892411c0bf5">mission_type_id</a>( &quot;MISSION_NULL&quot; )</td></tr>
 <tr class="separator:a0708976d834909f877ef0297617b9b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ad9f05dc11c6b54b126bfb3cbdc200"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmission__type.html#a01ad9f05dc11c6b54b126bfb3cbdc200">place</a> = <a class="el" href="structmission__place.html#a8a576363edf0be2f0e4e458e5bd79f2c">mission_place::always</a></td></tr>
@@ -207,7 +207,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00198">198</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00197">197</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2f0a629da12e220f4a569a972b40c338" name="a2f0a629da12e220f4a569a972b40c338"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f0a629da12e220f4a569a972b40c338">&#9670;&nbsp;</a></span>mission_type()</h2>
@@ -271,7 +271,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="missiondef_8cpp_source.html#l00458">get_all()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00712">DynamicDataLoader::check_consistency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00713">DynamicDataLoader::check_consistency()</a>.</p>
 
 </div>
 </div>
@@ -314,22 +314,22 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
-<div class="ttc" id="aclassmission_html"><div class="ttname"><a href="classmission.html">mission</a></div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00290">mission.h:291</a></div></div>
+<div class="ttc" id="aclassmission_html"><div class="ttname"><a href="classmission.html">mission</a></div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00289">mission.h:290</a></div></div>
 <div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00267">game.cpp:267</a></div></div>
 <div class="ttc" id="anamespacecalendar_html_ab01178b933b4f1c62bd75b2edfdbaf79"><div class="ttname"><a href="namespacecalendar.html#ab01178b933b4f1c62bd75b2edfdbaf79">calendar::start_of_cataclysm</a></div><div class="ttdeci">const time_point &amp; start_of_cataclysm</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00033">calendar.cpp:33</a></div></div>
 <div class="ttc" id="anamespacecalendar_html_ae15fcbf1c971589eb49c1a657fb6a580"><div class="ttname"><a href="namespacecalendar.html#ae15fcbf1c971589eb49c1a657fb6a580">calendar::turn</a></div><div class="ttdeci">time_point turn</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00036">calendar.cpp:36</a></div></div>
 <div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
-<div class="ttc" id="astructmission__type_html_a0708976d834909f877ef0297617b9b7b"><div class="ttname"><a href="structmission__type.html#a0708976d834909f877ef0297617b9b7b">mission_type::follow_up</a></div><div class="ttdeci">mission_type_id follow_up</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00239">mission.h:239</a></div></div>
-<div class="ttc" id="astructmission__type_html_a1f8991ca76a52e7791405cf961dd9355"><div class="ttname"><a href="structmission__type.html#a1f8991ca76a52e7791405cf961dd9355">mission_type::item_count</a></div><div class="ttdeci">int item_count</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00232">mission.h:232</a></div></div>
-<div class="ttc" id="astructmission__type_html_a27821672d14c5593e9092eea030d9d9a"><div class="ttname"><a href="structmission__type.html#a27821672d14c5593e9092eea030d9d9a">mission_type::deadline_high</a></div><div class="ttdeci">time_duration deadline_high</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00216">mission.h:216</a></div></div>
-<div class="ttc" id="astructmission__type_html_a6bb5ea627b2a01749189b7ef74a0292c"><div class="ttname"><a href="structmission__type.html#a6bb5ea627b2a01749189b7ef74a0292c">mission_type::item_id</a></div><div class="ttdeci">itype_id item_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00227">mission.h:227</a></div></div>
-<div class="ttc" id="astructmission__type_html_ab4453cee7ab10caf5368681a487b2f5a"><div class="ttname"><a href="structmission__type.html#ab4453cee7ab10caf5368681a487b2f5a">mission_type::monster_species</a></div><div class="ttdeci">species_id monster_species</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00236">mission.h:236</a></div></div>
-<div class="ttc" id="astructmission__type_html_add16e1706870455525b43b7b5db808b6"><div class="ttname"><a href="structmission__type.html#add16e1706870455525b43b7b5db808b6">mission_type::monster_kill_goal</a></div><div class="ttdeci">int monster_kill_goal</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00237">mission.h:237</a></div></div>
-<div class="ttc" id="astructmission__type_html_ae844c64bf43cfddccb5867374061d9ee"><div class="ttname"><a href="structmission__type.html#ae844c64bf43cfddccb5867374061d9ee">mission_type::monster_type</a></div><div class="ttdeci">mtype_id monster_type</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00235">mission.h:235</a></div></div>
-<div class="ttc" id="astructmission__type_html_aecad4bb6a0341efbbefda4b3b35a307d"><div class="ttname"><a href="structmission__type.html#aecad4bb6a0341efbbefda4b3b35a307d">mission_type::deadline_low</a></div><div class="ttdeci">time_duration deadline_low</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00215">mission.h:215</a></div></div>
-<div class="ttc" id="astructmission__type_html_af2d82dc034f7ae7f58816413d9d37d14"><div class="ttname"><a href="structmission__type.html#af2d82dc034f7ae7f58816413d9d37d14">mission_type::value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00213">mission.h:213</a></div></div>
+<div class="ttc" id="astructmission__type_html_a0708976d834909f877ef0297617b9b7b"><div class="ttname"><a href="structmission__type.html#a0708976d834909f877ef0297617b9b7b">mission_type::follow_up</a></div><div class="ttdeci">mission_type_id follow_up</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00238">mission.h:238</a></div></div>
+<div class="ttc" id="astructmission__type_html_a1f8991ca76a52e7791405cf961dd9355"><div class="ttname"><a href="structmission__type.html#a1f8991ca76a52e7791405cf961dd9355">mission_type::item_count</a></div><div class="ttdeci">int item_count</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00231">mission.h:231</a></div></div>
+<div class="ttc" id="astructmission__type_html_a27821672d14c5593e9092eea030d9d9a"><div class="ttname"><a href="structmission__type.html#a27821672d14c5593e9092eea030d9d9a">mission_type::deadline_high</a></div><div class="ttdeci">time_duration deadline_high</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00215">mission.h:215</a></div></div>
+<div class="ttc" id="astructmission__type_html_a6bb5ea627b2a01749189b7ef74a0292c"><div class="ttname"><a href="structmission__type.html#a6bb5ea627b2a01749189b7ef74a0292c">mission_type::item_id</a></div><div class="ttdeci">itype_id item_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00226">mission.h:226</a></div></div>
+<div class="ttc" id="astructmission__type_html_ab4453cee7ab10caf5368681a487b2f5a"><div class="ttname"><a href="structmission__type.html#ab4453cee7ab10caf5368681a487b2f5a">mission_type::monster_species</a></div><div class="ttdeci">species_id monster_species</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00235">mission.h:235</a></div></div>
+<div class="ttc" id="astructmission__type_html_add16e1706870455525b43b7b5db808b6"><div class="ttname"><a href="structmission__type.html#add16e1706870455525b43b7b5db808b6">mission_type::monster_kill_goal</a></div><div class="ttdeci">int monster_kill_goal</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00236">mission.h:236</a></div></div>
+<div class="ttc" id="astructmission__type_html_ae844c64bf43cfddccb5867374061d9ee"><div class="ttname"><a href="structmission__type.html#ae844c64bf43cfddccb5867374061d9ee">mission_type::monster_type</a></div><div class="ttdeci">mtype_id monster_type</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00234">mission.h:234</a></div></div>
+<div class="ttc" id="astructmission__type_html_aecad4bb6a0341efbbefda4b3b35a307d"><div class="ttname"><a href="structmission__type.html#aecad4bb6a0341efbbefda4b3b35a307d">mission_type::deadline_low</a></div><div class="ttdeci">time_duration deadline_low</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00214">mission.h:214</a></div></div>
+<div class="ttc" id="astructmission__type_html_af2d82dc034f7ae7f58816413d9d37d14"><div class="ttname"><a href="structmission__type.html#af2d82dc034f7ae7f58816413d9d37d14">mission_type::value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00212">mission.h:212</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mission_8h_source.html#l00216">deadline_high</a>, <a class="el" href="mission_8h_source.html#l00215">deadline_low</a>, <a class="el" href="mission_8h_source.html#l00239">follow_up</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="mission_8h_source.html#l00232">item_count</a>, <a class="el" href="mission_8h_source.html#l00227">item_id</a>, <a class="el" href="mission_8h_source.html#l00237">monster_kill_goal</a>, <a class="el" href="mission_8h_source.html#l00236">monster_species</a>, <a class="el" href="mission_8h_source.html#l00235">monster_type</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, <a class="el" href="calendar_8cpp_source.html#l00033">calendar::start_of_cataclysm</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, and <a class="el" href="mission_8h_source.html#l00213">value</a>.</p>
+<p class="reference">References <a class="el" href="mission_8h_source.html#l00215">deadline_high</a>, <a class="el" href="mission_8h_source.html#l00214">deadline_low</a>, <a class="el" href="mission_8h_source.html#l00238">follow_up</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="mission_8h_source.html#l00231">item_count</a>, <a class="el" href="mission_8h_source.html#l00226">item_id</a>, <a class="el" href="mission_8h_source.html#l00236">monster_kill_goal</a>, <a class="el" href="mission_8h_source.html#l00235">monster_species</a>, <a class="el" href="mission_8h_source.html#l00234">monster_type</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, <a class="el" href="calendar_8cpp_source.html#l00033">calendar::start_of_cataclysm</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, and <a class="el" href="mission_8h_source.html#l00212">value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00064">mission::reserve_new()</a>.</p>
 
@@ -362,13 +362,13 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>{</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>().<a class="code hl_function" href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">load_deferred</a>( <a class="code hl_variable" href="missiondef_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a> );</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}</div>
-<div class="ttc" id="aclassDynamicDataLoader_html_adca1972b6d79ffd55d6d7ca1a0c329b9"><div class="ttname"><a href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a></div><div class="ttdeci">static DynamicDataLoader &amp; get_instance()</div><div class="ttdoc">Returns the single instance of this class.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00110">init.cpp:110</a></div></div>
-<div class="ttc" id="aclassDynamicDataLoader_html_adf725674a5fcd11a4e8a248e14717d27"><div class="ttname"><a href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">DynamicDataLoader::load_deferred</a></div><div class="ttdeci">void load_deferred(deferred_json &amp;data)</div><div class="ttdoc">Loads and then removes entries from.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00149">init.cpp:149</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_adca1972b6d79ffd55d6d7ca1a0c329b9"><div class="ttname"><a href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a></div><div class="ttdeci">static DynamicDataLoader &amp; get_instance()</div><div class="ttdoc">Returns the single instance of this class.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00111">init.cpp:111</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_adf725674a5fcd11a4e8a248e14717d27"><div class="ttname"><a href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">DynamicDataLoader::load_deferred</a></div><div class="ttdeci">void load_deferred(deferred_json &amp;data)</div><div class="ttdoc">Loads and then removes entries from.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00150">init.cpp:150</a></div></div>
 <div class="ttc" id="amissiondef_8cpp_html_a9c21005f31e0aa8c574e3a02f2d265db"><div class="ttname"><a href="missiondef_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a></div><div class="ttdeci">static DynamicDataLoader::deferred_json deferred</div><div class="ttdef"><b>Definition:</b> <a href="missiondef_8cpp_source.html#l00196">missiondef.cpp:196</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="missiondef_8cpp_source.html#l00196">deferred</a>, <a class="el" href="init_8cpp_source.html#l00110">DynamicDataLoader::get_instance()</a>, and <a class="el" href="init_8cpp_source.html#l00149">DynamicDataLoader::load_deferred()</a>.</p>
+<p class="reference">References <a class="el" href="missiondef_8cpp_source.html#l00196">deferred</a>, <a class="el" href="init_8cpp_source.html#l00111">DynamicDataLoader::get_instance()</a>, and <a class="el" href="init_8cpp_source.html#l00150">DynamicDataLoader::load_deferred()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00625">DynamicDataLoader::finalize_loaded_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00626">DynamicDataLoader::finalize_loaded_data()</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02829">mission::deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02828">mission::deserialize()</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="missiondef_8cpp.html#aad43f85646ba6048bceffac71de16d8d">mission_type_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l00491">debug_menu::character_edit_menu()</a>, <a class="el" href="missiondef_8cpp_source.html#l00346">check_consistency()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02829">mission::deserialize()</a>, <a class="el" href="missiondef_8cpp_source.html#l00463">get_random_id()</a>, and <a class="el" href="mission_8cpp_source.html#l00536">mission::get_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l00491">debug_menu::character_edit_menu()</a>, <a class="el" href="missiondef_8cpp_source.html#l00346">check_consistency()</a>, <a class="el" href="savegame__json_8cpp_source.html#l02828">mission::deserialize()</a>, <a class="el" href="missiondef_8cpp_source.html#l00463">get_random_id()</a>, and <a class="el" href="mission_8cpp_source.html#l00536">mission::get_type()</a>.</p>
 
 </div>
 </div>
@@ -752,7 +752,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <a class="code hl_variable" href="structmission__type.html#add16e1706870455525b43b7b5db808b6">monster_kill_goal</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;monster_kill_goal&quot;</span> );</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    }</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;destination&quot;</span>, <a class="code hl_variable" href="structmission__type.html#a87d9c8066408c027d5cfcc0221f729c1">target_id</a>, strict );</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;destination&quot;</span>, <a class="code hl_variable" href="structmission__type.html#a13b9307a54f1d2d5dedbf48be20f6467">target_id</a>, strict );</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;goal_condition&quot;</span> ) ) {</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <a class="code hl_function" href="condition_8cpp.html#a67daf3a8a816445e21adc8e3b548212e">read_condition&lt;mission_goal_condition_context&gt;</a>( jo, <span class="stringliteral">&quot;goal_condition&quot;</span>, <a class="code hl_variable" href="structmission__type.html#a56d67c4149d2b4e6865217e57ecbe59e">goal_condition</a>, <span class="keyword">true</span> );</div>
@@ -774,33 +774,33 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="acondition_8cpp_html_a67daf3a8a816445e21adc8e3b548212e"><div class="ttname"><a href="condition_8cpp.html#a67daf3a8a816445e21adc8e3b548212e">read_condition&lt; mission_goal_condition_context &gt;</a></div><div class="ttdeci">template void read_condition&lt; mission_goal_condition_context &gt;(const JsonObject &amp;jo, const std::string &amp;member_name, std::function&lt; bool(const mission_goal_condition_context &amp;)&gt; &amp;condition, bool default_val)</div></div>
 <div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00586">generic_factory.h:586</a></div></div>
 <div class="ttc" id="ageneric__factory_8h_html_a6bc35b9738f0a0a68ccc6b4cfc7918f1"><div class="ttname"><a href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a></div><div class="ttdeci">void optional(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00615">generic_factory.h:615</a></div></div>
-<div class="ttc" id="amission_8h_html_ae243cf9069d522378856d5c6ab930bec"><div class="ttname"><a href="mission_8h.html#ae243cf9069d522378856d5c6ab930bec">mission_origin</a></div><div class="ttdeci">mission_origin</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00043">mission.h:43</a></div></div>
+<div class="ttc" id="amission_8h_html_ae243cf9069d522378856d5c6ab930bec"><div class="ttname"><a href="mission_8h.html#ae243cf9069d522378856d5c6ab930bec">mission_origin</a></div><div class="ttdeci">mission_origin</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00042">mission.h:42</a></div></div>
 <div class="ttc" id="amissiondef_8cpp_html_a99e2a176cccf208eaa7e1756e09e9791"><div class="ttname"><a href="missiondef_8cpp.html#a99e2a176cccf208eaa7e1756e09e9791">assign_function</a></div><div class="ttdeci">void assign_function(const JsonObject &amp;jo, const std::string &amp;id, Fun &amp;target, const std::map&lt; std::string, Fun &gt; &amp;cont)</div><div class="ttdef"><b>Definition:</b> <a href="missiondef_8cpp_source.html#l00224">missiondef.cpp:224</a></div></div>
 <div class="ttc" id="amissiondef_8cpp_html_a9f4a40c59033080c2d5b009fb28fe04c"><div class="ttname"><a href="missiondef_8cpp.html#a9f4a40c59033080c2d5b009fb28fe04c">mission_function_map</a></div><div class="ttdeci">static const std::map&lt; std::string, std::function&lt; void(mission *)&gt; &gt; mission_function_map</div><div class="ttdef"><b>Definition:</b> <a href="missiondef_8cpp_source.html#l00101">missiondef.cpp:101</a></div></div>
 <div class="ttc" id="amissiondef_8cpp_html_afd55c006bd48513f28927df0705ec86d"><div class="ttname"><a href="missiondef_8cpp.html#afd55c006bd48513f28927df0705ec86d">tripoint_function_map</a></div><div class="ttdeci">static const std::map&lt; std::string, std::function&lt; bool(const tripoint_abs_omt &amp;)&gt; &gt; tripoint_function_map</div><div class="ttdef"><b>Definition:</b> <a href="missiondef_8cpp_source.html#l00136">missiondef.cpp:136</a></div></div>
 <div class="ttc" id="apickup_8cpp_html_a0e89b8759b1d9911fd4632c9739dfd33"><div class="ttname"><a href="pickup_8cpp.html#a0e89b8759b1d9911fd4632c9739dfd33">item_count</a></div><div class="ttdeci">std::pair&lt; item, int &gt; item_count</div><div class="ttdef"><b>Definition:</b> <a href="pickup_8cpp_source.html#l00063">pickup.cpp:63</a></div></div>
 <div class="ttc" id="astructdialogue_html"><div class="ttname"><a href="structdialogue.html">dialogue</a></div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00221">dialogue.h:221</a></div></div>
-<div class="ttc" id="astructmission__type_html_a01ad9f05dc11c6b54b126bfb3cbdc200"><div class="ttname"><a href="structmission__type.html#a01ad9f05dc11c6b54b126bfb3cbdc200">mission_type::place</a></div><div class="ttdeci">std::function&lt; bool(const tripoint_abs_omt &amp;)&gt; place</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00241">mission.h:241</a></div></div>
-<div class="ttc" id="astructmission__type_html_a277910cda8867815729454f16fcafd07"><div class="ttname"><a href="structmission__type.html#a277910cda8867815729454f16fcafd07">mission_type::start</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; start</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00242">mission.h:242</a></div></div>
-<div class="ttc" id="astructmission__type_html_a2fbfd2f5d936380509d30dc4f8c73a8b"><div class="ttname"><a href="structmission__type.html#a2fbfd2f5d936380509d30dc4f8c73a8b">mission_type::fail</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; fail</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00244">mission.h:244</a></div></div>
-<div class="ttc" id="astructmission__type_html_a4b52ff904b2c3471a9edd65a49476d70"><div class="ttname"><a href="structmission__type.html#a4b52ff904b2c3471a9edd65a49476d70">mission_type::name</a></div><div class="ttdeci">translation name</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00205">mission.h:205</a></div></div>
-<div class="ttc" id="astructmission__type_html_a4fe9a33e7a4f3e7ad3e6e1339e3a8893"><div class="ttname"><a href="structmission__type.html#a4fe9a33e7a4f3e7ad3e6e1339e3a8893">mission_type::end</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; end</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00243">mission.h:243</a></div></div>
-<div class="ttc" id="astructmission__type_html_a54bb126ee82831a3d3496157a5f0bee5"><div class="ttname"><a href="structmission__type.html#a54bb126ee82831a3d3496157a5f0bee5">mission_type::empty_container</a></div><div class="ttdeci">itype_id empty_container</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00231">mission.h:231</a></div></div>
-<div class="ttc" id="astructmission__type_html_a56d67c4149d2b4e6865217e57ecbe59e"><div class="ttname"><a href="structmission__type.html#a56d67c4149d2b4e6865217e57ecbe59e">mission_type::goal_condition</a></div><div class="ttdeci">std::function&lt; bool(const mission_goal_condition_context &amp;)&gt; goal_condition</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00249">mission.h:249</a></div></div>
-<div class="ttc" id="astructmission__type_html_a7b084c7545741e7905e0ffd9c4d978ab"><div class="ttname"><a href="structmission__type.html#a7b084c7545741e7905e0ffd9c4d978ab">mission_type::origins</a></div><div class="ttdeci">std::vector&lt; mission_origin &gt; origins</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00226">mission.h:226</a></div></div>
-<div class="ttc" id="astructmission__type_html_a835c60bb87e09e80a343a6bf7a6fbc1d"><div class="ttname"><a href="structmission__type.html#a835c60bb87e09e80a343a6bf7a6fbc1d">mission_type::description</a></div><div class="ttdeci">translation description</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00207">mission.h:207</a></div></div>
-<div class="ttc" id="astructmission__type_html_a87d9c8066408c027d5cfcc0221f729c1"><div class="ttname"><a href="structmission__type.html#a87d9c8066408c027d5cfcc0221f729c1">mission_type::target_id</a></div><div class="ttdeci">string_id&lt; oter_type_t &gt; target_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00238">mission.h:238</a></div></div>
-<div class="ttc" id="astructmission__type_html_a8872c9cf3e3a3dd838448f3cd91ce4d8"><div class="ttname"><a href="structmission__type.html#a8872c9cf3e3a3dd838448f3cd91ce4d8">mission_type::goal</a></div><div class="ttdeci">mission_goal goal</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00209">mission.h:209</a></div></div>
-<div class="ttc" id="astructmission__type_html_a938be92bf77efbfa45d9c569d62e5842"><div class="ttname"><a href="structmission__type.html#a938be92bf77efbfa45d9c569d62e5842">mission_type::urgent</a></div><div class="ttdeci">bool urgent</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00218">mission.h:218</a></div></div>
-<div class="ttc" id="astructmission__type_html_a99ca0a0d55a99d31901e45826ce728fb"><div class="ttname"><a href="structmission__type.html#a99ca0a0d55a99d31901e45826ce728fb">mission_type::group_id</a></div><div class="ttdeci">item_group_id group_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00228">mission.h:228</a></div></div>
-<div class="ttc" id="astructmission__type_html_aad8d170d27380b816d3b4364617fe1fc"><div class="ttname"><a href="structmission__type.html#aad8d170d27380b816d3b4364617fe1fc">mission_type::container_id</a></div><div class="ttdeci">itype_id container_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00229">mission.h:229</a></div></div>
-<div class="ttc" id="astructmission__type_html_aafa827ff46a60f0383bd148fe6fb1ac6"><div class="ttname"><a href="structmission__type.html#aafa827ff46a60f0383bd148fe6fb1ac6">mission_type::remove_container</a></div><div class="ttdeci">bool remove_container</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00230">mission.h:230</a></div></div>
+<div class="ttc" id="astructmission__type_html_a01ad9f05dc11c6b54b126bfb3cbdc200"><div class="ttname"><a href="structmission__type.html#a01ad9f05dc11c6b54b126bfb3cbdc200">mission_type::place</a></div><div class="ttdeci">std::function&lt; bool(const tripoint_abs_omt &amp;)&gt; place</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00240">mission.h:240</a></div></div>
+<div class="ttc" id="astructmission__type_html_a13b9307a54f1d2d5dedbf48be20f6467"><div class="ttname"><a href="structmission__type.html#a13b9307a54f1d2d5dedbf48be20f6467">mission_type::target_id</a></div><div class="ttdeci">oter_type_str_id target_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00237">mission.h:237</a></div></div>
+<div class="ttc" id="astructmission__type_html_a277910cda8867815729454f16fcafd07"><div class="ttname"><a href="structmission__type.html#a277910cda8867815729454f16fcafd07">mission_type::start</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; start</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00241">mission.h:241</a></div></div>
+<div class="ttc" id="astructmission__type_html_a2fbfd2f5d936380509d30dc4f8c73a8b"><div class="ttname"><a href="structmission__type.html#a2fbfd2f5d936380509d30dc4f8c73a8b">mission_type::fail</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; fail</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00243">mission.h:243</a></div></div>
+<div class="ttc" id="astructmission__type_html_a4b52ff904b2c3471a9edd65a49476d70"><div class="ttname"><a href="structmission__type.html#a4b52ff904b2c3471a9edd65a49476d70">mission_type::name</a></div><div class="ttdeci">translation name</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00204">mission.h:204</a></div></div>
+<div class="ttc" id="astructmission__type_html_a4fe9a33e7a4f3e7ad3e6e1339e3a8893"><div class="ttname"><a href="structmission__type.html#a4fe9a33e7a4f3e7ad3e6e1339e3a8893">mission_type::end</a></div><div class="ttdeci">std::function&lt; void(mission *)&gt; end</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00242">mission.h:242</a></div></div>
+<div class="ttc" id="astructmission__type_html_a54bb126ee82831a3d3496157a5f0bee5"><div class="ttname"><a href="structmission__type.html#a54bb126ee82831a3d3496157a5f0bee5">mission_type::empty_container</a></div><div class="ttdeci">itype_id empty_container</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00230">mission.h:230</a></div></div>
+<div class="ttc" id="astructmission__type_html_a56d67c4149d2b4e6865217e57ecbe59e"><div class="ttname"><a href="structmission__type.html#a56d67c4149d2b4e6865217e57ecbe59e">mission_type::goal_condition</a></div><div class="ttdeci">std::function&lt; bool(const mission_goal_condition_context &amp;)&gt; goal_condition</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00248">mission.h:248</a></div></div>
+<div class="ttc" id="astructmission__type_html_a7b084c7545741e7905e0ffd9c4d978ab"><div class="ttname"><a href="structmission__type.html#a7b084c7545741e7905e0ffd9c4d978ab">mission_type::origins</a></div><div class="ttdeci">std::vector&lt; mission_origin &gt; origins</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00225">mission.h:225</a></div></div>
+<div class="ttc" id="astructmission__type_html_a835c60bb87e09e80a343a6bf7a6fbc1d"><div class="ttname"><a href="structmission__type.html#a835c60bb87e09e80a343a6bf7a6fbc1d">mission_type::description</a></div><div class="ttdeci">translation description</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00206">mission.h:206</a></div></div>
+<div class="ttc" id="astructmission__type_html_a8872c9cf3e3a3dd838448f3cd91ce4d8"><div class="ttname"><a href="structmission__type.html#a8872c9cf3e3a3dd838448f3cd91ce4d8">mission_type::goal</a></div><div class="ttdeci">mission_goal goal</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00208">mission.h:208</a></div></div>
+<div class="ttc" id="astructmission__type_html_a938be92bf77efbfa45d9c569d62e5842"><div class="ttname"><a href="structmission__type.html#a938be92bf77efbfa45d9c569d62e5842">mission_type::urgent</a></div><div class="ttdeci">bool urgent</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00217">mission.h:217</a></div></div>
+<div class="ttc" id="astructmission__type_html_a99ca0a0d55a99d31901e45826ce728fb"><div class="ttname"><a href="structmission__type.html#a99ca0a0d55a99d31901e45826ce728fb">mission_type::group_id</a></div><div class="ttdeci">item_group_id group_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00227">mission.h:227</a></div></div>
+<div class="ttc" id="astructmission__type_html_aad8d170d27380b816d3b4364617fe1fc"><div class="ttname"><a href="structmission__type.html#aad8d170d27380b816d3b4364617fe1fc">mission_type::container_id</a></div><div class="ttdeci">itype_id container_id</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00228">mission.h:228</a></div></div>
+<div class="ttc" id="astructmission__type_html_aafa827ff46a60f0383bd148fe6fb1ac6"><div class="ttname"><a href="structmission__type.html#aafa827ff46a60f0383bd148fe6fb1ac6">mission_type::remove_container</a></div><div class="ttdeci">bool remove_container</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00229">mission.h:229</a></div></div>
 <div class="ttc" id="astructmission__type_html_ac94fb1791baf42425a18826656c9bb43"><div class="ttname"><a href="structmission__type.html#ac94fb1791baf42425a18826656c9bb43">mission_type::parse_funcs</a></div><div class="ttdeci">bool parse_funcs(const JsonObject &amp;jo, std::function&lt; void(mission *)&gt; &amp;phase_func)</div><div class="ttdef"><b>Definition:</b> <a href="mission__util_8cpp_source.html#l00506">mission_util.cpp:506</a></div></div>
-<div class="ttc" id="astructmission__type_html_add01063ff7cdd01abe27323c25facf8b"><div class="ttname"><a href="structmission__type.html#add01063ff7cdd01abe27323c25facf8b">mission_type::difficulty</a></div><div class="ttdeci">int difficulty</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00211">mission.h:211</a></div></div>
-<div class="ttc" id="astructmission__type_html_aec7ba08c3e7befbc16729ea3a2e96b90"><div class="ttname"><a href="structmission__type.html#aec7ba08c3e7befbc16729ea3a2e96b90">mission_type::has_generic_rewards</a></div><div class="ttdeci">bool has_generic_rewards</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00220">mission.h:220</a></div></div>
-<div class="ttc" id="astructmission__type_html_aeed2e8d8b2b7e51c83e3d05481d71ace"><div class="ttname"><a href="structmission__type.html#aeed2e8d8b2b7e51c83e3d05481d71ace">mission_type::was_loaded</a></div><div class="ttdeci">bool was_loaded</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00202">mission.h:202</a></div></div>
+<div class="ttc" id="astructmission__type_html_add01063ff7cdd01abe27323c25facf8b"><div class="ttname"><a href="structmission__type.html#add01063ff7cdd01abe27323c25facf8b">mission_type::difficulty</a></div><div class="ttdeci">int difficulty</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00210">mission.h:210</a></div></div>
+<div class="ttc" id="astructmission__type_html_aec7ba08c3e7befbc16729ea3a2e96b90"><div class="ttname"><a href="structmission__type.html#aec7ba08c3e7befbc16729ea3a2e96b90">mission_type::has_generic_rewards</a></div><div class="ttdeci">bool has_generic_rewards</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00219">mission.h:219</a></div></div>
+<div class="ttc" id="astructmission__type_html_aeed2e8d8b2b7e51c83e3d05481d71ace"><div class="ttname"><a href="structmission__type.html#aeed2e8d8b2b7e51c83e3d05481d71ace">mission_type::was_loaded</a></div><div class="ttdeci">bool was_loaded</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00201">mission.h:201</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="missiondef_8cpp_source.html#l00224">assign_function()</a>, <a class="el" href="mission_8h_source.html#l00229">container_id</a>, <a class="el" href="mission_8h_source.html#l00216">deadline_high</a>, <a class="el" href="mission_8h_source.html#l00215">deadline_low</a>, <a class="el" href="missiondef_8cpp_source.html#l00196">deferred</a>, <a class="el" href="mission_8h_source.html#l00207">description</a>, <a class="el" href="mission_8h_source.html#l00211">difficulty</a>, <a class="el" href="mission_8h_source.html#l00231">empty_container</a>, <a class="el" href="mission_8h_source.html#l00243">end</a>, <a class="el" href="mission_8h_source.html#l00244">fail</a>, <a class="el" href="mission_8h_source.html#l00239">follow_up</a>, <a class="el" href="json_8h_source.html#l00895">JsonObject::get_enum_value()</a>, <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00249">JsonObject::get_source_location()</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8h_source.html#l01329">JsonObject::get_tags()</a>, <a class="el" href="mission_8h_source.html#l00209">goal</a>, <a class="el" href="mission_8h_source.html#l00249">goal_condition</a>, <a class="el" href="mission_8h_source.html#l00228">group_id</a>, <a class="el" href="mission_8h_source.html#l00220">has_generic_rewards</a>, <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="mission_8h_source.html#l00227">item_id</a>, <a class="el" href="generic__factory_8h_source.html#l00586">mandatory()</a>, <a class="el" href="missiondef_8cpp_source.html#l00101">mission_function_map</a>, <a class="el" href="mission_8h_source.html#l00237">monster_kill_goal</a>, <a class="el" href="mission_8h_source.html#l00236">monster_species</a>, <a class="el" href="mission_8h_source.html#l00235">monster_type</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4aabdee90f7518eedc26e713014acfcaca">mtype_id</a>, <a class="el" href="mission_8h_source.html#l00205">name</a>, <a class="el" href="generic__factory_8h_source.html#l00615">optional()</a>, <a class="el" href="mission_8h_source.html#l00226">origins</a>, <a class="el" href="mission__util_8cpp_source.html#l00506">parse_funcs()</a>, <a class="el" href="mission_8h_source.html#l00241">place</a>, <a class="el" href="condition_8cpp.html#a67daf3a8a816445e21adc8e3b548212e">read_condition&lt; mission_goal_condition_context &gt;()</a>, <a class="el" href="mission_8h_source.html#l00230">remove_container</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a1699a6e9678efc657f1d46d5f1ebae14">species_id</a>, <a class="el" href="mission_8h_source.html#l00242">start</a>, <a class="el" href="mission_8h_source.html#l00238">target_id</a>, <a class="el" href="missiondef_8cpp_source.html#l00136">tripoint_function_map</a>, <a class="el" href="mission_8h_source.html#l00218">urgent</a>, <a class="el" href="mission_8h_source.html#l00213">value</a>, and <a class="el" href="mission_8h_source.html#l00202">was_loaded</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="missiondef_8cpp_source.html#l00224">assign_function()</a>, <a class="el" href="mission_8h_source.html#l00228">container_id</a>, <a class="el" href="mission_8h_source.html#l00215">deadline_high</a>, <a class="el" href="mission_8h_source.html#l00214">deadline_low</a>, <a class="el" href="missiondef_8cpp_source.html#l00196">deferred</a>, <a class="el" href="mission_8h_source.html#l00206">description</a>, <a class="el" href="mission_8h_source.html#l00210">difficulty</a>, <a class="el" href="mission_8h_source.html#l00230">empty_container</a>, <a class="el" href="mission_8h_source.html#l00242">end</a>, <a class="el" href="mission_8h_source.html#l00243">fail</a>, <a class="el" href="mission_8h_source.html#l00238">follow_up</a>, <a class="el" href="json_8h_source.html#l00895">JsonObject::get_enum_value()</a>, <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00249">JsonObject::get_source_location()</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8h_source.html#l01329">JsonObject::get_tags()</a>, <a class="el" href="mission_8h_source.html#l00208">goal</a>, <a class="el" href="mission_8h_source.html#l00248">goal_condition</a>, <a class="el" href="mission_8h_source.html#l00227">group_id</a>, <a class="el" href="mission_8h_source.html#l00219">has_generic_rewards</a>, <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="mission_8h_source.html#l00226">item_id</a>, <a class="el" href="generic__factory_8h_source.html#l00586">mandatory()</a>, <a class="el" href="missiondef_8cpp_source.html#l00101">mission_function_map</a>, <a class="el" href="mission_8h_source.html#l00236">monster_kill_goal</a>, <a class="el" href="mission_8h_source.html#l00235">monster_species</a>, <a class="el" href="mission_8h_source.html#l00234">monster_type</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4aabdee90f7518eedc26e713014acfcaca">mtype_id</a>, <a class="el" href="mission_8h_source.html#l00204">name</a>, <a class="el" href="generic__factory_8h_source.html#l00615">optional()</a>, <a class="el" href="mission_8h_source.html#l00225">origins</a>, <a class="el" href="mission__util_8cpp_source.html#l00506">parse_funcs()</a>, <a class="el" href="mission_8h_source.html#l00240">place</a>, <a class="el" href="condition_8cpp.html#a67daf3a8a816445e21adc8e3b548212e">read_condition&lt; mission_goal_condition_context &gt;()</a>, <a class="el" href="mission_8h_source.html#l00229">remove_container</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a1699a6e9678efc657f1d46d5f1ebae14">species_id</a>, <a class="el" href="mission_8h_source.html#l00241">start</a>, <a class="el" href="mission_8h_source.html#l00237">target_id</a>, <a class="el" href="missiondef_8cpp_source.html#l00136">tripoint_function_map</a>, <a class="el" href="mission_8h_source.html#l00217">urgent</a>, <a class="el" href="mission_8h_source.html#l00212">value</a>, and <a class="el" href="mission_8h_source.html#l00201">was_loaded</a>.</p>
 
 </div>
 </div>
@@ -845,7 +845,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="missiondef_8cpp.html#aad43f85646ba6048bceffac71de16d8d">mission_type_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00232">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00233">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -917,13 +917,13 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="anamespacemission__util_html_a7c1dc5479a7502980f56103b4e865a8c"><div class="ttname"><a href="namespacemission__util.html#a7c1dc5479a7502980f56103b4e865a8c">mission_util::load_funcs</a></div><div class="ttdeci">bool load_funcs(const JsonObject &amp;jo, std::vector&lt; std::function&lt; void(mission *miss)&gt; &gt; &amp;funcs)</div><div class="ttdef"><b>Definition:</b> <a href="mission__util_8cpp_source.html#l00477">mission_util.cpp:477</a></div></div>
 <div class="ttc" id="astructdialogue_html_a2edd4e78d06b37dafd34284a48b82720"><div class="ttname"><a href="structdialogue.html#a2edd4e78d06b37dafd34284a48b82720">dialogue::beta</a></div><div class="ttdeci">npc * beta</div><div class="ttdoc">The NPC we talk to.</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00231">dialogue.h:231</a></div></div>
 <div class="ttc" id="astructdialogue_html_a42afe2cf929fea970dc6b74a8bec4bd7"><div class="ttname"><a href="structdialogue.html#a42afe2cf929fea970dc6b74a8bec4bd7">dialogue::alpha</a></div><div class="ttdeci">player * alpha</div><div class="ttdoc">The player character that speaks (always g-&gt;u).</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00226">dialogue.h:226</a></div></div>
-<div class="ttc" id="astructmission__type_html_ae1ba39d9d5eebf6142ad30488fcad8b6"><div class="ttname"><a href="structmission__type.html#ae1ba39d9d5eebf6142ad30488fcad8b6">mission_type::likely_rewards</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, itype_id &gt; &gt; likely_rewards</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00223">mission.h:223</a></div></div>
+<div class="ttc" id="astructmission__type_html_ae1ba39d9d5eebf6142ad30488fcad8b6"><div class="ttname"><a href="structmission__type.html#ae1ba39d9d5eebf6142ad30488fcad8b6">mission_type::likely_rewards</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, itype_id &gt; &gt; likely_rewards</div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00222">mission.h:222</a></div></div>
 <div class="ttc" id="astructtalk__effect__fun__t_html"><div class="ttname"><a href="structtalk__effect__fun__t.html">talk_effect_fun_t</a></div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00083">dialogue.h:83</a></div></div>
 <div class="ttc" id="astructtalk__effect__t_html"><div class="ttname"><a href="structtalk__effect__t.html">talk_effect_t</a></div><div class="ttdoc">Defines what happens when the trial succeeds or fails.</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00141">dialogue.h:141</a></div></div>
 <div class="ttc" id="astructtalk__effect__t_html_a7ac62b054d52cb82e60c9c41ff3f3835"><div class="ttname"><a href="structtalk__effect__t.html#a7ac62b054d52cb82e60c9c41ff3f3835">talk_effect_t::load_effect</a></div><div class="ttdeci">void load_effect(const JsonObject &amp;jo)</div><div class="ttdef"><b>Definition:</b> <a href="npctalk_8cpp_source.html#l02766">npctalk.cpp:2766</a></div></div>
 <div class="ttc" id="astructtalk__effect__t_html_aa36913602deb4bfc90dd451afb6032ea"><div class="ttname"><a href="structtalk__effect__t.html#aa36913602deb4bfc90dd451afb6032ea">talk_effect_t::effects</a></div><div class="ttdeci">std::vector&lt; talk_effect_fun_t &gt; effects</div><div class="ttdoc">Functions that are called when the response is chosen.</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00181">dialogue.h:181</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00226">dialogue::alpha</a>, <a class="el" href="dialogue_8h_source.html#l00231">dialogue::beta</a>, <a class="el" href="dialogue_8h_source.html#l00181">talk_effect_t::effects</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="mission_8cpp_source.html#l00594">mission::get_npc_id()</a>, <a class="el" href="mission_8h_source.html#l00223">likely_rewards</a>, <a class="el" href="npctalk_8cpp_source.html#l02766">talk_effect_t::load_effect()</a>, and <a class="el" href="mission__util_8cpp_source.html#l00477">mission_util::load_funcs()</a>.</p>
+<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00226">dialogue::alpha</a>, <a class="el" href="dialogue_8h_source.html#l00231">dialogue::beta</a>, <a class="el" href="dialogue_8h_source.html#l00181">talk_effect_t::effects</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="mission_8cpp_source.html#l00594">mission::get_npc_id()</a>, <a class="el" href="mission_8h_source.html#l00222">likely_rewards</a>, <a class="el" href="npctalk_8cpp_source.html#l02766">talk_effect_t::load_effect()</a>, and <a class="el" href="mission__util_8cpp_source.html#l00477">mission_util::load_funcs()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -960,7 +960,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="missiondef_8cpp_source.html#l00196">deferred</a>, and <a class="el" href="missiondef_8cpp.html#aad43f85646ba6048bceffac71de16d8d">mission_type_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00522">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00523">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -988,7 +988,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mission_8h_source.html#l00249">goal_condition</a>.</p>
+<p class="reference">References <a class="el" href="mission_8h_source.html#l00248">goal_condition</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>.</p>
 
@@ -1017,7 +1017,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="aclasstranslation_html_a30b5b9d586c786942c2321701a53e572"><div class="ttname"><a href="classtranslation.html#a30b5b9d586c786942c2321701a53e572">translation::translated</a></div><div class="ttdeci">std::string translated(int num=1) const</div><div class="ttdoc">Returns raw string if no translation is needed, otherwise returns the translated string.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00309">translations.cpp:309</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mission_8h_source.html#l00205">name</a>, and <a class="el" href="translations_8cpp_source.html#l00309">translation::translated()</a>.</p>
+<p class="reference">References <a class="el" href="mission_8h_source.html#l00204">name</a>, and <a class="el" href="translations_8cpp_source.html#l00309">translation::translated()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l01234">dialogue::gen_responses()</a>, and <a class="el" href="mission_8cpp_source.html#l00639">mission::name()</a>.</p>
 
@@ -1036,7 +1036,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00229">229</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00228">228</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1054,7 +1054,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00216">216</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00215">215</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00210">mission::assign()</a>, <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1072,7 +1072,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00215">215</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00214">214</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00210">mission::assign()</a>, <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1090,7 +1090,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00207">207</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00206">206</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00521">mission::get_description()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1108,7 +1108,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00246">246</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00245">245</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00655">mission::dialogue_for_topic()</a>.</p>
 
@@ -1126,7 +1126,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00211">211</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00210">210</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1144,7 +1144,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00231">231</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00230">230</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1162,7 +1162,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00243">243</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00242">242</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1180,7 +1180,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00244">244</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00243">243</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00240">mission::fail()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1198,7 +1198,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00239">239</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00238">238</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1216,7 +1216,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00209">209</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00208">208</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00210">mission::assign()</a>, <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, <a class="el" href="mission_8cpp_source.html#l00132">mission::on_creature_death()</a>, <a class="el" href="mission_8cpp_source.html#l00185">mission::on_talk_with_npc()</a>, <a class="el" href="condition_8cpp_source.html#l00602">conditional_t&lt; T &gt;::set_mission_goal()</a>, <a class="el" href="mission_8cpp_source.html#l00260">mission::step_complete()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1234,7 +1234,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00249">249</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00248">248</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00333">test_goal_condition()</a>.</p>
 
@@ -1252,7 +1252,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00228">228</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00227">227</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1270,7 +1270,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00220">220</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00219">219</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00604">mission::has_generic_rewards()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1288,7 +1288,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00201">201</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00200">200</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01105">debug_menu::mission_debug::describe()</a>, <a class="el" href="mission_8cpp_source.html#l00655">mission::dialogue_for_topic()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01137">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01165">debug_menu::mission_debug::edit_player()</a>, and <a class="el" href="mission_8cpp_source.html#l00647">mission::mission_id()</a>.</p>
 
@@ -1306,7 +1306,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00232">232</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00231">231</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1324,7 +1324,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00227">227</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00226">226</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1342,7 +1342,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00223">223</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00222">222</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00599">mission::get_likely_rewards()</a>, and <a class="el" href="mission__util_8cpp_source.html#l00506">parse_funcs()</a>.</p>
 
@@ -1360,7 +1360,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00237">237</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00236">236</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1378,7 +1378,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00236">236</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00235">235</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1396,7 +1396,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00235">235</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00234">234</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1422,7 +1422,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00205">205</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00204">204</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00057">tname()</a>.</p>
 
@@ -1440,7 +1440,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00226">226</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00225">225</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1458,7 +1458,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00241">241</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00240">240</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1476,7 +1476,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00233">233</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00232">232</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 </div>
 </div>
@@ -1492,7 +1492,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00230">230</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00229">229</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>, and <a class="el" href="mission_8cpp_source.html#l00280">mission::wrap_up()</a>.</p>
 
@@ -1510,25 +1510,25 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00242">242</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00241">241</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00210">mission::assign()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
 </div>
 </div>
-<a id="a87d9c8066408c027d5cfcc0221f729c1" name="a87d9c8066408c027d5cfcc0221f729c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87d9c8066408c027d5cfcc0221f729c1">&#9670;&nbsp;</a></span>target_id</h2>
+<a id="a13b9307a54f1d2d5dedbf48be20f6467" name="a13b9307a54f1d2d5dedbf48be20f6467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b9307a54f1d2d5dedbf48be20f6467">&#9670;&nbsp;</a></span>target_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstring__id.html">string_id</a>&lt;<a class="el" href="structoter__type__t.html">oter_type_t</a>&gt; mission_type::target_id</td>
+          <td class="memname"><a class="el" href="type__id_8h.html#a23955259c9ef5338ff50d43255f19cd9">oter_type_str_id</a> mission_type::target_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00238">238</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00237">237</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00344">mission::is_complete()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1546,7 +1546,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00234">234</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00233">233</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1562,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00218">218</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00217">217</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1580,7 +1580,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00213">213</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00212">212</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mission_8cpp_source.html#l00034">create()</a>, and <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1598,7 +1598,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00202">202</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mission_8h_source.html#l00201">201</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="missiondef_8cpp_source.html#l00237">load()</a>.</p>
 
@@ -1616,7 +1616,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structmission__type.html">mission_type</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:45 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

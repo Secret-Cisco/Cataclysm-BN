@@ -8,9 +8,6 @@ var overmap_8h =
     [ "om_vehicle", "structom__vehicle.html", "structom__vehicle" ],
     [ "radio_tower", "structradio__tower.html", "structradio__tower" ],
     [ "map_layer", "structmap__layer.html", "structmap__layer" ],
-    [ "om_special_sectors", "structom__special__sectors.html", "structom__special__sectors" ],
-    [ "overmap_special_placement", "structovermap__special__placement.html", "structovermap__special__placement" ],
-    [ "overmap_special_batch", "classovermap__special__batch.html", "classovermap__special__batch" ],
     [ "overmap", "classovermap.html", "classovermap" ],
     [ "CATA_SRC_OVERMAP_H", "overmap_8h.html#a06554c7629c0f98f86d6dc07b3720824", null ],
     [ "lab_type", "overmap_8h.html#a9fc8376b48f8cce3e3138d4a0019512d", [
@@ -24,7 +21,6 @@ var overmap_8h =
       [ "WEATHER_RADIO", "overmap_8h.html#a70d86ad55f59766b1ec9c303f6133ca6ae9bf89949c50540e0c72274a5520f5cc", null ]
     ] ],
     [ "enum_to_string< lab_type >", "overmap_8h.html#ac293a4de69bb907a477d435a0d0eb8e3", null ],
-    [ "get_sectors", "overmap_8h.html#a15fe961a6e28451056506e21e07a1a7a", null ],
     [ "is_ot_match", "overmap_8h.html#a03e6bd608fa639e549bff00791e5d701", null ],
     [ "is_river", "overmap_8h.html#a8649724292a78ee43164a3ecfe5aa0e7", null ],
     [ "is_river_or_lake", "overmap_8h.html#ab88142b643146aa55abd0b0f7d6ddfbb", null ],

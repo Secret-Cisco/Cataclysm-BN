@@ -1,5 +1,15 @@
 var NAVTREEINDEX145 =
 {
+"structislot__gun.html#ae9b01aff71774cf78fe209d439258c0a":[36,0,436,19],
+"structislot__gun.html#af061d17935624ae9c2404fa6050dd658":[36,0,436,15],
+"structislot__gunmod.html":[36,0,437],
+"structislot__gunmod.html#a072bb97399a7ce73226d77671408d0fb":[36,0,437,3],
+"structislot__gunmod.html#a20f62eb4d6e250814ad0e51249ce9a86":[36,0,437,8],
+"structislot__gunmod.html#a21ed51df149d7a2618aa789e91a6469a":[36,0,437,12],
+"structislot__gunmod.html#a26912068d3e61f67c23ed9fa4a59b18a":[36,0,437,16],
+"structislot__gunmod.html#a2c64a6cd256743ea8dc6df58e3c4f1fa":[36,0,437,14],
+"structislot__gunmod.html#a68bd7a7bad991d610455edfea54d27f1":[36,0,437,9],
+"structislot__gunmod.html#a68e25ba70cbdc4cd7b5dcc674af50d4a":[36,0,437,13],
 "structislot__gunmod.html#a7c89f77c624e7b37f5ccb1856ec62de1":[36,0,437,5],
 "structislot__gunmod.html#a7d484bba5d9bb2fe12574795ae457e96":[36,0,437,4],
 "structislot__gunmod.html#aa0768daa468887578a7a75bfe33e76c4":[36,0,437,2],
@@ -92,8 +102,8 @@ var NAVTREEINDEX145 =
 "structitem__info__data.html#adafcbaae8c911bf3d4fd7fff306a49a4":[36,0,456,16],
 "structitem__info__data.html#ae21c7618dbb6387bdc604ad7cf552dc9":[36,0,456,9],
 "structitem__info__data.html#aebc34b872c27347457cc489fc5d4c15f":[36,0,456,20],
-"structitem__internal_1_1scoped__goes__bad__cache.html":[36,0,24,0],
 "structitem__internal_1_1scoped__goes__bad__cache.html":[35,0,103,0],
+"structitem__internal_1_1scoped__goes__bad__cache.html":[36,0,24,0],
 "structitem__internal_1_1scoped__goes__bad__cache.html#a9c04c10d3077efbb0ad9f9cf3240fc26":[36,0,24,0,1],
 "structitem__internal_1_1scoped__goes__bad__cache.html#a9c04c10d3077efbb0ad9f9cf3240fc26":[35,0,103,0,1],
 "structitem__internal_1_1scoped__goes__bad__cache.html#aa1469bdfabcf1a484d40c1a7c96fcd98":[35,0,103,0,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX145 =
 "structjmapgen__int.html#a3eeed3ec5ac1d68b60c5dd678102187a":[36,0,479,1],
 "structjmapgen__int.html#a419ab06da234974d3cd29fdb9cc3589e":[36,0,479,6],
 "structjmapgen__int.html#a7d2f43f8f1c0fa5f9409f8562f5e579e":[36,0,479,2],
-"structjmapgen__int.html#ab5d661168459112504623684d209a3e2":[36,0,479,4],
-"structjmapgen__int.html#ade405a1b7d223b55b8713e4277040a91":[36,0,479,0],
-"structjmapgen__int.html#af46ca2297a74d2a89244702ca1c6fa04":[36,0,479,7],
-"structjmapgen__int.html#af91db998b4c873453177d97ad575d138":[36,0,479,5],
-"structjmapgen__int.html#afda6a32f9db6b0190e0ddf927c1b0839":[36,0,479,3],
-"structjmapgen__objects.html":[36,0,488],
-"structjmapgen__objects.html#a0d2247b936d9d6ad95db00845d7f82d3":[36,0,488,7],
-"structjmapgen__objects.html#a1d888afd71c7da7fde36d5ec8f31bccc":[36,0,488,2],
-"structjmapgen__objects.html#a30e7225bf025354f39f981b93b797f0f":[36,0,488,11],
-"structjmapgen__objects.html#a34299f1b045ec198d9dab61602fac6bf":[36,0,488,5],
-"structjmapgen__objects.html#a41c55acb74b0b002b642ba0f25c76984":[36,0,488,6]
+"structjmapgen__int.html#ab5d661168459112504623684d209a3e2":[36,0,479,4]
 };

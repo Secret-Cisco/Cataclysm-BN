@@ -68,7 +68,7 @@ var searchData=
   ['elec_5fresist_65',['elec_resist',['../classmaterial__type.html#a17a01bc7b3e52ffa715e73eb571024c7',1,'material_type']]],
   ['electric_5fgrid_5fat_66',['electric_grid_at',['../classovermapbuffer.html#aeb4d2e3e01e0041f8823c32630fe13c9',1,'overmapbuffer']]],
   ['electric_5fgrid_5fconnectivity_5fat_67',['electric_grid_connectivity_at',['../classovermapbuffer.html#a361e71e202336d6fd226be910ec6c6df',1,'overmapbuffer']]],
-  ['elevate_5fbridges_68',['elevate_bridges',['../overmap_8cpp.html#a4a593a5ed27a71543b0c7a15e1876ff2',1,'overmap.cpp']]],
+  ['elevate_5fbridges_68',['elevate_bridges',['../overmap_8cpp.html#a4ed05175aca230b5737505cb0eb61712',1,'overmap.cpp']]],
   ['elevator_69',['elevator',['../namespaceiexamine.html#ab4fee7395ae362ec1cdc5cc9c9fa5911',1,'iexamine']]],
   ['emergency_70',['emergency',['../classnpc.html#ab4e804558179db825c0085bafc9aa757',1,'npc::emergency(float danger) const'],['../classnpc.html#a86a36265d6d5b5c34e93087c963a2376',1,'npc::emergency() const']]],
   ['emergency_5frecall_71',['emergency_recall',['../classbasecamp.html#a8d006d7103ae144b81d9f68f24e7cea1',1,'basecamp']]],

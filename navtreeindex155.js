@@ -1,5 +1,15 @@
 var NAVTREEINDEX155 =
 {
+"structtemperature__effect.html#a634f4b33b99a2c99f8f3762724637552":[36,0,878,3],
+"structtemperature__effect.html#a64d9a087662accd814ad74e05af687f7":[36,0,878,8],
+"structtemperature__effect.html#a79157d2502ff0de59539fccd43df11f1":[36,0,878,4],
+"structtemperature__effect.html#a83a4a33a2ae296a67eed3619790e94d0":[36,0,878,7],
+"structtemperature__effect.html#a9d1e017e352aa6ed8bfb7dd329014d82":[36,0,878,0],
+"structtemperature__effect.html#ad560873f6d8b02fbbd1f9ea5ce264363":[36,0,878,5],
+"structter__furn__id.html":[36,0,881],
+"structter__furn__id.html#a0e4c9b3cbcad5dea11c882c58bf9caaf":[36,0,881,2],
+"structter__furn__id.html#a2fb5bf785bd9beb40c7956f92f00733d":[36,0,881,0],
+"structter__furn__id.html#acbfc4f432b2cf479189e6ab09e37d236":[36,0,881,1],
 "structter__t.html":[36,0,883],
 "structter__t.html#a353932a6b434023d88b9a6625b356cdb":[36,0,883,2],
 "structter__t.html#a35b6167b2ab7bcdb60d993447dc235b9":[36,0,883,12],
@@ -239,15 +249,5 @@ var NAVTREEINDEX155 =
 "structvalue__constraint.html#ad33f567fbe5109717f9d3b24409d6881":[36,0,931,3],
 "structvalue__constraint.html#af7c0a7d0c49fdf2da59a8b855b8551a0":[36,0,931,5],
 "structveh__collision.html":[36,0,932],
-"structveh__collision.html#a5b346d49ed96d1ac882411742b92c23a":[36,0,932,6],
-"structveh__collision.html#a92882f241ec360b0c1717643e4b8b5b4":[36,0,932,1],
-"structveh__collision.html#ab6374279b6a8e159072e1b543c8d9b6f":[36,0,932,4],
-"structveh__collision.html#abb1926e23af78f44bb793aad64b9fea0":[36,0,932,2],
-"structveh__collision.html#abba05cd17e45044d062877ea93487413":[36,0,932,0],
-"structveh__collision.html#abc795b6da592e268dcddbb022a1ce36a":[36,0,932,5],
-"structveh__collision.html#af14b2666c92075e676e798a7861ad156":[36,0,932,3],
-"structveh__interact_1_1install__info__t.html":[36,0,933,0],
-"structveh__interact_1_1install__info__t.html#a252b2aeffa4514e2f1454695ea7caea6":[36,0,933,0,4],
-"structveh__interact_1_1install__info__t.html#aa250d2123c968c091b08c4de9a2b9fe0":[36,0,933,0,0],
-"structveh__interact_1_1install__info__t.html#aa2e22b678f62f834c5823a4776fd2371":[36,0,933,0,2]
+"structveh__collision.html#a5b346d49ed96d1ac882411742b92c23a":[36,0,932,6]
 };

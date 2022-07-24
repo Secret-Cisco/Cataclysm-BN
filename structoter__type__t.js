@@ -20,7 +20,7 @@ var structoter__type__t =
     [ "directional_peers", "structoter__type__t.html#af0364908636c852c0be70611e9aace6b", null ],
     [ "extras", "structoter__type__t.html#a4d9cc5276d68cc0d3d6f1eb062f6ece7", null ],
     [ "flags", "structoter__type__t.html#a62b5fd20e7054ce0a84ceefe61045db4", null ],
-    [ "id", "structoter__type__t.html#a4771aa3f50b9af530dd27a3009861f87", null ],
+    [ "id", "structoter__type__t.html#a4a31467ad4c872f44537be40abb57391", null ],
     [ "land_use_code", "structoter__type__t.html#ad64566e2bbcbae2d691556ced30d1cbe", null ],
     [ "looks_like", "structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76", null ],
     [ "mondensity", "structoter__type__t.html#a27aaa0de7a8628785d8f4cb94a66e902", null ],

@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="separator:a105a2bc78dff70bdbdc683b88b2f5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e1940dc5802dfb2387644ce4ce4b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnc__color.html">nc_color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a29e1940dc5802dfb2387644ce4ce4b10">encumb_color</a> (int level)</td></tr>
 <tr class="separator:a29e1940dc5802dfb2387644ce4ce4b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a7fe4e25d4d32b168cdc76f313b4262c0">calc_fatigue_cap</a> (const <a class="el" href="classplayer.html">player</a> &amp;p)</td></tr>
+<tr class="memdesc:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the player's morale cap due to fatigue.  <a href="player_8h.html#a7fe4e25d4d32b168cdc76f313b4262c0">More...</a><br /></td></tr>
+<tr class="separator:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a582744a73fdbe14427f31b1b400ae552" name="a582744a73fdbe14427f31b1b400ae552"></a>
@@ -189,6 +192,49 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a7fe4e25d4d32b168cdc76f313b4262c0" name="a7fe4e25d4d32b168cdc76f313b4262c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe4e25d4d32b168cdc76f313b4262c0">&#9670;&nbsp;</a></span>calc_fatigue_cap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int calc_fatigue_cap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classplayer.html">player</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the player's morale cap due to fatigue. </p>
+
+<p class="definition">Definition at line <a class="el" href="player_8cpp_source.html#l04410">4410</a> of file <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04411" name="l04411"></a><span class="lineno"> 4411</span>{</div>
+<div class="line"><a id="l04412" name="l04412"></a><span class="lineno"> 4412</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">fatigue_levels::massive</a> ) {</div>
+<div class="line"><a id="l04413" name="l04413"></a><span class="lineno"> 4413</span>        <span class="keywordflow">return</span> 20;</div>
+<div class="line"><a id="l04414" name="l04414"></a><span class="lineno"> 4414</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">fatigue_levels::exhausted</a> ) {</div>
+<div class="line"><a id="l04415" name="l04415"></a><span class="lineno"> 4415</span>        <span class="keywordflow">return</span> 40;</div>
+<div class="line"><a id="l04416" name="l04416"></a><span class="lineno"> 4416</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">fatigue_levels::dead_tired</a> ) {</div>
+<div class="line"><a id="l04417" name="l04417"></a><span class="lineno"> 4417</span>        <span class="keywordflow">return</span> 60;</div>
+<div class="line"><a id="l04418" name="l04418"></a><span class="lineno"> 4418</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">fatigue_levels::tired</a> ) {</div>
+<div class="line"><a id="l04419" name="l04419"></a><span class="lineno"> 4419</span>        <span class="keywordflow">return</span> 80;</div>
+<div class="line"><a id="l04420" name="l04420"></a><span class="lineno"> 4420</span>    }</div>
+<div class="line"><a id="l04421" name="l04421"></a><span class="lineno"> 4421</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l04422" name="l04422"></a><span class="lineno"> 4422</span>}</div>
+<div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">fatigue_levels::tired</a></div><div class="ttdeci">@ tired</div></div>
+<div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">fatigue_levels::massive</a></div><div class="ttdeci">@ massive</div></div>
+<div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">fatigue_levels::exhausted</a></div><div class="ttdeci">@ exhausted</div></div>
+<div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">fatigue_levels::dead_tired</a></div><div class="ttdeci">@ dead_tired</div></div>
+<div class="ttc" id="aclassCharacter_html_a31c20b0d370fef88fefe520ff046daf5"><div class="ttname"><a href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">Character::get_fatigue</a></div><div class="ttdeci">int get_fatigue() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04448">character.cpp:4448</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">dead_tired</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">exhausted</a>, <a class="el" href="character_8cpp_source.html#l04448">Character::get_fatigue()</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">massive</a>, and <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">tired</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04424">player::calc_focus_equilibrium()</a>, and <a class="el" href="avatar_8cpp_source.html#l00985">avatar::disp_morale()</a>.</p>
+
+</div>
+</div>
 <a id="a105a2bc78dff70bdbdc683b88b2f5351" name="a105a2bc78dff70bdbdc683b88b2f5351"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a105a2bc78dff70bdbdc683b88b2f5351">&#9670;&nbsp;</a></span>DEFAULT_HOTKEYS()</h2>
 
@@ -267,7 +313,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="player_8h.html">player.h</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

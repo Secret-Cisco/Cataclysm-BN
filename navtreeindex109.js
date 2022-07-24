@@ -1,5 +1,11 @@
 var NAVTREEINDEX109 =
 {
+"namespaceVehicleSpawnFunction.html#ad19da351196135d64975f9100c16453d":[35,0,164,2],
+"namespaceactive__tiles.html":[35,0,0],
+"namespaceactive__tiles.html#a6b0d010a1354252227d36ca8bff5a660":[35,0,0,4],
+"namespaceactive__tiles.html#a8c34b5fd8ca11186e004b4aec8f2aa13":[35,0,0,2],
+"namespaceactive__tiles.html#a8ee11199630bf6a315debc6f64d0c082":[35,0,0,6],
+"namespaceactive__tiles.html#acec9cf4d0efa58e85eca34fc8546c967":[35,0,0,5],
 "namespaceactive__tiles.html#adff54c247924c04659ebbc2f1f109870":[35,0,0,1],
 "namespaceactive__tiles.html#af02db941c999ac559b9f2874d4609cfd":[35,0,0,3],
 "namespaceactivity__actors.html":[35,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX109 =
 "namespaceanonymous__namespace_02gates_8cpp_03.html#a0b0ef71c59e4f2574505a15e0d02853d":[35,0,27,2],
 "namespaceanonymous__namespace_02gates_8cpp_03.html#a62213fe2f53bd7076df7272451a41e1d":[35,0,27,3],
 "namespaceanonymous__namespace_02gates_8cpp_03.html#a63b9a34372e97c33bc7cd8ed239b4682":[35,0,27,1],
-"namespaceanonymous__namespace_02iexamine_8cpp_03.html":[35,0,28],
-"namespaceanonymous__namespace_02item__category_8cpp_03.html":[35,0,29],
-"namespaceanonymous__namespace_02item__category_8cpp_03.html#af08a772fbabbbc0c65e9f8f29b163d2e":[35,0,29,0],
-"namespaceanonymous__namespace_02line_8cpp_03.html":[35,0,30],
-"namespaceanonymous__namespace_02line_8cpp_03.html#a8d06d1baa307aedb61624e483de6f41e":[35,0,30,0],
-"namespaceanonymous__namespace_02live__view_8cpp_03.html":[35,0,31],
-"namespaceanonymous__namespace_02live__view_8cpp_03.html#a3146adf84d0f147782cef9bb3eb4b391":[35,0,31,0]
+"namespaceanonymous__namespace_02iexamine_8cpp_03.html":[35,0,28]
 };

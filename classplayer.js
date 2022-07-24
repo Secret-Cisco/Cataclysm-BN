@@ -29,7 +29,7 @@ var classplayer =
     [ "bionic_by_invlet", "classplayer.html#a09902859b0f28b6aae33c2b76abc521e", null ],
     [ "book_fun_for", "classplayer.html#a1869e8eaef94e686180c539c32dc52ca", null ],
     [ "calc_focus_change", "classplayer.html#a6d8d8980786115dc4783f61002cae7a5", null ],
-    [ "calc_focus_equilibrium", "classplayer.html#a9202ef548f32485ac763fa66319557fa", null ],
+    [ "calc_focus_equilibrium", "classplayer.html#a150ef012c78f811270037535a579e9ea", null ],
     [ "can_autolearn", "classplayer.html#a2e1328282191fb93805357b248623fb5", null ],
     [ "can_continue_craft", "classplayer.html#a9b76ffb136ac45068a15eca83a71b279", null ],
     [ "can_decomp_learn", "classplayer.html#a010e76e9611050acd16e0753ee8b492b", null ],

@@ -221,7 +221,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclasszone__data_html_a671d24b53d421db04ab8bf3886b13917"><div class="ttname"><a href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">zone_data::end</a></div><div class="ttdeci">tripoint end</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8h_source.html#l00243">clzones.h:243</a></div></div>
 <div class="ttc" id="aclasszone__data_html_a8a56e8448fc7fd31a846c366558c329e"><div class="ttname"><a href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">zone_data::start</a></div><div class="ttdeci">tripoint start</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8h_source.html#l00242">clzones.h:242</a></div></div>
 <div class="ttc" id="apoint_8h_html_a4b1a6bcaa42d2c06ecc3afc63305bfdf"><div class="ttname"><a href="point_8h.html#a4b1a6bcaa42d2c06ecc3afc63305bfdf">tripoint_zero</a></div><div class="ttdeci">static constexpr tripoint tripoint_zero</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00273">point.h:273</a></div></div>
-<div class="ttc" id="atype__id_8h_html_a4ec2337d992ab8b0115c2bd7ff30902a"><div class="ttname"><a href="type__id_8h.html#a4ec2337d992ab8b0115c2bd7ff30902a">zone_type_id</a></div><div class="ttdeci">string_id&lt; zone_type &gt; zone_type_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00176">type_id.h:176</a></div></div>
+<div class="ttc" id="atype__id_8h_html_a4ec2337d992ab8b0115c2bd7ff30902a"><div class="ttname"><a href="type__id_8h.html#a4ec2337d992ab8b0115c2bd7ff30902a">zone_type_id</a></div><div class="ttdeci">string_id&lt; zone_type &gt; zone_type_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00189">type_id.h:189</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00240">enabled</a>, <a class="el" href="clzones_8h_source.html#l00243">end</a>, <a class="el" href="clzones_8h_source.html#l00239">invert</a>, <a class="el" href="clzones_8h_source.html#l00241">is_vehicle</a>, <a class="el" href="clzones_8h_source.html#l00244">options</a>, <a class="el" href="clzones_8h_source.html#l00242">start</a>, <a class="el" href="point_8h_source.html#l00273">tripoint_zero</a>, and <a class="el" href="clzones_8h_source.html#l00237">type</a>.</p>
 
@@ -341,45 +341,45 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l01160">1160</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>{</div>
-<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>    data.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
-<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;faction&quot;</span> ) ) {</div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;faction&quot;</span>, <a class="code hl_class" href="classfaction.html">faction</a> );</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>        <a class="code hl_class" href="classfaction.html">faction</a> = <a class="code hl_function" href="clzones_8h.html#a67bbad110b1795536c3b321b2f34c02e">your_fac</a>;</div>
-<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    }</div>
-<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;invert&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a509e0fe316e3ee7bfff99fa3df16ae8d">invert</a> );</div>
-<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;enabled&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> );</div>
-<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    <span class="comment">//Legacy support</span></div>
-<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span> ) ) {</div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> );</div>
-<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>        <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    }</div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    <span class="comment">//Legacy support</span></div>
-<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;start_x&quot;</span> ) ) {</div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        <a class="code hl_struct" href="structtripoint.html">tripoint</a> s;</div>
-<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>        <a class="code hl_struct" href="structtripoint.html">tripoint</a> e;</div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_x&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> );</div>
-<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_y&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> );</div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_z&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_x&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> );</div>
-<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_y&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> );</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_z&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>        <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> = s;</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>        <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> = e;</div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> );</div>
-<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> );</div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    }</div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>    <span class="keyword">auto</span> new_options = <a class="code hl_function" href="classzone__options.html#a8bae192e3cee7999a4a5c43b85665052">zone_options::create</a>( <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>    new_options-&gt;deserialize( data );</div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>    <a class="code hl_variable" href="classzone__data.html#a1921916a39c079e41fa9ede351066843">options</a> = new_options;</div>
-<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l01163">1163</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>{</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>    data.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;faction&quot;</span> ) ) {</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;faction&quot;</span>, <a class="code hl_class" href="classfaction.html">faction</a> );</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>        <a class="code hl_class" href="classfaction.html">faction</a> = <a class="code hl_function" href="clzones_8h.html#a67bbad110b1795536c3b321b2f34c02e">your_fac</a>;</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    }</div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;invert&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a509e0fe316e3ee7bfff99fa3df16ae8d">invert</a> );</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;enabled&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> );</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    <span class="comment">//Legacy support</span></div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span> ) ) {</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> );</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>        <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>    }</div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>    <span class="comment">//Legacy support</span></div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;start_x&quot;</span> ) ) {</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>        <a class="code hl_struct" href="structtripoint.html">tripoint</a> s;</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        <a class="code hl_struct" href="structtripoint.html">tripoint</a> e;</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_x&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> );</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_y&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> );</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start_z&quot;</span>, s.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_x&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> );</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_y&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> );</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end_z&quot;</span>, e.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>        <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> = s;</div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>        <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> = e;</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;start&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> );</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;end&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> );</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>    }</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>    <span class="keyword">auto</span> new_options = <a class="code hl_function" href="classzone__options.html#a8bae192e3cee7999a4a5c43b85665052">zone_options::create</a>( <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>    new_options-&gt;deserialize( data );</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>    <a class="code hl_variable" href="classzone__data.html#a1921916a39c079e41fa9ede351066843">options</a> = new_options;</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01364">json.cpp:1364</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00831">json.h:832</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a887d230c6a42ef2a6cf72c0e040cd4e3"><div class="ttname"><a href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">JsonObject::has_member</a></div><div class="ttdeci">bool has_member(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00181">json.cpp:181</a></div></div>
@@ -410,10 +410,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00577">577</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>{</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a>( ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> ) / 2, ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> ) / 2, ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> ) / 2 );</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00578">578</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>{</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a>( ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a> ) / 2, ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a> ) / 2, ( <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a>.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> + <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a>.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> ) / 2 );</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00243">end</a>, <a class="el" href="clzones_8h_source.html#l00242">start</a>, <a class="el" href="point_8h_source.html#l00150">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00151">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00152">tripoint::z</a>.</p>
 
@@ -578,7 +578,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00241">is_vehicle</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01230">zone_manager::zone_edited()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01233">zone_manager::zone_edited()</a>.</p>
 
 </div>
 </div>
@@ -676,7 +676,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00244">options</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l02608">generic_multi_activity_check_requirement()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02808">generic_multi_activity_do()</a>, and <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l02628">generic_multi_activity_check_requirement()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02829">generic_multi_activity_do()</a>, and <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00242">start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l00942">map::deregister_vehicle_zone()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l00957">map::deregister_vehicle_zone()</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00237">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00662">zone_manager::get_point_set_loot()</a>, and <a class="el" href="activity__item__handling_8cpp_source.html#l02449">get_zone_for_act()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00663">zone_manager::get_point_set_loot()</a>, and <a class="el" href="activity__item__handling_8cpp_source.html#l02468">get_zone_for_act()</a>.</p>
 
 </div>
 </div>
@@ -891,7 +891,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, and <a class="el" href="clzones_8h_source.html#l00032">type_fac_hash_str</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00645">zone_manager::get_point_set()</a>, <a class="el" href="clzones_8h_source.html#l00302">get_type_hash()</a>, <a class="el" href="clzones_8cpp_source.html#l00680">zone_manager::get_vzone_set()</a>, and <a class="el" href="clzones_8cpp_source.html#l00597">zone_manager::has_defined()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00646">zone_manager::get_point_set()</a>, <a class="el" href="clzones_8h_source.html#l00302">get_type_hash()</a>, <a class="el" href="clzones_8cpp_source.html#l00682">zone_manager::get_vzone_set()</a>, and <a class="el" href="clzones_8cpp_source.html#l00598">zone_manager::has_defined()</a>.</p>
 
 </div>
 </div>
@@ -911,20 +911,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l01145">1145</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>{</div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;faction&quot;</span>, <a class="code hl_class" href="classfaction.html">faction</a> );</div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;invert&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a509e0fe316e3ee7bfff99fa3df16ae8d">invert</a> );</div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;enabled&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> );</div>
-<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> );</div>
-<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;start&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> );</div>
-<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;end&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> );</div>
-<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    <a class="code hl_function" href="classzone__data.html#a90988617fe28de36d0ba74e91be386bc">get_options</a>().<a class="code hl_function" href="classzone__options.html#aacfa8706c8ccc5b5c7673cba56255f83">serialize</a>( json );</div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l01148">1148</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>{</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> );</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;faction&quot;</span>, <a class="code hl_class" href="classfaction.html">faction</a> );</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;invert&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a509e0fe316e3ee7bfff99fa3df16ae8d">invert</a> );</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;enabled&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> );</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;is_vehicle&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> );</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;start&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> );</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;end&quot;</span>, <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> );</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    <a class="code hl_function" href="classzone__data.html#a90988617fe28de36d0ba74e91be386bc">get_options</a>().<a class="code hl_function" href="classzone__options.html#aacfa8706c8ccc5b5c7673cba56255f83">serialize</a>( json );</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01931">json.cpp:1931</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01942">json.cpp:1942</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02046">json.cpp:2046</a></div></div>
@@ -951,15 +951,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00566">566</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>{</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> = enabled_arg;</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00567">567</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>{</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <a class="code hl_variable" href="classzone__data.html#a4074c1987f50b58b194f390627b9f43c">enabled</a> = enabled_arg;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>}</div>
 <div class="ttc" id="aclasszone__manager_html_a11e6a0ecb51069e3c334b6f4b9c5c6bc"><div class="ttname"><a href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a></div><div class="ttdeci">static zone_manager &amp; get_manager()</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00125">clzones.cpp:125</a></div></div>
-<div class="ttc" id="aclasszone__manager_html_adad793b272c1a554e3b96eb98b2ef181"><div class="ttname"><a href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_manager::zone_edited</a></div><div class="ttdeci">void zone_edited(zone_data &amp;zone)</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l01230">clzones.cpp:1230</a></div></div>
+<div class="ttc" id="aclasszone__manager_html_adad793b272c1a554e3b96eb98b2ef181"><div class="ttname"><a href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_manager::zone_edited</a></div><div class="ttdeci">void zone_edited(zone_data &amp;zone)</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l01233">clzones.cpp:1233</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="clzones_8h_source.html#l00240">enabled</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, and <a class="el" href="clzones_8cpp_source.html#l01230">zone_manager::zone_edited()</a>.</p>
+<p class="reference">References <a class="el" href="clzones_8h_source.html#l00240">enabled</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, and <a class="el" href="clzones_8cpp_source.html#l01233">zone_manager::zone_edited()</a>.</p>
 
 </div>
 </div>
@@ -979,14 +979,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00572">572</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>{</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> = is_vehicle_arg;</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>}</div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00573">573</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>{</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> = is_vehicle_arg;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="clzones_8h_source.html#l00241">is_vehicle</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00960">zone_manager::create_vehicle_loot_zone()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l00962">zone_manager::create_vehicle_loot_zone()</a>.</p>
 
 </div>
 </div>
@@ -1005,26 +1005,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00520">520</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>{</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keyword">const</span> <span class="keyword">auto</span> maybe_name = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#aea2a24174c73dbc02d4b05f3f2f6443f">query_name</a>( <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keywordflow">if</span>( maybe_name.has_value() ) {</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        <span class="keyword">auto</span> new_name = maybe_name.value();</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <span class="keywordflow">if</span>( new_name.empty() ) {</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>            new_name = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;no name&gt;&quot;</span> );</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        }</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> != new_name ) {</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> = new_name;</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        }</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    }</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>}</div>
-<div class="ttc" id="aclasszone__manager_html_aea2a24174c73dbc02d4b05f3f2f6443f"><div class="ttname"><a href="classzone__manager.html#aea2a24174c73dbc02d4b05f3f2f6443f">zone_manager::query_name</a></div><div class="ttdeci">cata::optional&lt; std::string &gt; query_name(const std::string &amp;default_name=&quot;&quot;) const</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00471">clzones.cpp:471</a></div></div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00521">521</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>{</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keyword">const</span> <span class="keyword">auto</span> maybe_name = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#aea2a24174c73dbc02d4b05f3f2f6443f">query_name</a>( <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> );</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <span class="keywordflow">if</span>( maybe_name.has_value() ) {</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <span class="keyword">auto</span> new_name = maybe_name.value();</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        <span class="keywordflow">if</span>( new_name.empty() ) {</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            new_name = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;no name&gt;&quot;</span> );</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        }</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> != new_name ) {</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            <a class="code hl_variable" href="classzone__data.html#a2c43bdfc2acf14cf20346e58a12d3acb">name</a> = new_name;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        }</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    }</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>}</div>
+<div class="ttc" id="aclasszone__manager_html_aea2a24174c73dbc02d4b05f3f2f6443f"><div class="ttname"><a href="classzone__manager.html#aea2a24174c73dbc02d4b05f3f2f6443f">zone_manager::query_name</a></div><div class="ttdeci">cata::optional&lt; std::string &gt; query_name(const std::string &amp;default_name=&quot;&quot;) const</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00472">clzones.cpp:472</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00236">name</a>, <a class="el" href="clzones_8cpp_source.html#l00471">zone_manager::query_name()</a>, and <a class="el" href="clzones_8cpp_source.html#l01230">zone_manager::zone_edited()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00236">name</a>, <a class="el" href="clzones_8cpp_source.html#l00472">zone_manager::query_name()</a>, and <a class="el" href="clzones_8cpp_source.html#l01233">zone_manager::zone_edited()</a>.</p>
 
 </div>
 </div>
@@ -1054,23 +1054,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00553">553</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>{</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> &amp;&amp; manual ) {</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Tried moving a lootzone bound to a vehicle part&quot;</span> );</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    }</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> = position.first;</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> = position.second;</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">cache_data</a>();</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>}</div>
-<div class="ttc" id="aclasszone__manager_html_a87dd76c2aa5f4d37b5c9bc130bcd6f34"><div class="ttname"><a href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">zone_manager::cache_data</a></div><div class="ttdeci">void cache_data()</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00603">clzones.cpp:603</a></div></div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00554">554</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>{</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classzone__data.html#a33677da313cbb00dedd83e2775b0ff5d">is_vehicle</a> &amp;&amp; manual ) {</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Tried moving a lootzone bound to a vehicle part&quot;</span> );</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    }</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <a class="code hl_variable" href="classzone__data.html#a8a56e8448fc7fd31a846c366558c329e">start</a> = position.first;</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <a class="code hl_variable" href="classzone__data.html#a671d24b53d421db04ab8bf3886b13917">end</a> = position.second;</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">cache_data</a>();</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>}</div>
+<div class="ttc" id="aclasszone__manager_html_a87dd76c2aa5f4d37b5c9bc130bcd6f34"><div class="ttname"><a href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">zone_manager::cache_data</a></div><div class="ttdeci">void cache_data()</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00604">clzones.cpp:604</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="clzones_8cpp_source.html#l00603">zone_manager::cache_data()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="clzones_8h_source.html#l00243">end</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00241">is_vehicle</a>, and <a class="el" href="clzones_8h_source.html#l00242">start</a>.</p>
+<p class="reference">References <a class="el" href="clzones_8cpp_source.html#l00604">zone_manager::cache_data()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="clzones_8h_source.html#l00243">end</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00241">is_vehicle</a>, and <a class="el" href="clzones_8h_source.html#l00242">start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06971">vehicle::refresh_zones()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06939">vehicle::refresh_zones()</a>.</p>
 
 </div>
 </div>
@@ -1089,24 +1089,24 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00537">537</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>{</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keyword">const</span> <span class="keyword">auto</span> maybe_type = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a58567d67e9e649d2a7f88955374c2668">query_type</a>();</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="keywordflow">if</span>( maybe_type.has_value() &amp;&amp; maybe_type.value() != <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> ) {</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        <span class="keyword">auto</span> new_options = <a class="code hl_function" href="classzone__options.html#a8bae192e3cee7999a4a5c43b85665052">zone_options::create</a>( maybe_type.value() );</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        <span class="keywordflow">if</span>( new_options-&gt;query_at_creation() ) {</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>            <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> = maybe_type.value();</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>            <a class="code hl_variable" href="classzone__data.html#a1921916a39c079e41fa9ede351066843">options</a> = new_options;</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">cache_data</a>();</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>        }</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    }</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>}</div>
-<div class="ttc" id="aclasszone__manager_html_a58567d67e9e649d2a7f88955374c2668"><div class="ttname"><a href="classzone__manager.html#a58567d67e9e649d2a7f88955374c2668">zone_manager::query_type</a></div><div class="ttdeci">cata::optional&lt; zone_type_id &gt; query_type() const</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00486">clzones.cpp:486</a></div></div>
+<p class="definition">Definition at line <a class="el" href="clzones_8cpp_source.html#l00538">538</a> of file <a class="el" href="clzones_8cpp_source.html">clzones.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>{</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="keyword">const</span> <span class="keyword">auto</span> maybe_type = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a58567d67e9e649d2a7f88955374c2668">query_type</a>();</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keywordflow">if</span>( maybe_type.has_value() &amp;&amp; maybe_type.value() != <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> ) {</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        <span class="keyword">auto</span> new_options = <a class="code hl_function" href="classzone__options.html#a8bae192e3cee7999a4a5c43b85665052">zone_options::create</a>( maybe_type.value() );</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        <span class="keywordflow">if</span>( new_options-&gt;query_at_creation() ) {</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181">zone_edited</a>( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>            <a class="code hl_variable" href="classzone__data.html#a4b36bb3e2c8870e935479341bed70f2d">type</a> = maybe_type.value();</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>            <a class="code hl_variable" href="classzone__data.html#a1921916a39c079e41fa9ede351066843">options</a> = new_options;</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>            <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>().<a class="code hl_function" href="classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34">cache_data</a>();</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        }</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    }</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>}</div>
+<div class="ttc" id="aclasszone__manager_html_a58567d67e9e649d2a7f88955374c2668"><div class="ttname"><a href="classzone__manager.html#a58567d67e9e649d2a7f88955374c2668">zone_manager::query_type</a></div><div class="ttdeci">cata::optional&lt; zone_type_id &gt; query_type() const</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00487">clzones.cpp:487</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="clzones_8cpp_source.html#l00603">zone_manager::cache_data()</a>, <a class="el" href="clzones_8cpp_source.html#l00185">zone_options::create()</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00244">options</a>, <a class="el" href="clzones_8cpp_source.html#l00486">zone_manager::query_type()</a>, <a class="el" href="clzones_8h_source.html#l00237">type</a>, and <a class="el" href="clzones_8cpp_source.html#l01230">zone_manager::zone_edited()</a>.</p>
+<p class="reference">References <a class="el" href="clzones_8cpp_source.html#l00604">zone_manager::cache_data()</a>, <a class="el" href="clzones_8cpp_source.html#l00185">zone_options::create()</a>, <a class="el" href="clzones_8cpp_source.html#l00125">zone_manager::get_manager()</a>, <a class="el" href="clzones_8h_source.html#l00244">options</a>, <a class="el" href="clzones_8cpp_source.html#l00487">zone_manager::query_type()</a>, <a class="el" href="clzones_8h_source.html#l00237">type</a>, and <a class="el" href="clzones_8cpp_source.html#l01233">zone_manager::zone_edited()</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1170,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00240">240</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00311">get_enabled()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00566">set_enabled()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00311">get_enabled()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00567">set_enabled()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1196,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00243">243</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00577">get_center_point()</a>, <a class="el" href="clzones_8h_source.html#l00320">get_end_point()</a>, <a class="el" href="clzones_8h_source.html#l00333">has_inside()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00553">set_position()</a>, <a class="el" href="clzones_8h_source.html#l00289">unhash_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00578">get_center_point()</a>, <a class="el" href="clzones_8h_source.html#l00320">get_end_point()</a>, <a class="el" href="clzones_8h_source.html#l00333">has_inside()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00554">set_position()</a>, <a class="el" href="clzones_8h_source.html#l00289">unhash_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1248,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00239">239</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00308">get_invert()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00308">get_invert()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1274,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00241">241</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00314">get_is_vehicle()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00572">set_is_vehicle()</a>, <a class="el" href="clzones_8cpp_source.html#l00553">set_position()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00314">get_is_vehicle()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00573">set_is_vehicle()</a>, <a class="el" href="clzones_8cpp_source.html#l00554">set_position()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1300,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00236">236</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00296">get_name()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00520">set_name()</a>, and <a class="el" href="clzones_8h_source.html#l00257">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00296">get_name()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00521">set_name()</a>, and <a class="el" href="clzones_8h_source.html#l00257">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1326,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00244">244</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00327">get_options()</a>, <a class="el" href="clzones_8h_source.html#l00324">has_options()</a>, <a class="el" href="clzones_8cpp_source.html#l00537">set_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00327">get_options()</a>, <a class="el" href="clzones_8h_source.html#l00324">has_options()</a>, <a class="el" href="clzones_8cpp_source.html#l00538">set_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00242">242</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00577">get_center_point()</a>, <a class="el" href="clzones_8h_source.html#l00317">get_start_point()</a>, <a class="el" href="clzones_8h_source.html#l00333">has_inside()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00553">set_position()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00578">get_center_point()</a>, <a class="el" href="clzones_8h_source.html#l00317">get_start_point()</a>, <a class="el" href="clzones_8h_source.html#l00333">has_inside()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00554">set_position()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1378,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clzones_8h_source.html#l00237">237</a> of file <a class="el" href="clzones_8h_source.html">clzones.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01160">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00305">get_type()</a>, <a class="el" href="clzones_8h_source.html#l00302">get_type_hash()</a>, <a class="el" href="clzones_8cpp_source.html#l01145">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00537">set_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="clzones_8cpp_source.html#l01163">deserialize()</a>, <a class="el" href="clzones_8h_source.html#l00305">get_type()</a>, <a class="el" href="clzones_8h_source.html#l00302">get_type_hash()</a>, <a class="el" href="clzones_8cpp_source.html#l01148">serialize()</a>, <a class="el" href="clzones_8cpp_source.html#l00538">set_type()</a>, and <a class="el" href="clzones_8h_source.html#l00247">zone_data()</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1392,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classzone__data.html">zone_data</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

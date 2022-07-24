@@ -148,9 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1056cd7d4a7291b62742feb18f03d933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer__morale.html#a1056cd7d4a7291b62742feb18f03d933">decay</a> (const <a class="el" href="classtime__duration.html">time_duration</a> &amp;ticks=1_turns)</td></tr>
 <tr class="memdesc:a1056cd7d4a7291b62742feb18f03d933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks down morale counters and removes them.  <a href="classplayer__morale.html#a1056cd7d4a7291b62742feb18f03d933">More...</a><br /></td></tr>
 <tr class="separator:a1056cd7d4a7291b62742feb18f03d933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a94382ea9fa307b058a19659b858ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer__morale.html#a05a94382ea9fa307b058a19659b858ff">display</a> (int focus_eq, int pain_penalty, int fatigue_penalty)</td></tr>
-<tr class="memdesc:a05a94382ea9fa307b058a19659b858ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays morale screen.  <a href="classplayer__morale.html#a05a94382ea9fa307b058a19659b858ff">More...</a><br /></td></tr>
-<tr class="separator:a05a94382ea9fa307b058a19659b858ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4e61b329678f54956a8a066ce45fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer__morale.html#a6e4e61b329678f54956a8a066ce45fe0">display</a> (int focus_eq, int pain_penalty, int fatigue_cap)</td></tr>
+<tr class="memdesc:a6e4e61b329678f54956a8a066ce45fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays morale screen.  <a href="classplayer__morale.html#a6e4e61b329678f54956a8a066ce45fe0">More...</a><br /></td></tr>
+<tr class="separator:a6e4e61b329678f54956a8a066ce45fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab24d9b175d7eea0f556eccdc99f0f8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer__morale.html#aab24d9b175d7eea0f556eccdc99f0f8d">consistent_with</a> (const <a class="el" href="classplayer__morale.html">player_morale</a> &amp;morale) const</td></tr>
 <tr class="memdesc:aab24d9b175d7eea0f556eccdc99f0f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false whether morale is inconsistent with the argument.  <a href="classplayer__morale.html#aab24d9b175d7eea0f556eccdc99f0f8d">More...</a><br /></td></tr>
 <tr class="separator:aab24d9b175d7eea0f556eccdc99f0f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -916,8 +916,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a05a94382ea9fa307b058a19659b858ff" name="a05a94382ea9fa307b058a19659b858ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05a94382ea9fa307b058a19659b858ff">&#9670;&nbsp;</a></span>display()</h2>
+<a id="a6e4e61b329678f54956a8a066ce45fe0" name="a6e4e61b329678f54956a8a066ce45fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4e61b329678f54956a8a066ce45fe0">&#9670;&nbsp;</a></span>display()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,7 +938,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fatigue_penalty</em>&#160;</td>
+          <td class="paramname"><em>fatigue_cap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1140,11 +1140,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>            morale_line::line_color::green_gray_red</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        );</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    }</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keywordflow">if</span>( fatigue_penalty != 0 ) {</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keywordflow">if</span>( fatigue_cap ) {</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        bottom_lines.emplace_back(</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Fatigue level:&quot;</span> ), -fatigue_penalty,</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>            morale_line::number_format::signed_or_dash,</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>            morale_line::line_color::green_gray_red</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Fatigue Morale Cap:&quot;</span> ), fatigue_cap,</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>            morale_line::number_format::normal,</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>            morale_line::line_color::red_gray_green</div>
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>        );</div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    }</div>
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    bottom_lines.emplace_back(</div>
@@ -1276,13 +1276,13 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="adependency__tree_8h_html_a8935964c16c2e4cfade43a60a2659da9a0fc3cfbc27e91ea60a787de13dae3e3c"><div class="ttname"><a href="dependency__tree_8h.html#a8935964c16c2e4cfade43a60a2659da9a0fc3cfbc27e91ea60a787de13dae3e3c">node_error_type::num</a></div><div class="ttdeci">@ num</div></div>
 <div class="ttc" id="adialogue_8h_html_abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8"><div class="ttname"><a href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a></div><div class="ttdeci">@ action</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00037">dialogue.h:36</a></div></div>
 <div class="ttc" id="aeditmap_8cpp_html_a025a5c063205294df20818edc4cfe355"><div class="ttname"><a href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a></div><div class="ttdeci">static nc_color color(const T_t &amp;t)</div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06454">mapgen.cpp:6454</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06455">mapgen.cpp:6455</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a378d993a574b6bf30ea509fa46de2142"><div class="ttname"><a href="namespacecatacurses.html#a378d993a574b6bf30ea509fa46de2142">catacurses::mvwhline</a></div><div class="ttdeci">void mvwhline(const window &amp;win, const point &amp;p, chtype ch, int n)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00152">ncurses_def.cpp:152</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a576fd20080b8f49e27acf97af45b374b"><div class="ttname"><a href="namespacecatacurses.html#a576fd20080b8f49e27acf97af45b374b">catacurses::newwin</a></div><div class="ttdeci">window newwin(int nlines, int ncols, const point &amp;begin)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00034">ncurses_def.cpp:34</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a929fe85d472028f52d8a5cdfc0d35017"><div class="ttname"><a href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">catacurses::getmaxx</a></div><div class="ttdeci">int getmaxx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00058">ncurses_def.cpp:58</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_aa9823d249c21fa50daf277957fabb175"><div class="ttname"><a href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">catacurses::wnoutrefresh</a></div><div class="ttdeci">void wnoutrefresh(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00043">ncurses_def.cpp:43</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_ace2ce3990cb812fb83adf6e4ea1f9e8e"><div class="ttname"><a href="namespacecatacurses.html#ace2ce3990cb812fb83adf6e4ea1f9e8e">catacurses::werase</a></div><div class="ttdeci">void werase(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00053">ncurses_def.cpp:53</a></div></div>
-<div class="ttc" id="anamespaceovermap__ui_html_ad7f63bdddee1a58306c74273ced6a0ae"><div class="ttname"><a href="namespaceovermap__ui.html#ad7f63bdddee1a58306c74273ced6a0ae">overmap_ui::draw</a></div><div class="ttdeci">static void draw(const tripoint_abs_omt &amp;center, const tripoint_abs_omt &amp;orig, bool blink, bool show_explored, bool fast_scroll, input_context *inp_ctxt, const draw_data_t &amp;data, grids_draw_data &amp;grids_data)</div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8cpp_source.html#l01446">overmap_ui.cpp:1446</a></div></div>
+<div class="ttc" id="anamespaceovermap__ui_html_ad7f63bdddee1a58306c74273ced6a0ae"><div class="ttname"><a href="namespaceovermap__ui.html#ad7f63bdddee1a58306c74273ced6a0ae">overmap_ui::draw</a></div><div class="ttdeci">static void draw(const tripoint_abs_omt &amp;center, const tripoint_abs_omt &amp;orig, bool blink, bool show_explored, bool fast_scroll, input_context *inp_ctxt, const draw_data_t &amp;data, grids_draw_data &amp;grids_data)</div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8cpp_source.html#l01447">overmap_ui.cpp:1447</a></div></div>
 <div class="ttc" id="anamespaceui__manager_html_ae38f3a918052ef286ee60daac47f52d4"><div class="ttname"><a href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a></div><div class="ttdeci">void redraw()</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00285">ui_manager.cpp:285</a></div></div>
 <div class="ttc" id="anamespaceui_html"><div class="ttname"><a href="namespaceui.html">ui</a></div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8h_source.html#l00016">overmap_ui.h:17</a></div></div>
 <div class="ttc" id="aoutput_8cpp_html_a000abea6447dfafd5f9b787aa6753609"><div class="ttname"><a href="output_8cpp.html#a000abea6447dfafd5f9b787aa6753609">TERMX</a></div><div class="ttdeci">int TERMX</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00047">output.cpp:47</a></div></div>
@@ -1301,7 +1301,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 <div class="ttc" id="aweather__type_8h_html_a951701bd5446ac796b3a62dadcdb61f1afea087517c26fadd409bd4b9dc642555"><div class="ttname"><a href="weather__type_8h.html#a951701bd5446ac796b3a62dadcdb61f1afea087517c26fadd409bd4b9dc642555">sun_intensity_type::normal</a></div><div class="ttdeci">@ normal</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="color_8h_source.html#l00020">c_dark_gray</a>, <a class="el" href="color_8h_source.html#l00022">c_green</a>, <a class="el" href="color_8h_source.html#l00019">c_light_gray</a>, <a class="el" href="color_8h_source.html#l00027">c_light_red</a>, <a class="el" href="color_8h_source.html#l00018">c_white</a>, <a class="el" href="morale_8cpp_source.html#l00436">calculate_percentage()</a>, <a class="el" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01446">overmap_ui::draw()</a>, <a class="el" href="output_8cpp_source.html#l00575">draw_border()</a>, <a class="el" href="output_8cpp_source.html#l01314">draw_scrollbar()</a>, <a class="el" href="output_8cpp_source.html#l00056">FULL_SCREEN_HEIGHT</a>, <a class="el" href="output_8cpp_source.html#l00055">FULL_SCREEN_WIDTH</a>, <a class="el" href="morale_8cpp_source.html#l00489">get_level()</a>, <a class="el" href="morale_8cpp_source.html#l00129">player_morale::morale_point::get_name()</a>, <a class="el" href="morale_8cpp_source.html#l00222">player_morale::morale_point::get_percent_contribution()</a>, <a class="el" href="morale_8cpp_source.html#l00422">get_temper_mult()</a>, <a class="el" href="morale_8cpp_source.html#l00462">get_total_negative_value()</a>, <a class="el" href="morale_8cpp_source.html#l00475">get_total_positive_value()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="input_8cpp_source.html#l00854">input_context::handle_input()</a>, <a class="el" href="cata__tiles_8h.html#affa90804269b044a43867f93746f8f8ea811882fecd5c7618d7099ebbd39ea254">left</a>, <a class="el" href="mapgen_8cpp_source.html#l06454">line()</a>, <a class="el" href="output_8h_source.html#l00047">LINE_XOXX</a>, <a class="el" href="output_8h_source.html#l00045">LINE_XXXO</a>, <a class="el" href="translations_8h_source.html#l00342">localized_compare</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00152">catacurses::mvwhline()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00034">catacurses::newwin()</a>, <a class="el" href="weather__type_8h.html#a951701bd5446ac796b3a62dadcdb61f1afea087517c26fadd409bd4b9dc642555">normal</a>, <a class="el" href="dependency__tree_8h.html#a8935964c16c2e4cfade43a60a2659da9a0fc3cfbc27e91ea60a787de13dae3e3c">num</a>, <a class="el" href="morale_8h_source.html#l00236">points</a>, <a class="el" href="ui__manager_8cpp_source.html#l00285">ui_manager::redraw()</a>, <a class="el" href="input_8cpp_source.html#l00676">input_context::register_action()</a>, <a class="el" href="calendar_8h.html#a2966e2ed60e1b292fb9f87bc519ece79a7c4f29407893c334a6cb7a87bf045c0d">right</a>, <a class="el" href="output_8cpp_source.html#l00461">right_print()</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, <a class="el" href="output_8cpp_source.html#l00047">TERMX</a>, <a class="el" href="output_8cpp_source.html#l00048">TERMY</a>, <a class="el" href="output_8cpp_source.html#l00214">trim_and_print()</a>, <a class="el" href="catacharset_8cpp_source.html#l00142">utf8_width()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00053">catacurses::werase()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="color_8h_source.html#l00020">c_dark_gray</a>, <a class="el" href="color_8h_source.html#l00022">c_green</a>, <a class="el" href="color_8h_source.html#l00019">c_light_gray</a>, <a class="el" href="color_8h_source.html#l00027">c_light_red</a>, <a class="el" href="color_8h_source.html#l00018">c_white</a>, <a class="el" href="morale_8cpp_source.html#l00436">calculate_percentage()</a>, <a class="el" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01447">overmap_ui::draw()</a>, <a class="el" href="output_8cpp_source.html#l00575">draw_border()</a>, <a class="el" href="output_8cpp_source.html#l01314">draw_scrollbar()</a>, <a class="el" href="output_8cpp_source.html#l00056">FULL_SCREEN_HEIGHT</a>, <a class="el" href="output_8cpp_source.html#l00055">FULL_SCREEN_WIDTH</a>, <a class="el" href="morale_8cpp_source.html#l00489">get_level()</a>, <a class="el" href="morale_8cpp_source.html#l00129">player_morale::morale_point::get_name()</a>, <a class="el" href="morale_8cpp_source.html#l00222">player_morale::morale_point::get_percent_contribution()</a>, <a class="el" href="morale_8cpp_source.html#l00422">get_temper_mult()</a>, <a class="el" href="morale_8cpp_source.html#l00462">get_total_negative_value()</a>, <a class="el" href="morale_8cpp_source.html#l00475">get_total_positive_value()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="input_8cpp_source.html#l00854">input_context::handle_input()</a>, <a class="el" href="cata__tiles_8h.html#affa90804269b044a43867f93746f8f8ea811882fecd5c7618d7099ebbd39ea254">left</a>, <a class="el" href="mapgen_8cpp_source.html#l06455">line()</a>, <a class="el" href="output_8h_source.html#l00047">LINE_XOXX</a>, <a class="el" href="output_8h_source.html#l00045">LINE_XXXO</a>, <a class="el" href="translations_8h_source.html#l00342">localized_compare</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00152">catacurses::mvwhline()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00034">catacurses::newwin()</a>, <a class="el" href="weather__type_8h.html#a951701bd5446ac796b3a62dadcdb61f1afea087517c26fadd409bd4b9dc642555">normal</a>, <a class="el" href="dependency__tree_8h.html#a8935964c16c2e4cfade43a60a2659da9a0fc3cfbc27e91ea60a787de13dae3e3c">num</a>, <a class="el" href="morale_8h_source.html#l00236">points</a>, <a class="el" href="ui__manager_8cpp_source.html#l00285">ui_manager::redraw()</a>, <a class="el" href="input_8cpp_source.html#l00676">input_context::register_action()</a>, <a class="el" href="calendar_8h.html#a2966e2ed60e1b292fb9f87bc519ece79a7c4f29407893c334a6cb7a87bf045c0d">right</a>, <a class="el" href="output_8cpp_source.html#l00461">right_print()</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, <a class="el" href="output_8cpp_source.html#l00047">TERMX</a>, <a class="el" href="output_8cpp_source.html#l00048">TERMY</a>, <a class="el" href="output_8cpp_source.html#l00214">trim_and_print()</a>, <a class="el" href="catacharset_8cpp_source.html#l00142">utf8_width()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00053">catacurses::werase()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
 
 </div>
 </div>
@@ -1661,11 +1661,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03179">3179</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03180" name="l03180"></a><span class="lineno"> 3180</span>{</div>
-<div class="line"><a id="l03181" name="l03181"></a><span class="lineno"> 3181</span>    jsin.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l03182" name="l03182"></a><span class="lineno"> 3182</span>    jsin.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;morale&quot;</span>, <a class="code hl_variable" href="classplayer__morale.html#ab89efa8c97793daf1961a4b536caac9c">points</a> );</div>
-<div class="line"><a id="l03183" name="l03183"></a><span class="lineno"> 3183</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03174">3174</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03175" name="l03175"></a><span class="lineno"> 3175</span>{</div>
+<div class="line"><a id="l03176" name="l03176"></a><span class="lineno"> 3176</span>    jsin.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l03177" name="l03177"></a><span class="lineno"> 3177</span>    jsin.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;morale&quot;</span>, <a class="code hl_variable" href="classplayer__morale.html#ab89efa8c97793daf1961a4b536caac9c">points</a> );</div>
+<div class="line"><a id="l03178" name="l03178"></a><span class="lineno"> 3178</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00150">json.cpp:150</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00944">json.h:944</a></div></div>
 </div><!-- fragment -->
@@ -1745,7 +1745,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="morale_8h_source.html#l00252">body_parts</a>, <a class="el" href="morale_8cpp.html#a1e2a085a78738d789a7447af81ed3deb">effect_cold</a>, <a class="el" href="morale_8cpp.html#a4c80f98459b07d9175c344914b1525dd">effect_hot</a>, <a class="el" href="morale_8cpp.html#a09fec42ea1d19920f66b5a9afd8e7606">effect_took_prozac</a>, <a class="el" href="morale_8cpp.html#af06d6c676520c79c4ada995dcb0494ef">effect_took_prozac_bad</a>, <a class="el" href="effect_8cpp_source.html#l00974">effect::get_amount()</a>, <a class="el" href="effect_8cpp_source.html#l00502">effect_type::get_morale_type()</a>, <a class="el" href="morale_8cpp_source.html#l00401">remove()</a>, <a class="el" href="morale_8cpp_source.html#l00367">set_permanent_typed()</a>, <a class="el" href="morale_8cpp_source.html#l01055">set_prozac()</a>, <a class="el" href="morale_8cpp_source.html#l01064">set_prozac_bad()</a>, and <a class="el" href="calendar_8cpp_source.html#l00026">calendar::turn_zero</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09103">Character::check_and_recover_morale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09118">Character::check_and_recover_morale()</a>.</p>
 
 </div>
 </div>
@@ -1798,7 +1798,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="morale_8cpp_source.html#l01000">set_worn()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09103">Character::check_and_recover_morale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09118">Character::check_and_recover_morale()</a>.</p>
 
 </div>
 </div>
@@ -1826,7 +1826,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="morale_8cpp_source.html#l00909">set_mutation()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09103">Character::check_and_recover_morale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09118">Character::check_and_recover_morale()</a>.</p>
 
 </div>
 </div>
@@ -1891,7 +1891,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="morale_8h_source.html#l00286">perceived_pain</a>, and <a class="el" href="morale_8cpp_source.html#l01097">update_masochist_bonus()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09103">Character::check_and_recover_morale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09118">Character::check_and_recover_morale()</a>.</p>
 
 </div>
 </div>
@@ -2559,10 +2559,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03174">3174</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03175" name="l03175"></a><span class="lineno"> 3175</span>{</div>
-<div class="line"><a id="l03176" name="l03176"></a><span class="lineno"> 3176</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;morale&quot;</span>, <a class="code hl_variable" href="classplayer__morale.html#ab89efa8c97793daf1961a4b536caac9c">points</a> );</div>
-<div class="line"><a id="l03177" name="l03177"></a><span class="lineno"> 3177</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03169">3169</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03170" name="l03170"></a><span class="lineno"> 3170</span>{</div>
+<div class="line"><a id="l03171" name="l03171"></a><span class="lineno"> 3171</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;morale&quot;</span>, <a class="code hl_variable" href="classplayer__morale.html#ab89efa8c97793daf1961a4b536caac9c">points</a> );</div>
+<div class="line"><a id="l03172" name="l03172"></a><span class="lineno"> 3172</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02046">json.cpp:2046</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="json_8cpp_source.html#l02046">JsonOut::member()</a>.</p>
@@ -3118,7 +3118,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classplayer__morale.html">player_morale</a></li>
-    <li class="footer">Generated on Mon Jul 11 2022 10:53:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 24 2022 19:09:27 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

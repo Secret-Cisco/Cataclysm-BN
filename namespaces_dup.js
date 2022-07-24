@@ -1209,8 +1209,8 @@ var namespaces_dup =
     [ "overmap_connections", "namespaceovermap__connections.html", [
       [ "check_consistency", "namespaceovermap__connections.html#ab36252a44fc0ccdaee6640bfa11c1be5", null ],
       [ "finalize", "namespaceovermap__connections.html#a42c4f1f50efcfaca2bf3e432c16476a6", null ],
-      [ "guess_for", "namespaceovermap__connections.html#acd9590bde48cf17bcc18f277713e0e70", null ],
-      [ "guess_for", "namespaceovermap__connections.html#a23da3f5473af6f6b500dccd0d3755444", null ],
+      [ "guess_for", "namespaceovermap__connections.html#a08ab011bb828d660cabc5c89cbe1b0f4", null ],
+      [ "guess_for", "namespaceovermap__connections.html#af90b58fed265f687f61ea7ebddd57ae1", null ],
       [ "load", "namespaceovermap__connections.html#ae63dd560ad9fcf9bf40d2023642fb114", null ],
       [ "reset", "namespaceovermap__connections.html#aedeb81c9b5cc4ed3aa0345d2b4b7a5ab", null ]
     ] ],
@@ -1229,7 +1229,7 @@ var namespaces_dup =
     ] ],
     [ "overmap_specials", "namespaceovermap__specials.html", [
       [ "check_consistency", "namespaceovermap__specials.html#a5b049e59ea1caba25c44c785e08210c8", null ],
-      [ "create_building_from", "namespaceovermap__specials.html#af2ddf58bdbaf464bad8d7aca1d70226c", null ],
+      [ "create_building_from", "namespaceovermap__specials.html#af05eed49c8aee8dba1ae1fcdf347385c", null ],
       [ "finalize", "namespaceovermap__specials.html#a2939ccd0213e323b8a8c10f764f206eb", null ],
       [ "get_all", "namespaceovermap__specials.html#ae39e94620013b52e3f84a973c5a5bf73", null ],
       [ "get_default_batch", "namespaceovermap__specials.html#a7e95432bcc3c9ccbb4567d281671ec36", null ],

@@ -44,7 +44,7 @@ var searchData=
   ['omapx_41',['OMAPX',['../game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232',1,'game_constants.h']]],
   ['omapy_42',['OMAPY',['../game__constants_8h.html#a19d4c597789235509b7ee6060543829e',1,'game_constants.h']]],
   ['omedit_5frotation_43',['omedit_rotation',['../classuistatedata.html#ae701b895ac6f22ce2abffbfff8e6c10f',1,'uistatedata']]],
-  ['omspec_5ffreq_44',['OMSPEC_FREQ',['../omdata_8h.html#ad25977a64e3d8681be2cea62c5633769',1,'omdata.h']]],
+  ['omspec_5ffreq_44',['OMSPEC_FREQ',['../overmap__special_8h.html#ad25977a64e3d8681be2cea62c5633769',1,'overmap_special.h']]],
   ['omt_45',['omt',['../namespacecoords.html#ae222bbb7f74b56f73f807483083914fb',1,'coords']]],
   ['omt_5fpath_46',['omt_path',['../classCharacter.html#abf9fb0e53589386ea19d64a377ad6247',1,'Character']]],
   ['omt_5fpos_47',['omt_pos',['../classbasecamp.html#aa23443799ab9ae6cbe7cda89fb13abaf',1,'basecamp']]],

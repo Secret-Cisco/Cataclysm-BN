@@ -117,7 +117,7 @@ var classovermap =
     [ "overmapbuffer", "classovermap.html#a4665583e9e218458c25c2f7df580a8bf", null ],
     [ "camps", "classovermap.html#a5bc3048cc5ecaac086a1f0ba93891edd", null ],
     [ "cities", "classovermap.html#a51184ac4981b9683a2494c24f9a6b005", null ],
-    [ "connections_out", "classovermap.html#ad7fd5e1c866e12209c5bff7f25f98a0e", null ],
+    [ "connections_out", "classovermap.html#acc1cecb2d887517e5bc0e4ae74528c82", null ],
     [ "electric_grid_connections", "classovermap.html#a9d2fce374afa5a9a9e2cd361fb5984ba", null ],
     [ "invalid_tripoint", "classovermap.html#aa0999e49bed45fc1eb5e30498b8934f4", null ],
     [ "labs", "classovermap.html#adb2c5de3caaf6e0d4c87eb0f15439b20", null ],
