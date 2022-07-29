@@ -178,34 +178,34 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01688">1688</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span>{</div>
-<div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>    <span class="keywordtype">int</span> final_time = <a class="code hl_variable" href="structconstruction.html#a028cdad58389e12991899814221f0122">time</a>;</div>
-<div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span>    <span class="keywordtype">int</span> assistants = 0;</div>
-<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span> </div>
-<div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.get_crafting_helpers() ) {</div>
-<div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span>        <span class="keywordflow">if</span>( elem-&gt;meets_skill_requirements( *<span class="keyword">this</span> ) ) {</div>
-<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>            assistants++;</div>
-<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>        }</div>
-<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>    }</div>
-<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span> </div>
-<div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span>    <span class="keywordflow">if</span>( assistants &gt;= 2 ) {</div>
-<div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>        final_time *= 0.4f;</div>
-<div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( assistants == 1 ) {</div>
-<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>        final_time *= 0.75f;</div>
-<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>    }</div>
-<div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span> </div>
-<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>    final_time *= <a class="code hl_function" href="structconstruction.html#ad7c75ab4b42d656e538ee720801aa96b">time_scale</a>();</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01702">1702</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>{</div>
+<div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>    <span class="keywordtype">int</span> final_time = <a class="code hl_variable" href="structconstruction.html#a028cdad58389e12991899814221f0122">time</a>;</div>
+<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>    <span class="keywordtype">int</span> assistants = 0;</div>
 <div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span> </div>
-<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>    <span class="keywordflow">return</span> final_time;</div>
-<div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>}</div>
+<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.get_crafting_helpers() ) {</div>
+<div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>        <span class="keywordflow">if</span>( elem-&gt;meets_skill_requirements( *<span class="keyword">this</span> ) ) {</div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>            assistants++;</div>
+<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>        }</div>
+<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>    }</div>
+<div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span> </div>
+<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>    <span class="keywordflow">if</span>( assistants &gt;= 2 ) {</div>
+<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span>        final_time *= 0.4f;</div>
+<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( assistants == 1 ) {</div>
+<div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>        final_time *= 0.75f;</div>
+<div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>    }</div>
+<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span> </div>
+<div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>    final_time *= <a class="code hl_function" href="structconstruction.html#ad7c75ab4b42d656e538ee720801aa96b">time_scale</a>();</div>
+<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span> </div>
+<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>    <span class="keywordflow">return</span> final_time;</div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>}</div>
 <div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00267">game.cpp:267</a></div></div>
 <div class="ttc" id="astructconstruction_html_a028cdad58389e12991899814221f0122"><div class="ttname"><a href="structconstruction.html#a028cdad58389e12991899814221f0122">construction::time</a></div><div class="ttdeci">int time</div><div class="ttdef"><b>Definition:</b> <a href="construction_8h_source.html#l00079">construction.h:79</a></div></div>
-<div class="ttc" id="astructconstruction_html_ad7c75ab4b42d656e538ee720801aa96b"><div class="ttname"><a href="structconstruction.html#ad7c75ab4b42d656e538ee720801aa96b">construction::time_scale</a></div><div class="ttdeci">float time_scale() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01678">construction.cpp:1678</a></div></div>
+<div class="ttc" id="astructconstruction_html_ad7c75ab4b42d656e538ee720801aa96b"><div class="ttname"><a href="structconstruction.html#ad7c75ab4b42d656e538ee720801aa96b">construction::time_scale</a></div><div class="ttdeci">float time_scale() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01692">construction.cpp:1692</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="construction_8h_source.html#l00079">time</a>, and <a class="el" href="construction_8cpp_source.html#l01678">time_scale()</a>.</p>
+<p class="reference">References <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="construction_8h_source.html#l00079">time</a>, and <a class="el" href="construction_8cpp_source.html#l01692">time_scale()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l03779">activity_handlers::build_do_turn()</a>, and <a class="el" href="construction_8cpp_source.html#l01710">get_time_string()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l03779">activity_handlers::build_do_turn()</a>, and <a class="el" href="construction_8cpp_source.html#l01724">get_time_string()</a>.</p>
 
 </div>
 </div>
@@ -225,16 +225,16 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01716">1716</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>{</div>
-<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>    std::string time_text = <a class="code hl_function" href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">get_time_string</a>();</div>
-<div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>    std::vector&lt;std::string&gt; folded_time = <a class="code hl_function" href="output_8cpp.html#afc0a91b0fbe1ed197d2e2ac5ceaac1a2">foldstring</a>( time_text, width );</div>
-<div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>    <span class="keywordflow">return</span> folded_time;</div>
-<div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01730">1730</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>{</div>
+<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>    std::string time_text = <a class="code hl_function" href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">get_time_string</a>();</div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>    std::vector&lt;std::string&gt; folded_time = <a class="code hl_function" href="output_8cpp.html#afc0a91b0fbe1ed197d2e2ac5ceaac1a2">foldstring</a>( time_text, width );</div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>    <span class="keywordflow">return</span> folded_time;</div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>}</div>
 <div class="ttc" id="aoutput_8cpp_html_afc0a91b0fbe1ed197d2e2ac5ceaac1a2"><div class="ttname"><a href="output_8cpp.html#afc0a91b0fbe1ed197d2e2ac5ceaac1a2">foldstring</a></div><div class="ttdeci">std::vector&lt; std::string &gt; foldstring(const std::string &amp;str, int width, const char split)</div><div class="ttdoc">Split the input text into separate lines and wrap long lines.</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00068">output.cpp:68</a></div></div>
-<div class="ttc" id="astructconstruction_html_ab277019211fcf8e122cd9ba0f011568d"><div class="ttname"><a href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">construction::get_time_string</a></div><div class="ttdeci">std::string get_time_string() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01710">construction.cpp:1710</a></div></div>
+<div class="ttc" id="astructconstruction_html_ab277019211fcf8e122cd9ba0f011568d"><div class="ttname"><a href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">construction::get_time_string</a></div><div class="ttdeci">std::string get_time_string() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01724">construction.cpp:1724</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="output_8cpp_source.html#l00068">foldstring()</a>, and <a class="el" href="construction_8cpp_source.html#l01710">get_time_string()</a>.</p>
+<p class="reference">References <a class="el" href="output_8cpp_source.html#l00068">foldstring()</a>, and <a class="el" href="construction_8cpp_source.html#l01724">get_time_string()</a>.</p>
 
 </div>
 </div>
@@ -261,22 +261,22 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01710">1710</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>{</div>
-<div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span>    <span class="keyword">const</span> <a class="code hl_class" href="classtime__duration.html">time_duration</a> turns = <a class="code hl_function" href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a>( <a class="code hl_function" href="structconstruction.html#a52094564ee6ba8fb55b74f6913c9a0bf">adjusted_time</a>() / 100 );</div>
-<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Time to complete: &quot;</span> ) + <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a>( turns ), <a class="code hl_variable" href="construction_8cpp.html#aad18bc79fe3445eef05a1be4464faf71">color_data</a> );</div>
-<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01724">1724</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>{</div>
+<div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span>    <span class="keyword">const</span> <a class="code hl_class" href="classtime__duration.html">time_duration</a> turns = <a class="code hl_function" href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a>( <a class="code hl_function" href="structconstruction.html#a52094564ee6ba8fb55b74f6913c9a0bf">adjusted_time</a>() / 100 );</div>
+<div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Time to complete: &quot;</span> ) + <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a>( turns ), <a class="code hl_variable" href="construction_8cpp.html#aad18bc79fe3445eef05a1be4464faf71">color_data</a> );</div>
+<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>}</div>
 <div class="ttc" id="acalendar_8cpp_html_aeb989652ea2bf7fd03b07a74fd30bd7a"><div class="ttname"><a href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a></div><div class="ttdeci">std::string to_string(const time_duration &amp;d)</div><div class="ttdoc">Returns a string showing a duration.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00327">calendar.cpp:327</a></div></div>
 <div class="ttc" id="aclasstime__duration_html"><div class="ttname"><a href="classtime__duration.html">time_duration</a></div><div class="ttdoc">A duration defined as a number of specific time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00179">calendar.h:180</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_a0f7145f4fc4c09defbaf25f468e4e54a"><div class="ttname"><a href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a></div><div class="ttdeci">static constexpr time_duration from_turns(const T t)</div><div class="ttdoc">Named constructors to get a duration representing a multiple of the named time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00204">calendar.h:204</a></div></div>
 <div class="ttc" id="acolor_8cpp_html_a0f25678be1fc95cb81381a004493a4cc"><div class="ttname"><a href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a></div><div class="ttdeci">std::string colorize(const std::string &amp;text, const nc_color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="color_8cpp_source.html#l00669">color.cpp:669</a></div></div>
 <div class="ttc" id="aconstruction_8cpp_html_aad18bc79fe3445eef05a1be4464faf71"><div class="ttname"><a href="construction_8cpp.html#aad18bc79fe3445eef05a1be4464faf71">color_data</a></div><div class="ttdeci">static const deferred_color color_data</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l00147">construction.cpp:147</a></div></div>
-<div class="ttc" id="astructconstruction_html_a52094564ee6ba8fb55b74f6913c9a0bf"><div class="ttname"><a href="structconstruction.html#a52094564ee6ba8fb55b74f6913c9a0bf">construction::adjusted_time</a></div><div class="ttdeci">int adjusted_time() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01688">construction.cpp:1688</a></div></div>
+<div class="ttc" id="astructconstruction_html_a52094564ee6ba8fb55b74f6913c9a0bf"><div class="ttname"><a href="structconstruction.html#a52094564ee6ba8fb55b74f6913c9a0bf">construction::adjusted_time</a></div><div class="ttdeci">int adjusted_time() const</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l01702">construction.cpp:1702</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="construction_8cpp_source.html#l01688">adjusted_time()</a>, <a class="el" href="construction_8cpp_source.html#l00147">color_data</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="construction_8cpp_source.html#l01702">adjusted_time()</a>, <a class="el" href="construction_8cpp_source.html#l00147">color_data</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01716">get_folded_time_string()</a>, and <a class="el" href="construction_8cpp_source.html#l01671">print_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01730">get_folded_time_string()</a>, and <a class="el" href="construction_8cpp_source.html#l01685">print_time()</a>.</p>
 
 </div>
 </div>
@@ -318,14 +318,14 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01671">1671</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span>{</div>
-<div class="line"><a id="l01674" name="l01674"></a><span class="lineno"> 1674</span>    std::string text = <a class="code hl_function" href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">get_time_string</a>();</div>
-<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8cpp.html#ab9659cbe9ec23a2efd813f795cb7fb73">fold_and_print</a>( w, p, width, col, text );</div>
-<div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01685">1685</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span>{</div>
+<div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span>    std::string text = <a class="code hl_function" href="structconstruction.html#ab277019211fcf8e122cd9ba0f011568d">get_time_string</a>();</div>
+<div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8cpp.html#ab9659cbe9ec23a2efd813f795cb7fb73">fold_and_print</a>( w, p, width, col, text );</div>
+<div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>}</div>
 <div class="ttc" id="aoutput_8cpp_html_ab9659cbe9ec23a2efd813f795cb7fb73"><div class="ttname"><a href="output_8cpp.html#ab9659cbe9ec23a2efd813f795cb7fb73">fold_and_print</a></div><div class="ttdeci">int fold_and_print(const catacurses::window &amp;w, const point &amp;begin, int width, const nc_color &amp;base_color, const std::string &amp;text, const char split)</div><div class="ttdoc">Fold and print text in the given window.</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00299">output.cpp:299</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="output_8cpp_source.html#l00299">fold_and_print()</a>, and <a class="el" href="construction_8cpp_source.html#l01710">get_time_string()</a>.</p>
+<p class="reference">References <a class="el" href="output_8cpp_source.html#l00299">fold_and_print()</a>, and <a class="el" href="construction_8cpp_source.html#l01724">get_time_string()</a>.</p>
 
 </div>
 </div>
@@ -344,20 +344,20 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01678">1678</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>{</div>
-<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span>    <span class="comment">//incorporate construction time scaling</span></div>
-<div class="line"><a id="l01681" name="l01681"></a><span class="lineno"> 1681</span>    <span class="keywordflow">if</span>( get_option&lt;int&gt;( <span class="stringliteral">&quot;CONSTRUCTION_SCALING&quot;</span> ) == 0 ) {</div>
-<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecalendar.html#aef148fa54dcd19dba93471745bb00975">calendar::season_ratio</a>();</div>
-<div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span>        <span class="keywordflow">return</span> get_option&lt;int&gt;( <span class="stringliteral">&quot;CONSTRUCTION_SCALING&quot;</span> ) / 100.0;</div>
-<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>    }</div>
-<div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l01692">1692</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span>{</div>
+<div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span>    <span class="comment">//incorporate construction time scaling</span></div>
+<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>    <span class="keywordflow">if</span>( get_option&lt;int&gt;( <span class="stringliteral">&quot;CONSTRUCTION_SCALING&quot;</span> ) == 0 ) {</div>
+<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecalendar.html#aef148fa54dcd19dba93471745bb00975">calendar::season_ratio</a>();</div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>        <span class="keywordflow">return</span> get_option&lt;int&gt;( <span class="stringliteral">&quot;CONSTRUCTION_SCALING&quot;</span> ) / 100.0;</div>
+<div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span>    }</div>
+<div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>}</div>
 <div class="ttc" id="anamespacecalendar_html_aef148fa54dcd19dba93471745bb00975"><div class="ttname"><a href="namespacecalendar.html#aef148fa54dcd19dba93471745bb00975">calendar::season_ratio</a></div><div class="ttdeci">float season_ratio()</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00485">calendar.cpp:485</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="calendar_8cpp_source.html#l00485">calendar::season_ratio()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01688">adjusted_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01702">adjusted_time()</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00060">60</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00049">49</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00106">106</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00051">51</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">blueprint_options::get_final_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>, <a class="el" href="game_8cpp_source.html#l06194">game::print_trap_info()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>, and <a class="el" href="iexamine_8cpp_source.html#l03789">iexamine::trap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">blueprint_options::get_final_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>, <a class="el" href="game_8cpp_source.html#l06194">game::print_trap_info()</a>, <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>, and <a class="el" href="iexamine_8cpp_source.html#l03789">iexamine::trap()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00089">89</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -466,7 +466,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00075">75</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01901">construction_activity()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l00891">place_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01901">construction_activity()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l00893">place_construction()</a>.</p>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00103">103</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -502,7 +502,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00066">66</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00093">93</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00857">can_construct()</a>, <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00284">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00858">can_construct()</a>, <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00285">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -538,7 +538,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00087">87</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00057">57</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00857">can_construct()</a>, <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00284">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00858">can_construct()</a>, <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00285">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00063">63</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00857">can_construct()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00858">can_construct()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00091">91</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00149">has_pre_terrain()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00149">has_pre_terrain()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -610,7 +610,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00053">53</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -628,7 +628,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00085">85</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00857">can_construct()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00858">can_construct()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00055">55</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">blueprint_options::get_final_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00149">has_pre_terrain()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01040">find_base_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="clzones_8cpp_source.html#l00212">blueprint_options::get_final_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00149">has_pre_terrain()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00071">71</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -685,7 +685,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00069">69</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00244">construction_color()</a>, <a class="el" href="construction_8cpp_source.html#l00284">construction_menu()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>, and <a class="el" href="character_8cpp_source.html#l03427">Character::meets_skill_requirements()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00245">construction_color()</a>, <a class="el" href="construction_8cpp_source.html#l00285">construction_menu()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>, and <a class="el" href="character_8cpp_source.html#l03427">Character::meets_skill_requirements()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +703,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00072">72</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01901">construction_activity()</a>, <a class="el" href="construction_8cpp_source.html#l00284">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02628">generic_multi_activity_check_requirement()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00891">place_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l00818">player_can_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01901">construction_activity()</a>, <a class="el" href="construction_8cpp_source.html#l00285">construction_menu()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02628">generic_multi_activity_check_requirement()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>, <a class="el" href="construction_8cpp_source.html#l00893">place_construction()</a>, and <a class="el" href="construction_8cpp_source.html#l00819">player_can_build()</a>.</p>
 
 </div>
 </div>
@@ -721,7 +721,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00076">76</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -739,7 +739,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00079">79</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01688">adjusted_time()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l03779">activity_handlers::build_do_turn()</a>, <a class="el" href="construction_8cpp_source.html#l00958">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01777">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01702">adjusted_time()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l03779">activity_handlers::build_do_turn()</a>, <a class="el" href="construction_8cpp_source.html#l00962">complete_construction()</a>, <a class="el" href="construction_8cpp_source.html#l01791">get_build_reqs_for_furn_ter_ids()</a>, and <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -757,7 +757,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="construction_8h_source.html#l00082">82</a> of file <a class="el" href="construction_8h_source.html">construction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01491">load_construction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l01505">load_construction()</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structconstruction.html">construction</a></li>
-    <li class="footer">Generated on Sun Jul 24 2022 19:09:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jul 29 2022 22:37:05 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
